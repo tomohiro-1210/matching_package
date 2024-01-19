@@ -1,0 +1,27 @@
+// ボタン
+.c-button {
+    width: 310px;
+    height: 67px;
+    background: #4893C6;
+    border-radius: 300px;
+    position: relative;
+    a{        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Noto Sans JP";
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+.c-button.gratation {
+    background: linear-gradient(to right, #346CB5, #97A7D5);;
+    width: 260px;
+    height: 60px;
+    a{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
