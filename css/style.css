@@ -956,13 +956,13 @@ main {
   }
 }
 /* フォーム */
-.contact-form {
+.registration {
   background-color: #F8F8F8;
   /* ラベル */
   /* お問合せフォーム ------------------------------*/
   /* アイテム */
 }
-.contact-form__title {
+.registration__title {
   font-weight: bold;
   font-size: 36px;
   letter-spacing: 0.05em;
@@ -970,13 +970,13 @@ main {
   color: #104069;
   padding: 50px;
 }
-.contact-form__registration {
+.registration__registration {
   width: 600px;
   margin: 0 auto;
   background-color: #4893C6;
   border-radius: 10px 10px 0 0;
 }
-.contact-form__registration p {
+.registration__registration p {
   font-family: "Noto Sans JP";
   font-weight: bold;
   font-size: 18px;
@@ -985,10 +985,10 @@ main {
   color: #fff;
   padding: 15px;
 }
-.contact-form__form {
+.registration__form {
   padding-bottom: 80px;
 }
-.contact-form__before {
+.registration__before {
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 0.15em;
@@ -997,7 +997,7 @@ main {
   color: #000;
   margin-bottom: 50px;
 }
-.contact-form__label {
+.registration__label {
   padding: 2px 14px;
   font-size: 14px;
   text-align: left;
@@ -1006,70 +1006,70 @@ main {
   border-radius: 5px;
   display: inline-block;
 }
-.contact-form__label-danger {
+.registration__label-danger {
   background: #104069;
   color: #fff;
 }
-.contact-form__items {
+.registration__items {
   max-width: 480px;
   margin: 0 auto;
   background-color: #fff;
   padding: 60px;
   border-radius: 0 0 10px 10px;
 }
-.contact-form__item dl {
+.registration__item dl {
   display: block;
   max-width: 480px;
   width: calc(100% - 20px);
   margin: 0 auto;
 }
-.contact-form__item dt {
+.registration__item dt {
   width: 100%;
   margin-bottom: 10px;
 }
-.contact-form__item dd {
+.registration__item dd {
   width: 100%;
   align-items: center;
 }
-.contact-form__item dd select, .contact-form__item dd input, .contact-form__item dd textarea {
+.registration__item dd select, .registration__item dd input, .registration__item dd textarea {
   display: block;
   font-size: 16px;
   padding: 15px 20px;
   border: solid 1px #A5BACC;
   border-radius: 5px;
 }
-.contact-form__item dd textarea {
+.registration__item dd textarea {
   width: calc(100% - 40px);
   height: 159px;
   padding: 10px;
 }
-.contact-form__item__name {
+.registration__item__name {
   display: flex;
 }
-.contact-form__item__name--input {
+.registration__item__name--input {
   width: 121px;
   margin-right: 16px;
 }
-.contact-form__item__name--input:last-child {
+.registration__item__name--input:last-child {
   margin-right: 0px;
 }
-.contact-form__item__name--example {
+.registration__item__name--example {
   font-family: "Yu Gothic";
   font-weight: normal;
   font-size: 16px;
   margin-right: 7px;
 }
-.contact-form__item__mail--input {
+.registration__item__mail--input {
   width: calc(100% - 42px);
 }
-.contact-form__item__tel {
+.registration__item__tel {
   display: flex;
 }
-.contact-form__item__tel--input {
+.registration__item__tel--input {
   width: 93px;
   margin-right: 7px;
 }
-.contact-form__item__tel--line::after {
+.registration__item__tel--line::after {
   content: "";
   flex-grow: 1;
   height: 1px;
@@ -1080,39 +1080,39 @@ main {
   top: 50%;
   margin-right: 7px;
 }
-.contact-form__item__tel--input:last-child {
+.registration__item__tel--input:last-child {
   margin-right: 0px;
 }
-.contact-form__item:not(:last-child) {
+.registration__item:not(:last-child) {
   margin-bottom: 30px;
 }
-.contact-form__item:last-child {
+.registration__item:last-child {
   margin-top: 50px;
 }
-.contact-form__subtitle {
+.registration__subtitle {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.05em;
   text-align: left;
   color: #111;
 }
-.contact-form__subtitle--name {
+.registration__subtitle--name {
   display: inline-block;
 }
-.contact-form__privicy {
+.registration__privicy {
   display: flex;
   align-items: center;
 }
-.contact-form__privicy .check-box {
+.registration__privicy .check-box {
   display: flex;
   display: inline-block;
   margin: 0 9px 0 0;
 }
-.contact-form__privicy__check {
+.registration__privicy__check {
   display: flex;
   align-items: center;
 }
-.contact-form__privicy--doui, .contact-form__privicy-link {
+.registration__privicy--doui, .registration__privicy-link {
   font-family: "Noto Sans CJK JP";
   font-size: 16px;
   letter-spacing: 0.1em;
@@ -1122,32 +1122,32 @@ main {
   color: #111111;
   display: inline-block;
 }
-.contact-form__privicy-link {
+.registration__privicy-link {
   color: #346CB5;
   transition: all 0.5s;
   height: 30px;
   line-height: 30px;
   text-decoration: underline;
 }
-.contact-form label:not(:first-child) {
+.registration label:not(:first-child) {
   margin-left: 24px;
 }
-.contact-form__button.c-button.gratation {
+.registration__button.c-button.gratation {
   width: 310px;
   height: 54px;
   margin: 0 auto 20px;
 }
-.contact-form__button.c-button.gratation a {
+.registration__button.c-button.gratation a {
   font-size: 16px;
 }
-.contact-form__login {
+.registration__login {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.05em;
   text-align: center;
   color: #111;
 }
-.contact-form__login span {
+.registration__login span {
   color: #346CB5;
   text-decoration: underline;
   display: inline-block;
@@ -1155,63 +1155,63 @@ main {
 
 @media screen and (max-width: 768px) {
   /* フォーム */
-  .contact-form {
+  .registration {
     background-color: #F8F8F8;
     /* ラベル */
     /* お問合せフォーム ------------------------------*/
     /* アイテム */
   }
-  .contact-form__title {
+  .registration__title {
     font-size: 22px;
     padding: 30px 0;
   }
-  .contact-form__registration {
+  .registration__registration {
     max-width: 520px;
     width: calc(100% - 40px);
   }
-  .contact-form__registration p {
+  .registration__registration p {
     font-size: 14px;
     padding: 10px;
   }
-  .contact-form__form {
+  .registration__form {
     padding-bottom: 60px;
     width: calc(100% - 40px);
     margin: 0 auto;
   }
-  .contact-form__label {
+  .registration__label {
     padding: 2px 12px;
     font-size: 12px;
     margin-left: 10px;
   }
-  .contact-form__items {
+  .registration__items {
     max-width: 480px;
     margin: 0 auto;
     background-color: #fff;
     padding: 20px;
   }
-  .contact-form__item:not(:last-child) {
+  .registration__item:not(:last-child) {
     margin-bottom: 20px;
   }
-  .contact-form__item:last-child {
+  .registration__item:last-child {
     margin-top: 0px;
   }
-  .contact-form__subtitle {
+  .registration__subtitle {
     font-size: 14px;
   }
-  .contact-form__privicy {
+  .registration__privicy {
     display: flex;
     align-items: center;
   }
-  .contact-form__privicy .check-box {
+  .registration__privicy .check-box {
     display: flex;
     display: inline-block;
     margin: 0 9px 0 0;
   }
-  .contact-form__privicy__check {
+  .registration__privicy__check {
     display: flex;
     align-items: center;
   }
-  .contact-form__privicy--doui, .contact-form__privicy-link {
+  .registration__privicy--doui, .registration__privicy-link {
     font-size: 14px;
     letter-spacing: 0.1em;
     text-align: left;
@@ -1219,22 +1219,22 @@ main {
     color: #111111;
     display: inline-block;
   }
-  .contact-form__privicy-link {
+  .registration__privicy-link {
     color: #346CB5;
     transition: all 0.5s;
     text-decoration: underline;
   }
-  .contact-form label:not(:first-child) {
+  .registration label:not(:first-child) {
     margin-left: 24px;
   }
-  .contact-form__button.c-button.gratation {
+  .registration__button.c-button.gratation {
     width: 260px;
     height: 50px;
   }
-  .contact-form__button.c-button.gratation a {
+  .registration__button.c-button.gratation a {
     font-size: 14px;
   }
-  .contact-form__login {
+  .registration__login {
     font-size: 14px;
   }
 }

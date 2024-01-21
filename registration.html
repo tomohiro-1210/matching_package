@@ -84,100 +84,100 @@
     <!-- /menu -->
 
     <!-- contactForm -->
-    <section class="contact-form">
+    <section class="registration">
         <!-- タイトル -->
-        <h2 class="contact-form__title">新規お申し込みフォーム</h2>
+        <h2 class="registration__title">新規お申し込みフォーム</h2>
         <!-- /タイトル -->
        <!-- 登録フォーム本体 -->
-       <div class="contact-form__registration">
+       <div class="registration__registration">
             <p>メールアドレスで登録</p>
        </div>
-        <form method="POST" class="contact-form__form" id="failure">
-            <ul class="contact-form__items">
+        <form method="POST" class="registration__form" id="failure">
+            <ul class="registration__items">
     
-                <!-- アイテム メールアドレス -->
-                <li class="contact-form__item">
+                <!-- アイテム 会社名 -->
+                <li class="registration__item">
                     <dl>
-                        <dt class="contact-form__subtitle">
-                          <span class="contact-form__subtitle--name">メールアドレス</span>
-                          <span class="contact-form__label contact-form__label-danger">必須</span>
+                        <dt class="registration__subtitle">
+                          <span class="registration__subtitle--name">会社名</span>
+                          <span class="registration__label registration__label-danger">必須</span>
                         </dt>
-                        <dd class="contact-form__item__mail">
-                            <input class="contact-form__item__mail--input" type="text" name="address" value="" placeholder="例：株式会社〇〇〇〇">
+                        <dd class="registration__item__mail">
+                            <input class="registration__item__mail--input" type="text" name="address" value="" placeholder="例：株式会社〇〇〇〇">
                         </dd>
                     </dl>
-                </li><!-- /アイテム メールアドレス -->
+                </li><!-- /アイテム 会社名 -->
     
                 <!-- アイテム 部署名 -->
-                <li class="contact-form__item">
+                <li class="registration__item">
                     <dl>
-                        <dt class="contact-form__subtitle">
-                          <span class="contact-form__subtitle--name">部署名</span>
-                          <span class="contact-form__label contact-form__label-danger">必須</span>
+                        <dt class="registration__subtitle">
+                          <span class="registration__subtitle--name">部署名</span>
+                          <span class="registration__label registration__label-danger">必須</span>
                         </dt>
-                        <dd class="contact-form__item__mail">
-                            <input class="contact-form__item__mail--input" type="text" name="address" value="" placeholder="例：人事部">
+                        <dd class="registration__item__mail">
+                            <input class="registration__item__mail--input" type="text" name="address" value="" placeholder="例：人事部">
                         </dd>
                     </dl>
                 </li><!-- /アイテム 部署名 -->
     
                 <!-- アイテム お名前 -->
-                <li class="contact-form__item">
+                <li class="registration__item">
                     <dl>
-                        <dt class="contact-form__subtitle">
-                          <span class="contact-form__subtitle--name">お名前</span>
-                          <span class="contact-form__label contact-form__label-danger">必須</span>
+                        <dt class="registration__subtitle">
+                          <span class="registration__subtitle--name">お名前</span>
+                          <span class="registration__label registration__label-danger">必須</span>
                         </dt>
-                        <dd class="contact-form__item__mail">
-                            <input class="contact-form__item__mail--input" type="text" name="address" value="" placeholder="例：お名前太郎">
+                        <dd class="registration__item__mail">
+                            <input class="registration__item__mail--input" type="text" name="address" value="" placeholder="例：お名前太郎">
                         </dd>
                     </dl>
                 </li><!-- /アイテム お名前 -->
     
                 <!-- アイテム メールアドレス -->
-                <li class="contact-form__item">
+                <li class="registration__item">
                     <dl>
-                        <dt class="contact-form__subtitle">
-                          <span class="contact-form__subtitle--name">メールアドレス</span>
-                          <span class="contact-form__label contact-form__label-danger">必須</span>
+                        <dt class="registration__subtitle">
+                          <span class="registration__subtitle--name">メールアドレス</span>
+                          <span class="registration__label registration__label-danger">必須</span>
                         </dt>
-                        <dd class="contact-form__item__mail">
-                            <input class="contact-form__item__mail--input" type="text" name="address" value="" placeholder="example@gco.jp">
+                        <dd class="registration__item__mail">
+                            <input class="registration__item__mail--input" type="text" name="address" value="" placeholder="example@gco.jp">
                         </dd>
                     </dl>
                 </li><!-- /アイテム メールアドレス -->
     
                 <!-- アイテム 電話番号 -->
-                <li class="contact-form__item">
+                <li class="registration__item">
                     <dl>
-                        <dt class="contact-form__subtitle">
-                          <span class="contact-form__subtitle--name">電話番号</span>
-                          <span class="contact-form__label contact-form__label-danger">必須</span>
+                        <dt class="registration__subtitle">
+                          <span class="registration__subtitle--name">電話番号</span>
+                          <span class="registration__label registration__label-danger">必須</span>
                         </dt>
-                        <dd class="contact-form__item__mail">
-                            <input class="contact-form__item__mail--input" type="text" name="address" value="" placeholder="例：0123-456-789">
+                        <dd class="registration__item__mail">
+                            <input class="registration__item__mail--input" type="text" name="address" value="" placeholder="例：0123-456-789">
                         </dd>
                     </dl>
                 </li><!-- /アイテム 電話番号 -->
     
                 <!-- アイテム 個人情報取り扱い -->
-                <li class="contact-form__item">
+                <li class="registration__item">
                     <dl>
-                        <dt class="contact-form__subtitle">
+                        <dt class="registration__subtitle">
                         </dt>
-                        <dd  class="contact-form__privicy">
-                                <div class="contact-form__privicy__check">
+                        <dd  class="registration__privicy">
+                                <div class="registration__privicy__check">
                                     <input class="check-box" type="checkbox" name="privacy-check" value="プライバシーポリシーに同意します。">
-                                    <span class="contact-form__privicy--doui"><a href="#" class="contact-form__privicy-link">利用規約</a>、<a href="#" class="contact-form__privicy-link">プライバシーポリシー</a>を確認して承諾する</span>
+                                    <span class="registration__privicy--doui"><a href="#" class="registration__privicy-link">利用規約</a>、<a href="#" class="registration__privicy-link">プライバシーポリシー</a>を確認して承諾する</span>
                                 </div>
                         </dd>
                     </dl>
                 </li><!-- /アイテム 個人情報取り扱い -->
     
                 <!-- アイテム ボタン -->
-                <li class="contact-form__item">
-                    <div class="contact-form__button c-button gratation"><a href="#">新規お申し込みする</a></div>
-                    <p class="contact-form__login">すでに会員の方は<br class="sp-on"><span>こちらからログイン</span>してください</p>
+                <li class="registration__item">
+                    <div class="registration__button c-button gratation"><a href="#">新規お申し込みする</a></div>
+                    <p class="registration__login">すでに会員の方は<br class="sp-on"><span>こちらからログイン</span>してください</p>
                 </li><!-- /アイテム ボタン -->
     
             </ul>
