@@ -25,3 +25,72 @@
         white-space: nowrap;
     }
 }
+
+// ぱんくず
+.c-breadcrumb{
+    margin-bottom: 60px;
+    &__lists {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        margin-right: 10px;
+        font-size: 14px;
+        color: #000;
+        line-height: 18px;
+        img{
+            width:16px;
+            height: 18px;
+        }
+        a{
+            color: #000;
+        }
+    }
+}
+
+// ページタイトル
+.c-pageTitle {
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #104069;
+    margin: 60px 0;
+}
+
+
+@media screen and (max-width:768px) {
+    // ぱんくず
+    .c-breadcrumb{
+        margin-bottom: 30px;
+        &__lists {
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+        }
+        &__list {
+            margin-right: 10px;
+            font-size: 12px;
+            color: #000;
+            line-height: 12px;
+            a{
+                color: #000;
+            }
+        }
+    }
+
+    // ページタイトル
+    .c-pageTitle {
+        font-weight: bold;
+        font-size: 28px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #104069;
+        margin: 30px 0;
+    }
+}
