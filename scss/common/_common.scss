@@ -17,3 +17,14 @@ a,span{
     text-decoration: none;
     display: block;
 }
+
+main{
+    margin-top: 120px;
+}
+// スマホ版
+@media screen and (max-width:768px) {
+    main{
+        margin-top: 90px;
+    }
+}
+
