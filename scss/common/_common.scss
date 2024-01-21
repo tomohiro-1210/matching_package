@@ -21,10 +21,29 @@ a,span{
 main{
     margin-top: 120px;
 }
-// スマホ版
-@media screen and (max-width:768px) {
+
+// pc/spオンオフ
+.pc-on{
+    display: block;
+}
+.sp-on{
+    display: none;
+}
+
+// タブレット版
+@media screen and (max-width:920px) {
     main{
         margin-top: 90px;
+    }
+}
+// スマホ版
+@media screen and (max-width:768px) {
+    // pc/spオンオフ
+    .pc-on{
+        display: none;
+    }
+    .sp-on{
+        display: block;
     }
 }
 
