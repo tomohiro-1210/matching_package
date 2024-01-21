@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -150,13 +151,13 @@ main {
   font-weight: bold;
 }
 
-.c-button.lite-gratation {
+.c-button.gratation {
   background: linear-gradient(to right, #346CB5, #97A7D5);
   width: 260px;
   height: 60px;
   border: solid 2px #fff;
 }
-.c-button.lite-gratation a {
+.c-button.gratation a {
   font-size: 14px;
   white-space: nowrap;
 }
@@ -171,13 +172,13 @@ main {
   color: #346CB5;
 }
 
-.c-button.gratation {
+.c-button.lite-gratation {
   background: linear-gradient(to right, #0489C6, #C1D2E8);
   width: 260px;
   height: 60px;
   border: solid 2px #fff;
 }
-.c-button.gratation a {
+.c-button.lite-gratation a {
   font-size: 14px;
   white-space: nowrap;
 }
@@ -951,6 +952,289 @@ main {
     width: auto;
     padding-bottom: 10px;
     border-bottom: solid 1px #4893C6;
+    font-size: 14px;
+  }
+}
+/* フォーム */
+.contact-form {
+  background-color: #F8F8F8;
+  /* ラベル */
+  /* お問合せフォーム ------------------------------*/
+  /* アイテム */
+}
+.contact-form__title {
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #104069;
+  padding: 50px;
+}
+.contact-form__registration {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #4893C6;
+  border-radius: 10px 10px 0 0;
+}
+.contact-form__registration p {
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+}
+.contact-form__form {
+  padding-bottom: 80px;
+}
+.contact-form__before {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 50px;
+}
+.contact-form__label {
+  padding: 2px 14px;
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+  margin-left: 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.contact-form__label-danger {
+  background: #104069;
+  color: #fff;
+}
+.contact-form__items {
+  max-width: 480px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 0 0 10px 10px;
+}
+.contact-form__item dl {
+  display: block;
+  max-width: 480px;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+}
+.contact-form__item dt {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.contact-form__item dd {
+  width: 100%;
+  align-items: center;
+}
+.contact-form__item dd select, .contact-form__item dd input, .contact-form__item dd textarea {
+  display: block;
+  font-size: 16px;
+  padding: 15px 20px;
+  border: solid 1px #A5BACC;
+  border-radius: 5px;
+}
+.contact-form__item dd textarea {
+  width: calc(100% - 40px);
+  height: 159px;
+  padding: 10px;
+}
+.contact-form__item__name {
+  display: flex;
+}
+.contact-form__item__name--input {
+  width: 121px;
+  margin-right: 16px;
+}
+.contact-form__item__name--input:last-child {
+  margin-right: 0px;
+}
+.contact-form__item__name--example {
+  font-family: "Yu Gothic";
+  font-weight: normal;
+  font-size: 16px;
+  margin-right: 7px;
+}
+.contact-form__item__mail--input {
+  width: calc(100% - 42px);
+}
+.contact-form__item__tel {
+  display: flex;
+}
+.contact-form__item__tel--input {
+  width: 93px;
+  margin-right: 7px;
+}
+.contact-form__item__tel--line::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #000000;
+  display: block;
+  width: 7px;
+  position: relative;
+  top: 50%;
+  margin-right: 7px;
+}
+.contact-form__item__tel--input:last-child {
+  margin-right: 0px;
+}
+.contact-form__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.contact-form__item:last-child {
+  margin-top: 50px;
+}
+.contact-form__subtitle {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #111;
+}
+.contact-form__subtitle--name {
+  display: inline-block;
+}
+.contact-form__privicy {
+  display: flex;
+  align-items: center;
+}
+.contact-form__privicy .check-box {
+  display: flex;
+  display: inline-block;
+  margin: 0 9px 0 0;
+}
+.contact-form__privicy__check {
+  display: flex;
+  align-items: center;
+}
+.contact-form__privicy--doui, .contact-form__privicy-link {
+  font-family: "Noto Sans CJK JP";
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  height: 30px;
+  line-height: 30px;
+  color: #111111;
+  display: inline-block;
+}
+.contact-form__privicy-link {
+  color: #346CB5;
+  transition: all 0.5s;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+.contact-form label:not(:first-child) {
+  margin-left: 24px;
+}
+.contact-form__button.c-button.gratation {
+  width: 310px;
+  height: 54px;
+  margin: 0 auto 20px;
+}
+.contact-form__button.c-button.gratation a {
+  font-size: 16px;
+}
+.contact-form__login {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #111;
+}
+.contact-form__login span {
+  color: #346CB5;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  /* フォーム */
+  .contact-form {
+    background-color: #F8F8F8;
+    /* ラベル */
+    /* お問合せフォーム ------------------------------*/
+    /* アイテム */
+  }
+  .contact-form__title {
+    font-size: 22px;
+    padding: 30px 0;
+  }
+  .contact-form__registration {
+    max-width: 520px;
+    width: calc(100% - 40px);
+  }
+  .contact-form__registration p {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .contact-form__form {
+    padding-bottom: 60px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
+  .contact-form__label {
+    padding: 2px 12px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .contact-form__items {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+  }
+  .contact-form__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .contact-form__item:last-child {
+    margin-top: 0px;
+  }
+  .contact-form__subtitle {
+    font-size: 14px;
+  }
+  .contact-form__privicy {
+    display: flex;
+    align-items: center;
+  }
+  .contact-form__privicy .check-box {
+    display: flex;
+    display: inline-block;
+    margin: 0 9px 0 0;
+  }
+  .contact-form__privicy__check {
+    display: flex;
+    align-items: center;
+  }
+  .contact-form__privicy--doui, .contact-form__privicy-link {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    height: auto;
+    color: #111111;
+    display: inline-block;
+  }
+  .contact-form__privicy-link {
+    color: #346CB5;
+    transition: all 0.5s;
+    text-decoration: underline;
+  }
+  .contact-form label:not(:first-child) {
+    margin-left: 24px;
+  }
+  .contact-form__button.c-button.gratation {
+    width: 260px;
+    height: 50px;
+  }
+  .contact-form__button.c-button.gratation a {
+    font-size: 14px;
+  }
+  .contact-form__login {
     font-size: 14px;
   }
 }
