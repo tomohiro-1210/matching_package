@@ -97,6 +97,7 @@ a, span {
   background: #4893C6;
   border-radius: 300px;
   position: relative;
+  border: solid 2px #fff;
 }
 .c-button a {
   position: absolute;
@@ -109,14 +110,40 @@ a, span {
   font-weight: bold;
 }
 
+.c-button:hover {
+  background: #fff;
+  border: solid 2px #4893C6;
+}
+.c-button:hover a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Noto Sans JP";
+  color: #4893C6;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .c-button.gratation {
   background: linear-gradient(to right, #346CB5, #97A7D5);
   width: 260px;
   height: 60px;
+  border: solid 2px #fff;
 }
 .c-button.gratation a {
   font-size: 14px;
   white-space: nowrap;
+}
+
+.c-button.gratation:hover {
+  background: #fff;
+  border: solid 2px #346CB5;
+}
+.c-button.gratation:hover a {
+  font-size: 14px;
+  white-space: nowrap;
+  color: #346CB5;
 }
 
 .c-breadcrumb {
@@ -140,7 +167,8 @@ a, span {
   height: 18px;
 }
 .c-breadcrumb__list a {
-  color: #000;
+  color: #104069;
+  text-decoration: underline;
 }
 
 .c-pageTitle {
@@ -152,16 +180,22 @@ a, span {
   margin: 60px 0;
 }
 
+@media screen and (max-width: 920px) {
+  .c-breadcrumb {
+    margin-bottom: 40px;
+  }
+  .c-pageTitle {
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #104069;
+    margin: 40px 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .c-breadcrumb {
     margin-bottom: 30px;
-  }
-  .c-breadcrumb__lists {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
   }
   .c-breadcrumb__list {
     margin-right: 10px;
@@ -173,11 +207,8 @@ a, span {
     color: #000;
   }
   .c-pageTitle {
-    font-weight: bold;
     font-size: 28px;
     letter-spacing: 0.05em;
-    text-align: center;
-    color: #104069;
     margin: 30px 0;
   }
 }
@@ -188,7 +219,6 @@ a, span {
   position: relative;
   margin: 0px auto 0px;
   padding-top: 30px;
-  border-bottom: solid 1px #333333;
 }
 .l-header__job {
   font-weight: bold;
@@ -258,7 +288,7 @@ a, span {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .l-header {
     height: 90px;
     padding: 0px;
@@ -313,7 +343,7 @@ a, span {
   }
 }
 .l-footer__container {
-  padding: 60px 20px 0;
+  padding: 60px 0px 0;
 }
 .l-footer__menu--nav {
   display: flex;
@@ -406,7 +436,7 @@ a, span {
   padding: 15px 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
   .l-footer__container {
     padding: 40px 0px 0;
   }
@@ -447,7 +477,7 @@ a, span {
   }
   .l-footer__bottom--inner {
     flex-direction: column-reverse;
-    padding: 30px 20px;
+    padding: 30px 0px;
   }
   .l-footer__title {
     font-size: 16px;
@@ -493,17 +523,17 @@ a, span {
   padding-left: 30px;
 }
 .privacy__text--left01 {
-  padding-left: 60px;
+  padding-left: 30px;
   margin-bottom: 0px;
 }
 .privacy__text--left02 {
-  padding-left: 80px;
+  padding-left: 60px;
   margin-bottom: 10px;
 }
-.privacy__text--left03 {
+.privacy__text--nospace {
   padding-left: 0px;
 }
-.privacy__text--google {
+.privacy__text--topspace {
   padding-left: 0px;
   margin-top: 16px;
 }
@@ -528,13 +558,14 @@ a, span {
 .privacy__text--number03::before {
   content: "03";
 }
+.privacy__text--number04::before {
+  content: "04";
+}
+.privacy__text--number05::before {
+  content: "05";
+}
 
-@media screen and (max-width: 768px) {
-  .privacy__top, .privacy__text, .privacy__text--left01, .privacy__text--left02 {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 20px;
-  }
+@media screen and (max-width: 920px) {
   .privacy__contain, .privacy__top {
     width: calc(100% - 40px);
     padding: 0 20px;
@@ -545,13 +576,22 @@ a, span {
   .privacy__contain:not(:last-child) {
     margin-bottom: 20px;
   }
-  .privacy__title {
-    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .privacy__top, .privacy__text, .privacy__text--left01, .privacy__text--left02 {
+    font-weight: normal;
     font-size: 14px;
-    letter-spacing: 0.05em;
     line-height: 20px;
-    text-align: left;
-    color: #1a1a1a;
+  }
+  .privacy__top {
+    margin-bottom: 20px;
+  }
+  .privacy__contain:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .privacy__title {
+    font-size: 14px;
+    line-height: 20px;
     margin-bottom: 20px;
   }
   .privacy__text {
@@ -559,32 +599,20 @@ a, span {
     padding-left: 25px;
   }
   .privacy__text--left01 {
-    padding-left: 45px;
+    padding-left: 25px;
   }
   .privacy__text--left02 {
-    padding-left: 65px;
+    padding-left: 45px;
   }
-  .privacy__text--left03 {
+  .privacy__text--nospace {
     padding-left: 0px;
   }
-  .privacy__text--google {
+  .privacy__text--topspace {
     padding-left: 0px;
     margin-top: 12px;
   }
   .privacy__text:not(:last-child) {
     margin-bottom: 5px;
-  }
-  .privacy__text--number::before {
-    font-size: 14px;
-  }
-  .privacy__text--number01::before {
-    content: "01";
-  }
-  .privacy__text--number02::before {
-    content: "02";
-  }
-  .privacy__text--number03::before {
-    content: "03";
   }
 }
 /*# sourceMappingURL=style.css.map */
