@@ -1,0 +1,88 @@
+//企業概要
+.about {
+    margin-bottom: 100px;
+    &__table {
+        max-width: 1000px;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        white-space: nowrap;
+        dt,dt+dd{
+            letter-spacing: 0.1em;
+            line-height: 30px;
+            text-align: left;
+            color: #333;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        dt{
+            width: calc(30% - 22px);
+            font-size: 18px;
+            font-weight: bold;
+            padding-left: 22px;
+            border-bottom: solid 2px #4893C6;
+        }
+        dt+dd{
+            width: calc(100% - 30%);
+            font-size: 16px;
+            font-weight: 500;
+            border-bottom: solid 1px #4893C6;
+        }
+        
+        
+    }
+    
+}
+
+
+@media screen and (max-width:768px) {
+    //企業概要
+    .about {
+        max-width: 700px;
+        margin: 0 auto 80px;
+        position: static;      
+        &__wrapper{
+            position: static;
+            top: 0%;
+            left: 0%;
+            transform: translate(-0%, -0%);
+            padding: 0;
+        }
+        &__table {
+            padding: 0px 20px;
+            display: block;
+            flex-wrap: nowrap;
+            border-top: none;
+            dt,dt+dd{
+                font-family: "Noto Sans CJK JP";
+                letter-spacing: 0.1em;
+                line-height: 22px;
+                text-align: left;
+                color: #333;
+                border-bottom: none;
+                padding-top: 10px;
+                padding-bottom: 00px;
+            }
+            dt:last-of-type,dd:last-of-type{
+                border-bottom: none;
+                border-bottom: none;
+            }
+            dt{
+                width: auto;
+                font-weight: bold;
+                padding-left: 0px;
+                font-size: 15px;
+            }
+            dt+dd{
+                width: auto;
+                padding-bottom: 10px;
+                border-bottom: solid 1px #4893C6;
+                font-size: 14px;
+            }           
+            
+        }
+    }
+
+}
