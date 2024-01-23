@@ -33,9 +33,25 @@
     }
 }
 
+// TOPページタイトル
+.c-secTitle {
+    font-family: "Noto Sans JP";
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #4893C6;
+    margin-bottom: 80px;
+}
+.c-secTitle.dark-blue {
+    color: #104069;
+}
+
+
+
 // グラテーションボタン（紺色）
 .c-button.gratation {
-    background: linear-gradient(to right, #346CB5, #97A7D5);;
+    background: linear-gradient(to right, #346CB5, #97A7D5);
     width: 260px;
     height: 60px;
     border: solid 2px #fff;
@@ -148,5 +164,11 @@
         font-size: 28px;
         letter-spacing: 0.05em;
         margin: 30px 0;
+    }
+
+    // TOPページタイトル
+    .c-secTitle {
+        font-size: 28px;
+        margin-bottom: 60px;
     }
 }
