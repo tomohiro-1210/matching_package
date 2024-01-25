@@ -1,0 +1,370 @@
+.l-header {
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    // ポジション固定
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    // 間隔調整
+    margin: 0px auto 0px;
+    padding-top: 30px;
+    &__job {
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #346cb5;
+        // 位置を揃える
+        display: flex;
+        align-items: center;
+        // ボタンの位置
+        position: absolute;
+        top: -10%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        img{
+            width: 16px;
+            height: 16px;
+            margin-left: 20px;
+        }
+    }
+    &__wrap {
+        width: 100%;
+        padding: 0 20px;
+        max-width: 1400px;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    &__title {
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 33px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #4893c6;
+    }
+    &__nav,&__menu {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    &__list {
+        margin-right: 30px;
+        a{
+            font-weight: bold;
+            font-size: 14px;
+            color: #333333;
+        }
+    }
+    &__list:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__button{
+        margin-right: 30px;
+    }
+    &__login{
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 18px;
+        color: #346cb5;
+    }
+    &__humburgur {
+        display: none;
+    }
+    
+    
+}
+
+// スマホメニュー
+.sp-menu {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    padding: 20px 0;
+    max-width: 920px;
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto 0;
+    overflow: auto;
+    // メニューの位置固定
+    position: fixed;
+    top: 0;
+    // アニメーション
+    transform: translateX(120%);
+    opacity: 0;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    &__wrap{
+        background-color: #fff;
+        width: calc(100% - 40px);
+        height: calc(100vh - 40px);
+        margin: 0 auto;
+        border-radius: 20px;
+        position: relative;
+    }
+    &__close{
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: #4893c6;
+        font-size: 30px;
+        // Xの位置揃え
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        // Xの位置中央
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 3px 3px 6px rgba($color: #000000, $alpha: 0.5);
+    }
+    &__content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__list {
+        width: fit-content;
+        margin: 0px auto 20px;
+        padding: 40px;
+    }
+    &__item {
+        text-align: center;
+        white-space: nowrap;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: 0.05em;
+        line-height: 30px;
+        text-align: center;
+        color: #111;
+    }
+    &__login {
+        width: fit-content;
+        margin: 0 auto 25px;
+        p{
+            display: inline-block;
+            font-weight: normal;
+            font-size: 27px;
+            letter-spacing: 0.05em;
+            color: #1e324f;
+            position: relative;
+            padding: 0 40px;
+            margin: 0 auto;
+            white-space: nowrap;
+            span{
+                display: inline-block;
+                color: #DE2D28;
+                font-weight: bold;
+            }
+        }
+        p::before {  
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: "";
+            width: 2px;
+            height: 100%;
+            background: #000;
+            border-radius: 3px;
+            transform: rotate(-45deg);
+        }
+        p::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #000;
+            border-radius: 3px;
+            transform: rotate(45deg);
+        }
+    }
+    &__button{
+        margin: 0 auto 50px;
+        box-shadow: 3px 3px 6px rgba($color: #000000, $alpha: 0.3);
+        
+    }
+    &__button.c-button{
+        background-color: #104069;
+        color: #104069;
+        border: none;
+    }
+    &__button.c-button.lite-gratation,
+    &__button.c-button{
+        width: 500px;
+        height: 70px;
+        border: none;
+        a{
+            font-size: 24px;
+        }
+    }
+    &__job {
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 24px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #346cb5;
+        // 位置を揃える
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // ボタンの位置
+        img{
+            width: 24px;
+            height: 24px;
+            margin-left: 20px;
+        }
+    }
+}
+.sp-menu.open{
+    position: fixed;
+    z-index: 9990;
+    // アニメーション
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+// タブレット版
+@media screen and (max-width:920px) {
+    .l-header {
+        height: 90px;
+        padding: 0px;
+        // 位置を揃える
+        display: flex;
+        align-items: center;
+        &__wrap{
+            width: calc(100% - 40px);
+        }
+        &__job {
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #346cb5;
+            // 位置を揃える
+            display: flex;
+            align-items: center;
+            // ボタンの位置
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            transform: translate(0%, -50%);
+            img{
+                width: 14px;
+                height: 14px;
+                margin-left: 10px;
+            }
+        }
+        &__title {
+            font-size: 16px;
+        }
+        &__menu,&__button {
+            display: none;
+        }
+        &__login{
+            font-size: 12px;
+        }
+        &__humburgur {
+            display: block;
+            margin-left: 30px;
+            span{
+                width: 30px;
+                height: 2px;
+                background-color: #104069;
+            }
+            span:nth-child(1),
+            span:nth-child(2){
+                margin-bottom: 8px;
+            }
+            span:nth-child(3){
+                width: 20px;
+            }
+        }
+    }
+    
+}
+
+// スマホ版
+@media screen and (max-width:768px) {
+    // スマホメニュー
+    .sp-menu {
+        &__wrap{
+            background-color: #fff;
+            width: calc(100% - 40px);
+            height: calc(100vh - 40px);
+            margin: 0 auto;
+            border-radius: 20px;
+            position: relative;
+        }
+        &__close{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+        &__list {
+            width: fit-content;
+            margin: 0px auto 20px;
+            padding: 40px;
+        }
+        &__item {
+            text-align: center;
+            white-space: nowrap;
+        }
+        &__item:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        &__name {
+            font-size: 15px;
+        }
+        &__login {
+            margin: 0 auto 15px;
+            p{
+                font-size: 18px;
+            }
+        }
+        &__button{
+            margin: 0 auto 30px;
+            box-shadow: 3px 3px 6px rgba($color: #000000, $alpha: 0.3);
+        }
+        &__button.c-button.lite-gratation,
+        &__button.c-button{
+            width: 290px;
+            height: 50px;
+            border: none;
+            a{
+                font-size: 14px;
+            }
+        }
+        &__job {
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #346cb5;
+            img{
+                width: 16px;
+                height: 16px;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+

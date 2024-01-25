@@ -1,0 +1,194 @@
+// ボタン
+.c-button {
+    width: 310px;
+    height: 67px;
+    background: #4893C6;
+    border-radius: 300px;
+    position: relative;
+    border: solid 2px #fff;
+    // box-shadow: 3px 3px 6px rgba($color: #000000, $alpha: 1.0);
+    a{        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Noto Sans JP";
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+.c-button:hover {
+    background: #fff;
+    border: solid 2px #4893C6;
+    a{        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Noto Sans JP";
+        color: #4893C6;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+// TOPページタイトル
+.c-secTitle {
+    font-family: "Noto Sans JP";
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #4893C6;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+.c-secTitle.dark-blue {
+    color: #104069;
+}
+.c-secTitle:before,
+.c-secTitle:after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #4893C6;
+}
+ 
+.c-secTitle:before {
+    margin-right: 50px;
+}
+ 
+.c-secTitle:after {
+    margin-left: 50px;
+}
+
+
+// グラテーションボタン（紺色）
+.c-button.gratation {
+    background: linear-gradient(to left, #346CB5, #97A7D5);
+    width: 260px;
+    height: 60px;
+    border: solid 2px #fff;
+    a{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+.c-button.lite-gratation:hover {
+    background: #fff;
+    border: solid 2px #346CB5;
+    a{
+        font-size: 14px;
+        white-space: nowrap;
+        color: #346CB5;
+    }
+}
+
+// グラテーションボタン（水色）
+.c-button.lite-gratation {
+    background: linear-gradient(to left, #0489C6, #C1D2E8);
+    width: 260px;
+    height: 60px;
+    border: solid 2px #fff;
+    a{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+.c-button.gratation:hover {
+    background: #fff;
+    border: solid 2px #346CB5;
+    a{
+        font-size: 14px;
+        white-space: nowrap;
+        color: #346CB5;
+    }
+}
+
+// ぱんくず
+.c-breadcrumb{
+    margin-bottom: 60px;
+    &__lists {
+        margin: 30px auto 0;
+        max-width: 1200px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        margin-right: 10px;
+        font-size: 14px;
+        color: #000;
+        line-height: 18px;
+        img{
+            width:16px;
+            height: 18px;
+        }
+        a{
+            color: #346CB5;
+            text-decoration: underline;
+        }
+    }
+}
+
+// ページタイトル
+.c-pageTitle {
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #4893C6;
+    margin: 120px auto 60px;
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+    background: linear-gradient(transparent 60%, #FBFE8E 60%);
+    font-weight: bold;
+    width: fit-content;
+    padding: 0 30px;
+}
+
+// タブレット版
+@media screen and (max-width:920px) {
+    // ぱんくず
+    .c-breadcrumb{
+        margin-bottom: 40px;
+    }
+
+    // ページタイトル
+    .c-pageTitle {
+        font-weight: bold;
+        font-size: 28px;
+        letter-spacing: 0.05em;
+        text-align: center;
+    }
+}
+@media screen and (max-width:768px) {
+    // ぱんくず
+    .c-breadcrumb{
+        margin-bottom: 30px;
+        &__list {
+            margin-right: 10px;
+            font-size: 12px;
+            color: #000;
+            line-height: 12px;
+            a{
+                color: #000;
+            }
+        }
+    }
+
+    // ページタイトル
+    .c-pageTitle {
+        font-size: 28px;
+        letter-spacing: 0.05em;
+    }
+
+    // TOPページタイトル
+    .c-secTitle {
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+}

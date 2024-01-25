@@ -1,0 +1,247 @@
+<!-- 
+    PHPのコードが書いてある箇所はお問い合わせフォームのコードをそのまま残してあるので、
+    自由に改変してもらっても大丈夫です。
+ -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>就活マッチングサイト お問い合わせ</title>
+</head>
+<body>
+    <header class="l-header">
+        <a href="#" class="l-header__job" target="_blank">採用担当者様はこちら<img src="./assets/img/new_window.png" alt="new window"></a>
+        <div class="l-header__wrap">
+            <p class="l-header__title">就活マッチングサイト</p>
+            <nav class="l-header__nav">
+                <ul class="l-header__menu">
+                    <li class="l-header__list"><a href="#">就活マッチングサイトとは？</a></li>
+                    <li class="l-header__list"><a href="#">就活コラム</a></li>
+                    <li class="l-header__list"><a href="#">お知らせ</a></li>
+                    <li class="l-header__list"><a href="#">よくある質問</a></li>
+                </ul>
+                <div class="l-header__button c-button lite-gratation"><a href="#">新規会員登録</a></div>
+                <a href="#" class="l-header__login">就活ログイン</a>
+                <div class="l-header__humburgur">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <main>
+        <!-- menu -->
+            <div class="sp-menu">
+                <div class="sp-menu__wrap">
+                    <div class="sp-menu__close">
+                        ×
+                    </div>
+                    <div class="sp-menu__content">
+                        <ul class="sp-menu__list">
+                            <li class="sp-menu__item">
+                                <a href="#">
+                                    <span class="sp-menu__name">就活マッチングサイトとは？</span>
+                                </a>
+                            </li>
+                            <li class="sp-menu__item">
+                                <a href="#">
+                                    <span class="sp-menu__name">就活コラム</span>
+                                </a>
+                            </li>
+                            <li class="sp-menu__item">
+                                <a href="#">
+                                    <span class="sp-menu__name">お知らせ</span>
+                                </a>
+                            </li>
+                            <li class="sp-menu__item">
+                                <a href="#">
+                                    <span class="sp-menu__name">よくある質問</span>
+                                </a>
+                            </li>
+                            <li class="sp-menu__item">
+                                <a href="#">
+                                    <span class="sp-menu__name">お問い合わせ</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sp-menu__button c-button"><a href="#">ログイン</a></div>
+                        <div class="sp-menu__login">
+                            <p>まずは<span>無料</span>で会員登録</p>
+                        </div>
+                        <div class="sp-menu__button c-button lite-gratation"><a href="#">新規会員登録</a></div>
+                        <a href="#" class="sp-menu__job" target="_blank">採用担当者様はこちら<img src="./assets/img/new_window.png" alt="new window"></a>
+                        
+                    </div>
+    
+                </div>
+    
+            </div>
+        <!-- /menu -->
+
+    <!-- contactForm -->
+    <section class="contact">
+        <!-- タイトル -->
+        <h2 class="c-pageTitle">お問い合わせ</h2>
+        <!-- /タイトル -->
+
+
+      <!-- breadcrumb -->
+      <div class="c-breadcrumb">
+        <ul class="c-breadcrumb__lists">
+          <li class="c-breadcrumb__list"><a href="#">トップ</a></li>
+          <li class="c-breadcrumb__list">></li>
+          <li class="c-breadcrumb__list">お問い合わせ</li>
+        </ul>
+      </div>
+      <!-- /breadcrumb -->
+
+       <!-- 登録フォーム本体 -->
+        <form method="POST" class="contact__form" id="failure">
+            <ul class="contact__items">
+    
+                <!-- アイテム お名前 -->
+                <li class="contact__item">
+                    <dl>
+                        <dt class="contact__subtitle">
+                          <span class="contact__subtitle--name">お名前</span>
+                          <span class="contact__label contact__label-danger">必須</span>
+                        </dt>
+                        <dd class="contact__item__mail">
+                            <input class="contact__item__mail--input" type="text" name="address" value="" placeholder="お名前太郎">
+                        </dd>
+                    </dl>
+                </li><!-- /アイテム お名前 -->
+    
+                <!-- アイテム フリガナ -->
+                <li class="contact__item">
+                    <dl>
+                        <dt class="contact__subtitle">
+                          <span class="contact__subtitle--name">フリガナ</span>
+                          <span class="contact__label contact__label-danger">必須</span>
+                        </dt>
+                        <dd class="contact__item__mail">
+                            <input class="contact__item__mail--input" type="text" name="address" value="" placeholder="オナマエタロウ">
+                        </dd>
+                    </dl>
+                </li><!-- /アイテム フリガナ -->
+    
+                <!-- アイテム メールアドレス -->
+                <li class="contact__item">
+                    <dl>
+                        <dt class="contact__subtitle">
+                          <span class="contact__subtitle--name">メールアドレス</span>
+                          <span class="contact__label contact__label-danger">必須</span>
+                        </dt>
+                        <dd class="contact__item__mail">
+                            <input class="contact__item__mail--input" type="text" name="address" value="" placeholder="sample@samole.com">
+                        </dd>
+                    </dl>
+                </li><!-- /アイテム メールアドレス -->
+    
+                <!-- アイテム お問い合わせの種類 -->
+                <li class="contact__item">
+                    <dl>
+                        <dt class="contact__subtitle">
+                          <span class="contact__subtitle--name">お問い合わせの種類</span>
+                          <span class="contact__label contact__label-danger">必須</span>
+                        </dt>
+                        <dd class="contact__item__mail">
+                            <input class="contact__item__mail--input" type="text" name="address" value="" placeholder="お問い合わせの種類を入力してください">
+                        </dd>
+                    </dl>
+                </li><!-- /アイテム お問い合わせの種類 -->
+    
+                <!-- アイテム お問い合わせ内容 -->
+                <li class="contact__item">
+                    <dl>
+                        <dt class="contact__subtitle">
+                          <span class="contact__subtitle--name">お問い合わせ内容</span>
+                          <span class="contact__label contact__label-danger">必須</span>
+                        </dt>
+                        <dd  class="contact__item__inquiry">
+                            <textarea class="contact-form__item__inquiry--textarea" name="text" rows="3" placeholder="お問合せ内容を入力してください"></textarea>
+                        </dd>
+                    </dl>
+                </li><!-- /アイテム お問い合わせ内容 -->
+    
+                <!-- アイテム 個人情報取り扱い -->
+                <li class="contact__item">
+                    <dl>
+                        <dt class="contact__subtitle">
+                        </dt>
+                        <dd  class="contact__privicy">
+                                <div class="contact__privicy__check">
+                                    <input class="check-box" type="checkbox" name="privacy-check" value="プライバシーポリシーに同意します。">
+                                    <span class="contact__privicy--doui"><a href="#" class="contact__privicy-link">利用規約</a>、<a href="#" class="contact__privicy-link">プライバシーポリシー</a>を確認して承諾する</span>
+                                </div>
+                        </dd>
+                    </dl>
+                </li><!-- /アイテム 個人情報取り扱い -->
+    
+                <!-- アイテム ボタン -->
+                <li class="contact__item">
+                    <p class="contact__caution">※迷惑メール対策としてドメイン指定受信を設定されている方は＜@ankalink.com＞からのメールを受信できるように設定してください。<br>
+                        ※お問い合わせ内容によってはご返信までお時間をいただく場合があります。予めご了承ください。</p>
+                    <div class="contact__button c-button "><a href="#">送信する</a></div>
+                </li><!-- /アイテム ボタン -->
+    
+            </ul>
+        </form>
+    </section>
+    <!-- /contactForm -->
+
+    </main>
+    
+    <!-- footer -->
+    <footer class="l-footer">
+        <div class="l-footer__container">
+            <div class="l-footer__top--container">
+                <nav class="l-footer__nav">
+                    <ul class="l-footer__menu--nav">
+                        <li class="l-footer__list--nav"><a href="#">就活マッチングサイトとは？</a></li>
+                        <li class="l-footer__list--nav"><a href="#">就活コラム</a></li>
+                        <li class="l-footer__list--nav"><a href="#">お知らせ</a></li>
+                        <li class="l-footer__list--nav"><a href="#">よくある質問</a></li>
+                    </ul>
+                </nav>
+                <div class="l-footer__button">
+                    <div class="c-button__wrap">
+                        <div class="c-button lite-gratation"><a href="#">新規会員登録</a></div>
+                    </div>
+                    <a href="#" class="l-footer__login">就活ログイン</a>
+                </div>
+                <a href="#" class="l-footer__job" target="_blank">採用担当者様はこちら<img src="./assets/img/new_window.png" alt="new window"></a>
+            </div>
+            <div class="l-footer__bottom--container">
+                <div class="l-footer__bottom--inner">
+                    <p class="l-footer__title">就活マッチングサイト</p>
+                    <ul class="l-footer__menu">
+                        <li class="l-footer__list"><a href="#">利用規約</a></li>
+                        <li class="l-footer__list"><a href="#">プライバシーポリシー</a></li>
+                        <li class="l-footer__list"><a href="#">運営会社</a></li>
+                        <li class="l-footer__list"><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="l-footer__copyright">
+                <p>©就活マッチングサイト</p>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jquery/js -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+      <script src="js/common.js"></script>
+</body>
+</html>
