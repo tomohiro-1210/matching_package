@@ -6,23 +6,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>就活マッチングサイト</title>
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <title>就活マッチングサイト TOP</title>
 </head>
 <body>
     <!-- header -->
     <header class="l-header">
-        <a href="#" class="l-header__job" target="_blank">就職活動中の方はこちら<img src="./assets/img/new_window.png" alt="new window"></a>
+        <a href="#" class="l-header__job" target="_blank">採用担当者様はこちら<img src="./assets/img/new_window.png" alt="new window"></a>
         <div class="l-header__wrap">
             <p class="l-header__title">就活マッチングサイト</p>
             <nav class="l-header__nav">
                 <ul class="l-header__menu">
-                    <li class="l-header__list"><a href="#">就活マッチングサイトについて</a></li>
-                    <li class="l-header__list"><a href="#">サービスについて</a></li>
-                    <li class="l-header__list"><a href="#">料金プラン</a></li>
+                    <li class="l-header__list"><a href="#">就活マッチングサイトとは？</a></li>
+                    <li class="l-header__list"><a href="#">就活コラム</a></li>
                     <li class="l-header__list"><a href="#">お知らせ</a></li>
+                    <li class="l-header__list"><a href="#">よくある質問</a></li>
                 </ul>
-                <div class="l-header__button c-button gratation"><a href="#">お申し込みはこちら</a></div>
-                <a href="#" class="l-header__login">企業ログイン</a>
+                <div class="l-header__button c-button lite-gratation"><a href="#">新規会員登録</a></div>
+                <a href="#" class="l-header__login">就活ログイン</a>
                 <div class="l-header__humburgur">
                     <span></span>
                     <span></span>
@@ -44,17 +47,12 @@
                     <ul class="sp-menu__list">
                         <li class="sp-menu__item">
                             <a href="#">
-                                <span class="sp-menu__name">就活マッチングサイトについて</span>
+                                <span class="sp-menu__name">就活マッチングサイトとは？</span>
                             </a>
                         </li>
                         <li class="sp-menu__item">
                             <a href="#">
-                                <span class="sp-menu__name">サービスについて</span>
-                            </a>
-                        </li>
-                        <li class="sp-menu__item">
-                            <a href="#">
-                                <span class="sp-menu__name">納品料金プランの流れ</span>
+                                <span class="sp-menu__name">就活コラム</span>
                             </a>
                         </li>
                         <li class="sp-menu__item">
@@ -67,13 +65,18 @@
                                 <span class="sp-menu__name">よくある質問</span>
                             </a>
                         </li>
+                        <li class="sp-menu__item">
+                            <a href="#">
+                                <span class="sp-menu__name">お問い合わせ</span>
+                            </a>
+                        </li>
                     </ul>
-                    <div class="sp-menu__button c-button lite-gratation"><a href="#">ログイン</a></div>
+                    <div class="sp-menu__button c-button"><a href="#">ログイン</a></div>
                     <div class="sp-menu__login">
                         <p>まずは<span>無料</span>で会員登録</p>
                     </div>
-                    <div class="sp-menu__button c-button gratation"><a href="#">お申し込みはこちら</a></div>
-                    <a href="#" class="sp-menu__job" target="_blank">就職活動中の方はこちら<img src="./assets/img/new_window.png" alt="new window"></a>
+                    <div class="sp-menu__button c-button lite-gratation"><a href="#">新規会員登録</a></div>
+                    <a href="#" class="sp-menu__job" target="_blank">採用担当者様はこちら<img src="./assets/img/new_window.png" alt="new window"></a>
                     
                 </div>
 
@@ -82,23 +85,51 @@
         </div>
     <!-- /menu -->
 
-    <!-- fv -->
+    <!-- FV~就活マッチングサイトとは -->
     <div class="p-fv">
-        <div class="p-fv__wrap">
-            <div class="p-fv__left">
-                <p class="p-fv__catch">求めていた人材が<br>
-                    きっと見つかる</p>
-            </div>
-            <div class="p-fv__right">
-                <div class="p-fv__speech">
-                    <img src="assets/img/fv-speech.png" alt="fv-speech">
+        <div class="p-fv__top">
+            <div class="p-fv__top__wrap">
+                <div class="p-fv__top__title">
+                    <p><span>あなたに合った</span><br>
+                        <span>全国</span>の企業が<br>
+                        きっと<span>見つかる！</span></p>
+                    <img src="./assets/img/fv-lens.png" alt="fv-lens">
                 </div>
-                <p class="p-fv__registration">まずは<span>無料</span>で会員登録</p>
-                <div class="p-fv__button c-button"><a href="#">もっと見る</a></div>
+                <div class="p-fv__top__content">
+                    <div class="p-fv__top__speech">
+                        <img src="./assets/img/fv-speech.png" alt="fv-speech">
+                    </div>
+                    <div class="p-fv__top__login">
+                        <p>まずは<span>無料</span>で会員登録</p>
+                    </div>
+                    <div class="p-fv__top__button c-button lite-gratation"><a href="#">新規会員登録</a></div>
+                </div>
+            </div>
+            <div class="p-fv__top__job">
+                <img src="./assets/img/fv-job.png" alt="fv-job">
+                <a href="#" target="_blank"><span>採用担当者様はこちら<img src="./assets/img/new_window-white.png" alt="new window"></span></a>
+            </div>
+        </div>
+        <div class="p-fv__bottom">
+            <div class="p-fv__bottom__wrap">
+                <div class="p-fv__bottom__lite">
+                    <img src="./assets/img/fv-lite.png" alt="fv-lite">
+                </div>
+                <div class="p-fv__bottom__contain">
+                    <p class="c-pageTitle">新卒学生就活サイト<br>
+                        就活マッチングサイトとは</p>
+                    <p class="p-fv__bottom__service">企業とあなたを繋ぐ<br>
+                        ダイレクトリクルーティングサービスです</p>
+                    <p class="p-fv__bottom__text">就職活動をしている方に、<br>
+                        企業から求人のオファーが届く<br class="sp-on">スカウト形式の就活マッチングサイトです<br>
+                        登録企業数も豊富！企業側から興味を<br class="sp-on">持った学生にオファーが届きます</p>
+                        <div class="p-fv__bottom__button c-button sp-on"><a href="#">もっと見る</a></div>
+                </div>
+                <div class="p-fv__bottom__button c-button pc-on"><a href="#">もっと見る</a></div>
             </div>
         </div>
     </div>
-    <!-- /fv -->
+    <!-- /FV~就活マッチングサイトとは -->
 
     <!-- 全国の企業登録数 -->
     <section class="p-japan">
@@ -133,190 +164,213 @@
     </section>
     <!-- /全国の企業登録数 -->
 
-
-    <!-- 就活マッチングサイトとは？ -->
-    <section class="p-matching">
-        <div class="p-matching__bg">
-            <img src="./assets/img/matchin-bg.png" alt="matchin-bg">
-        </div>
-        <div class="p-matching__contain">
-            <div class="p-matching__left">
-                <img src="./assets/img/matching-img.png" alt="matching">
-            </div>
-            <div class="p-matching__right">
-                <div class="p-matching__speech">
-                    <img src="./assets/img/matching-speech.png" alt="speech">
-                </div>
-                <p class="p-matching__title">就活マッチングサイトとは</p>
-                <p class="p-matching__catch">就職活動中の<span>学生の情報を検索して</span>、<br>
-                    <span>企業側からアプローチすること</span>ができる</p>
-                <p class="p-matching__text">就活マッチングサイトは、<br class="pc-on">
-                    全国の学生や就職活動中の方のプロフィールや適性を参考にし<br>
-                    気になった方にを直接オファーすることができる、<br class="pc-on">
-                    ダイレクトリクルーティングサービスです</p>
-            </div>
-        </div>
-    </section>
-    <!-- /就活マッチングサイトとは？ -->
-
-    <!-- 選ばれる３つの理由 -->
-    <section class="p-reason">
-            <!-- 見出し -->
-            <h2 class="c-secTitle">選ばれる<br class="sp-on"><span>3</span>つの理由</h2><!-- /見出し -->
-
-            <ul class="p-reason__lists">
-                <li class="p-reason__item">
-                    <p class="p-reason__number">01</p>
-                        <div class="p-reason__white">
-                            <div class="p-reason__img p-reason__img--01">
-                                <img src="./assets/img/reason01.png" alt="reason01">
-                            </div>
-                        </div>
-                    <h3 class="p-reason__subtitle">日本全国対応</h3>
-                    <p class="p-reason__text">就活マッチングサイトは全国対応しております<br>
-                        企業側は幅広い地域の方に向けて、<br class="sp-on">自社のPRができます
-                        </p>
-                </li>
-                <li class="p-reason__item">
-                    <p class="p-reason__number">02</p>
-                        <div class="p-reason__white">
-                            <div class="p-reason__img p-reason__img--02">
-                                <img src="./assets/img/reason02.png" alt="reason02">
-                            </div>
-                        </div>
-                    <h3 class="p-reason__subtitle">知名度で負けない</h3>
-                    <p class="p-reason__text">企業から直接、就活生にアプローチできるので、<br class="pc-on">企業の知名度は関係なく求人募集が可能！<br>
-                        待っているだけでは見つからない、<br>
-                        求めていた人材に出会えます。</p>
-                </li>
-                <li class="p-reason__item">
-                    <p class="p-reason__number">03</p>
-                        <div class="p-reason__white">
-                            <div class="p-reason__img p-reason__img--03">
-                                <img src="./assets/img/reason03.png" alt="reason03">
-                            </div>
-                        </div>
-                    <h3 class="p-reason__subtitle">企業にあった人材を採用</h3>
-                    <p class="p-reason__text">プロフィール情報から、<br class="pc-on">事業内容に合った人材を<br class="pc-on">自ら探すことができます。</p>
-                </li>
-            </ul>
-
-            <div class="p-reason__aspiration">
-                <div class="p-reason__aspiration__contain">
-                    <div class="p-reason__aspiration__left">
-                        <div class="p-reason__aspiration__speech">
-                            <img src="./assets/img/reason-speech.png" alt="reason-speech">
-                        </div>
-                        <p class="p-reason__aspiration__title">第二志望制度</p>
-                    </div>
-                    <div class="p-reason__aspiration__right">
-                        <p class="p-reason__aspiration__text">学生の利用ハードルを低くするため、第二志望制度を設けています。<br>
-                            スカウトされた際に承認・辞退以外の選択を用意しました。<br>
-                            就活生は気軽に話を聞きやすくなり、企業は求める人材を採用できる可能性がアップします。<br>
-                            そのため採用後の内定辞退を減らすことができます</p>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- /選ばれる３つの理由 -->
-
-    <!-- 機能紹介 -->
-    <section class="p-function">
-            <!-- 見出し -->
-            <h2 class="c-secTitle">機能紹介</h2><!-- /見出し -->
-            
-            <!-- 機能紹介 -->
-            <div class="p-function__list">
-                <div class="p-function__item">
-                    <div class="p-function__left">
-                        <p class="p-function__number">01</p>
-                        <img src="./assets/img/function01.png" alt="function01">
-                    </div>
-                    <div class="p-function__right">
-                        <h3 class="p-function__name">ユーザー検索機能</h3>
-                        <p class="p-function__text">就活生が登録する情報を元に絞り込み検索をすることができます<br>
-                            自社の募集内容の基準に合った就活生をその場で検索することができて<br>
-                            マッチングの確率も高くなります</p>
-                    </div>
-                </div>
-                <div class="p-function__item">
-                    <div class="p-function__left">
-                        <p class="p-function__number">02</p>
-                        <img src="./assets/img/function02.png" alt="function02">
-                    </div>
-                    <div class="p-function__right">
-                        <h3 class="p-function__name">オファー機能</h3>
-                        <p class="p-function__text">募集内容の基準に合った就活生を見つけたら、詳細ページからオファーが可能<br>
-                            オファーすると就活生に通知が届き、企業情報を見てもらうことができます<br>
-                            就活生側も希望する募集内容であれば承認し、メッセージのやりとりが開始されます</p>
-                    </div>
-                </div>
-                <div class="p-function__item">
-                    <div class="p-function__left">
-                        <p class="p-function__number">03</p>
-                        <img src="./assets/img/function03.png" alt="function03">
-                    </div>
-                    <div class="p-function__right">
-                        <h3 class="p-function__name">採用情報作成機能</h3>
-                        <p class="p-function__text">企業によって募集内容の基準は一つではないため、募集内容は追加編集が可能です<br>
-                            様々な部署の採用ができるため、より多くの人材を獲得する事ができます</p>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- /機能紹介 -->
-
     <!-- 登録から選考までの流れ -->
     <section class="p-flow">
-            <!-- 見出し -->
-            <h2 class="c-secTitle">登録から選考までの流れ</h2><!-- /見出し -->
-            
-            <div class="p-flow__contain">
-                <div class="p-flow__step">
-                    <div class="p-flow__step__wrap">
+        <!-- 見出し -->
+        <h2 class="c-secTitle">登録から選考までの流れ</h2><!-- /見出し -->
+        <div class="p-flow__contain">
+            <div class="p-flow__step">
+                <div class="p-flow__step__wrap">
+                    <div class="p-flow__step--top">
                         <p class="p-flow__number">STEP 01</p>
                         <div class="p-flow__img"><img src="./assets/img/flow01.png" alt="flow01"></div>
-                        <p class="p-flow__title">会員登録をして<br>
-                            企業情報と募集内容を登録</p>
-                        <p class="p-flow__text">自社の特徴や特別な制度など<br>
-                            強みを細かく<br>
-                            登録することでユーザーからの<br>
-                            興味関心度が高くなります</p>
                     </div>
-                </div>
-                <div class="p-flow__arrow"><img src="./assets/img/flow-arrow.png" alt="flow-arrow"></div>
-                <div class="p-flow__step">
-                    <div class="p-flow__step__wrap">
-                        <p class="p-flow__number">STEP 02</p>
-                        <div class="p-flow__img"><img src="./assets/img/flow02.png" alt="flow02"></div>
-                        <p class="p-flow__title">貴社の採用情報に合った<br>
-                            就活生を探してオファー</p>
-                        <p class="p-flow__text">オファーできる就活生には限りが<br>
-                            あるので、就活生の選考は<br>
-                            慎重に行いましょう</p>
-                    </div>
-                </div>
-                <div class="p-flow__arrow"><img src="./assets/img/flow-arrow.png" alt="flow-arrow"></div>
-                <div class="p-flow__step">
-                    <div class="p-flow__step__wrap">
-                        <p class="p-flow__number">STEP 03</p>
-                        <div class="p-flow__img"><img src="./assets/img/flow03.png" alt="flow03"></div>
-                        <p class="p-flow__title">就活生と<br>
-                            やりとりをして選考スタート！</p>
-                        <p class="p-flow__text">就活生からオファーが承認され<br>
-                            メッセージのやりとりが始まります<br>
-                            面談の日程など決めて選考スタート</p>
+                    <div class="p-flow__step--bottom">
+                        <p class="p-flow__title">会員登録をして<br class="pc-on">
+                            プロフィールを<br class="sp-on">充実させましょう！</p>
+                        <p class="p-flow__text">プロフィール率80%以上にして、<br>
+                            企業にアピールしましょう<br>
+                            自分から気になる企業に応募もOK!</p>
                     </div>
                 </div>
             </div>
+            <div class="p-flow__arrow"><img src="./assets/img/arrow-hand.png" alt="arrow-hand"></div>
+            <div class="p-flow__step">
+                <div class="p-flow__step__wrap">
+                    <div class="p-flow__step--top">
+                        <p class="p-flow__number">STEP 02</p>
+                        <div class="p-flow__img"><img src="./assets/img/flow02.png" alt="flow02"></div>
+                    </div>
+                    <div class="p-flow__step--bottom">
+                        <p class="p-flow__title">オファーを受ける！<br>
+                            気になる企業に応募する！</p>
+                        <p class="p-flow__text">担当者からオファーを<br>
+                            受け取ると通知が届きます<br>
+                            第二志望制度」もあります！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-flow__arrow"><img src="./assets/img/arrow-hand.png" alt="arrow-hand"></div>
+            <div class="p-flow__step">
+                <div class="p-flow__step__wrap">
+                    <div class="p-flow__step--top">
+                        <p class="p-flow__number">STEP 03</p>
+                        <div class="p-flow__img"><img src="./assets/img/flow03.png" alt="flow03"></div>
+                    </div>
+                    <div class="p-flow__step--bottom">
+                        <p class="p-flow__title">企業の採用担当者と<br>
+                            やりとりをして<br class="sp-on">選考が始まります！</p>
+                        <p class="p-flow__text">オファーを承認すると担当者と<br>
+                            メッセージのやり取りが<br class="sp-on">できるようになります<br>
+                            企業によっては選考ではなく<br class="sp-on">、面談や<br class="pc-on">
+                            インターンシップに<br class="sp-on">なることもあります</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- /登録から選考までの流れ -->
 
+    <!-- 就活生のための就活コラム -->
+        <section class="p-column">
+            <div class="p-column__wrap">
+                <!-- 見出し -->
+                <h2 class="c-secTitle">就活生のための<br>就活コラム</h2><!-- /見出し -->
+    
+    
+                <div class="pc-on">
+                    <ul class="p-hanting__list">
+                        <li class="p-hanting__item">
+                            <a href="#">
+                                <div class="p-hanting__img">
+                                    <img src="./assets/img/hanting01.png" alt="hanting01">
+                                </div>
+                                <div class="p-hanting__contain">
+                                    <p class="p-hanting__subTitle">タイトルが入りますタイトルが入りますタイトルがタイトルが…</p>
+                                    <p class="p-hanting__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</p>
+                                    <div class="p-hanting__flex">
+                                        <div class="p-hanting__flex__list">
+                                            <p href="#">カテゴリ名</p>
+                                            <p href="#">カテゴリ名</p>
+                                            </div>
+                                        <div class="p-hanting__flex__list">
+                                            <img src="./assets/img/news-arrow.png" alt="news-arrow">
+                                            </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-hanting__item">
+                            <a href="#">
+                                <div class="p-hanting__img">
+                                    <img src="./assets/img/hanting02.png" alt="hanting02">
+                                </div>
+                                <div class="p-hanting__contain">
+                                    <p class="p-hanting__subTitle">タイトルが入りますタイトルが入りますタイトルがタイトルが…</p>
+                                    <p class="p-hanting__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</p>
+                                    <div class="p-hanting__flex">
+                                        <div class="p-hanting__flex__list">
+                                            <p href="#">カテゴリ名</p>
+                                            <p href="#">カテゴリ名</p>
+                                            </div>
+                                        <div class="p-hanting__flex__list">
+                                            <img src="./assets/img/news-arrow.png" alt="news-arrow">
+                                            </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-hanting__item">
+                            <a href="#">
+                                <div class="p-hanting__img">
+                                    <img src="./assets/img/hanting03.png" alt="hanting03">
+                                </div>
+                                <div class="p-hanting__contain">
+                                    <p class="p-hanting__subTitle">タイトルが入りますタイトルが入りますタイトルがタイトルが…</p>
+                                    <p class="p-hanting__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</p>
+                                    <div class="p-hanting__flex">
+                                        <div class="p-hanting__flex__list">
+                                            <p href="#">カテゴリ名</p>
+                                            <p href="#">カテゴリ名</p>
+                                            </div>
+                                        <div class="p-hanting__flex__list">
+                                            <img src="./assets/img/news-arrow.png" alt="news-arrow">
+                                            </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sp-on">
+                    <ul class="p-hanting__list sp-slider">
+                        <li class="p-hanting__item">
+                            <a href="#">
+                                <div class="p-hanting__img">
+                                    <img src="./assets/img/hanting01.png" alt="hanting01">
+                                </div>
+                                <div class="p-hanting__contain">
+                                    <p class="p-hanting__subTitle">タイトルが入りますタイトルが入りますタイトルがタイトルが…</p>
+                                    <p class="p-hanting__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</p>
+                                    <div class="p-hanting__flex">
+                                        <div class="p-hanting__flex__list">
+                                            <p href="#">カテゴリ名</p>
+                                            <p href="#">カテゴリ名</p>
+                                            </div>
+                                        <div class="p-hanting__flex__list">
+                                            <img src="./assets/img/news-arrow.png" alt="news-arrow">
+                                            </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-hanting__item">
+                            <a href="#">
+                                <div class="p-hanting__img">
+                                    <img src="./assets/img/hanting02.png" alt="hanting02">
+                                </div>
+                                <div class="p-hanting__contain">
+                                    <p class="p-hanting__subTitle">タイトルが入りますタイトルが入りますタイトルがタイトルが…</p>
+                                    <p class="p-hanting__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</p>
+                                    <div class="p-hanting__flex">
+                                        <div class="p-hanting__flex__list">
+                                            <p href="#">カテゴリ名</p>
+                                            <p href="#">カテゴリ名</p>
+                                            </div>
+                                        <div class="p-hanting__flex__list">
+                                            <img src="./assets/img/news-arrow.png" alt="news-arrow">
+                                            </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="p-hanting__item">
+                            <a href="#">
+                                <div class="p-hanting__img">
+                                    <img src="./assets/img/hanting03.png" alt="hanting03">
+                                </div>
+                                <div class="p-hanting__contain">
+                                    <p class="p-hanting__subTitle">タイトルが入りますタイトルが入りますタイトルがタイトルが…</p>
+                                    <p class="p-hanting__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…</p>
+                                    <div class="p-hanting__flex">
+                                        <div class="p-hanting__flex__list">
+                                            <p href="#">カテゴリ名</p>
+                                            <p href="#">カテゴリ名</p>
+                                            </div>
+                                        <div class="p-hanting__flex__list">
+                                            <img src="./assets/img/news-arrow.png" alt="news-arrow">
+                                            </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="p-column__button c-button"><a href="#">もっと見る</a></div>
+
+            </div>
+
+            
+        </section>
+    <!-- /就活生のための就活コラム -->
+
+    
     <!-- お知らせ -->
     <section class="p-news">
         <div class="p-news__wrap">
             <!-- 見出し -->
-            <h2 class="c-secTitle">お知らせ</h2><!-- /見出し -->
+            <h2 class="c-secTitle">就活マッチングサイトからのお知らせ</h2><!-- /見出し -->
     
             <!-- お知らせリスト -->
             <ul class="p-news__list">
@@ -367,7 +421,7 @@
     <section class="p-faq">
         <div class="p-faq__wrap">
             <!-- 見出し -->
-            <h2 class="c-secTitle dark-blue">よくある質問</h2><!-- /見出し -->
+            <h2 class="c-secTitle">就活マッチングサイトのよくある質問</h2><!-- /見出し -->
     
             <!-- 質問リスト -->
             <ul class="p-faq__list">
@@ -412,26 +466,26 @@
     </section>
     <!-- /よくある質問 -->
     </main>
-
+    
     <!-- footer -->
     <footer class="l-footer">
         <div class="l-footer__container">
             <div class="l-footer__top--container">
                 <nav class="l-footer__nav">
                     <ul class="l-footer__menu--nav">
-                        <li class="l-footer__list--nav"><a href="#">就活マッチングサイトについて</a></li>
-                        <li class="l-footer__list--nav"><a href="#">サービスについて</a></li>
-                        <li class="l-footer__list--nav"><a href="#">料金プラン</a></li>
+                        <li class="l-footer__list--nav"><a href="#">就活マッチングサイトとは？</a></li>
+                        <li class="l-footer__list--nav"><a href="#">就活コラム</a></li>
                         <li class="l-footer__list--nav"><a href="#">お知らせ</a></li>
+                        <li class="l-footer__list--nav"><a href="#">よくある質問</a></li>
                     </ul>
                 </nav>
                 <div class="l-footer__button">
                     <div class="c-button__wrap">
-                        <div class="c-button gratation"><a href="#">お申し込みはこちら</a></div>
+                        <div class="c-button lite-gratation"><a href="#">新規会員登録</a></div>
                     </div>
-                    <a href="#" class="l-footer__login">企業ログイン</a>
+                    <a href="#" class="l-footer__login">就活ログイン</a>
                 </div>
-                <a href="#" class="l-footer__job" target="_blank">就職活動中の方はこちら<img src="./assets/img/new_window.png" alt="new window"></a>
+                <a href="#" class="l-footer__job" target="_blank">採用担当者様はこちら<img src="./assets/img/new_window.png" alt="new window"></a>
             </div>
             <div class="l-footer__bottom--container">
                 <div class="l-footer__bottom--inner">
@@ -450,11 +504,15 @@
         </div>
     </footer>
     <!-- /footer -->
+
     <!-- jquery/js -->
     <script
     src="https://code.jquery.com/jquery-3.7.1.js"
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
+    <!-- slickのJavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
       <script src="js/common.js"></script>
+
 </body>
 </html>

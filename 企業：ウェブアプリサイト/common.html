@@ -1,0 +1,81 @@
+<!-- 
+    このhtmlフォルダはヘッダーやフッターなどの共通部分のみ集約しています。
+ -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <div class="l-header__wrap">
+            <p class="l-header__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-header__nav">
+                <div class="l-header__img">
+                    <img src="./assets/img/user-icon.png" alt="user-icon">
+                </div>
+                <p class="l-header__company"><span>株式会社〇〇〇グループ</span>  さん</p>
+                <p class="l-header__triangle">◀</p>◀
+                <div class="l-header__humburgur">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <main style="height: 100vh;">
+        <div class="l-inner">
+            <div class="l-container">
+                <div class="l-container__main">
+                    <h1 class="c-secTitle--left">メインタイトルレフト</h1>
+                    <h1 class="c-secTitle--center">メインタイトルセンター</h1>
+                </div>
+                <aside class="l-container__side">
+                    <div class="l-container__side__search">
+                        <p><img src="./assets/img/side-search.png" alt="side-search">学生を検索する</p>
+                    </div>
+                    <!-- 会社情報 -->
+                    <div class="l-container__side__company">
+                        <p class="l-container__side__title"><img src="./assets/img/side-circle.png" alt="side-circle">会社情報</p>
+                        <ul class="l-container__side__list">
+                            <li class="l-container__side__item"><a href="#"><img src="./assets/img/side-arrow.png" alt="side-arrow"></a></li>
+                        </ul>
+                    </div>
+                    <!-- 検討リスト -->
+                    <div class="l-container__side__consider">
+                        <p class="l-container__side__title"><img src="./assets/img/side-list.png" alt="side-list">検討リスト</p>
+                        <ul class="l-container__side__list">
+                            <li class="l-container__side__item"><a href="#"><img src="./assets/img/side-arrow.png" alt="side-arrow"></a></li>
+                        </ul>
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <div class="l-footer__container">
+            <p class="l-footer__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-footer__nav">
+                <ul class="l-footer__menu">
+                    <li class="l-footer__list"><a href="#">利用規約</a></li>
+                    <li class="l-footer__list"><a href="#">プライバシーポリシー</a></li>
+                    <li class="l-footer__list"><a href="#">運営会社</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- /footer -->
+</body>
+</html>
