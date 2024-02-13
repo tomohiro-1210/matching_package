@@ -22,14 +22,7 @@
     background: #fff;
     border: solid 2px #4893C6;
     a{        
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Noto Sans JP";
-        color: #4893C6;
         font-size: 16px;
-        font-weight: bold;
     }
 }
 
@@ -165,6 +158,25 @@
     margin: 60px 0;
 }
 
+.c-link{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #0058a3;
+    text-decoration-color: #0058a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 16px;
+        height: 16px;
+        transform: rotate(180deg);
+        margin-right: 10px;
+    }
+}
+
 // タブレット版
 @media screen and (max-width:920px) {
     // ぱんくず
@@ -209,4 +221,262 @@
         font-size: 28px;
         margin-bottom: 60px;
     }
+    // 中央寄せのタイトル
+    .c-secTitle--center {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    .c-secTitle--center:before, .c-secTitle--center:after {
+        border-top: 1px solid;
+        content: "";
+        width: calc(22% - 20px); /* 線の長さ */
+        color: #4893C6;
+    }
+    .c-secTitle--center:before {
+        margin-right: 20px; /* 文字の右隣 */
+    }
+    .c-secTitle--center:after {
+        margin-left: 20px; /* 文字の左隣 */
+    }
+}
+
+// フォーム
+.c-form__box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    form{
+        padding: 30px 50px;
+        border-radius: 0px 0px 10px 10px;
+        background-color: #fff;
+    }
+    .c-button{
+        margin:0 auto 23px;
+    }
+}
+.c-form__title {
+    width: 100%;
+    height: 60px;
+    background-color: #0489C6;
+    color: #fff;
+    font-family: "Noto Sans JP";
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+    border-radius: 10px 10px 0 0;
+}
+.c-form__item {
+    width: 100%;
+    label{
+        display: block;
+        font-family: "Noto Sans JP";
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        margin: 0 0 20px 0px;
+        color: #111;
+        
+    }
+    label span{ 
+        display: inline-block;
+        background-color: #de2d28;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        padding: 0 10px;
+        margin-left: 20px;
+        border-radius: 5px;
+    }
+    input{
+        appearance: none;
+        border: solid 1px #0489C6;
+        border-radius: 10px;
+        max-width: 438px;
+        width: 100%;
+        padding: 15px 20px;
+    }
+    input:hover{
+        border: solid 1px #0058a3;
+        box-shadow: 0px 1px 8px rgba($color: #000000, $alpha: 0.5);
+    }
+}
+.c-form__item:not(:last-child) {
+    margin-bottom: 35px;
+}
+.c-form__text {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #111;
+    margin: 23px 0 35px;
+    a{
+        display: inline-block;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: #0058a3;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-align: left;
+
+    }
+}
+.c-form__item .c-form__item__selectbox {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    select{
+        min-width: 0;
+        width: calc(100% - 20px) !important;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-weight: bold;
+        padding: 15px 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        color: #333333;
+        font-size: 16px;
+        cursor: pointer;
+        border: solid 1px #4893C6;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+.c-form__item .c-form__item__selectbox::after{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 10px;
+    height: 10px;
+    border-bottom: solid 4px #0489C6;
+    border-left: solid 4px #0489C6;
+    color: #4893C6;
+    font-weight: bold;
+    content: '';
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.c-form__check {
+    display: flex;
+    align-items: center;
+    input{
+        width: 20px;
+        height: 20px;
+        border: solid 1px #0489C6;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    a{
+        display: inline-block;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-color: #0058a3;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #0058a3;
+    }
+}
+.c-form__check.--autologin {
+    justify-content: center;
+}
+.c-form__check.--privacy {
+    justify-content: left;
+    margin-bottom: 55px;
+}
+
+@media screen and (max-width:768px) {
+    
+// フォーム
+.c-form__box {
+    form{
+        padding: 20px;
+    }
+    .c-button{
+        margin:0 auto 23px;
+    }
+}
+.c-form__title {
+    width: 100%;
+    height: 40px;
+    background-color: #0489C6;
+    color: #fff;
+    font-family: "Noto Sans JP";
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 10px 10px 0 0;
+}
+.c-form__item {
+    max-width: 438px;
+    width: 100%;
+    label{
+        font-size: 14px;
+        margin: 0 0 10px 0px;
+        
+    }
+    label span{ 
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    input{
+        appearance: none;
+        border: solid 1px #0489C6;
+        border-radius: 10px;
+        max-width: 438px;
+        width: calc(100% - 30px);
+        padding: 10px 15px;
+    }
+}
+.c-form__item .c-form__item__selectbox {
+    select{
+        width: 100% !important;
+        padding: 10px 15px;
+    }
+}
+.c-form__item .c-form__item__selectbox::after{
+    top: 50%;
+    right: 10%;
+    width: 8px;
+    height: 8px;
+    border-bottom: solid 3px #0489C6;
+    border-left: solid 3px #0489C6;
+    color: #4893C6;
+    font-weight: bold;
+    content: '';
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.c-form__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.c-form__text {
+    text-decoration-color: #0058a3;
+    font-size: 16px;
+    margin: 20px 0 30px;
+}
+.c-form__check {
+    display: flex;
+    input{
+        width: 16px;
+        height: 16px;
+    }
+    a{
+        font-size: 14px;
+    }
+}
+.c-form__check.--privacy {
+    justify-content: left;
+    margin-bottom: 40px;
+}
 }

@@ -1,0 +1,462 @@
+<!-- 
+    このhtmlフォルダはヘッダーやフッターなどの共通部分のみ集約しています。
+ -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <div class="l-header__wrap">
+            <p class="l-header__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-header__nav">
+                <div class="l-header__img">
+                    <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                </div>
+                <p class="l-header__company"><span>株式会社〇〇〇グループ</span>  さん</p>
+                <p class="l-header__triangle">◀</p>
+                <div class="l-header__humburgur">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+        <div class="dashboard">
+            <div class="dashboard__content">
+                <div class="dashboard__close">X</div>
+                <!-- inner -->
+                <div class="dashboard__inner">
+                    <div class="dashboard__search">
+                        <!-- 検索窓 -->
+                        <form action="#" class="search-form-1">
+                            <label>
+                                <button type="submit" aria-label="検索"></button>
+                                <input type="text" placeholder="キーワードを入力して検索する">
+                            </label>
+                        </form><!-- /検索窓 -->
+                    </div>
+                    <!-- カテゴリーのラベル -->
+                    <div class="dashboard__categorys">
+                        <p class="dashboard__category">すべて</p>
+                        <p class="dashboard__category">検討リスト</p>
+                        <p class="dashboard__category">オファーしたユーザー</p>
+                        <p class="dashboard__category">内定者</p>
+                    </div>
+                    <!-- status -->
+                    <div class="dashboard__status">
+                        <ul class="dashboard__status__list">
+                            <li class="dashboard__status__item">
+                                <p class="dashboard__status__label">卒業大学</p>
+                                <label class="dashboard__status__selectbox">
+                                    <select>
+                                        <option>選択してください</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li class="dashboard__status__item">
+                                <p class="dashboard__status__label">部活・サークル</p>
+                                <label class="dashboard__status__selectbox">
+                                    <select>
+                                        <option>選択してください</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li class="dashboard__status__item">
+                                <p class="dashboard__status__label">志望業界</p>
+                                <label class="dashboard__status__selectbox">
+                                    <select>
+                                        <option>選択してください</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li class="dashboard__status__item">
+                                <p class="dashboard__status__label">希望職種</p>
+                                <label class="dashboard__status__selectbox">
+                                    <select>
+                                        <option>選択してください</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li class="dashboard__status__item">
+                                <p class="dashboard__status__label">企業選びの軸</p>
+                                <label class="dashboard__status__selectbox">
+                                    <select>
+                                        <option>選択してください</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li class="dashboard__status__item">
+                                <p class="dashboard__status__label">スカウト設定</p>
+                                <label class="dashboard__status__selectbox">
+                                    <select>
+                                        <option>選択してください</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                        </ul>
+                        <!-- status -->
+                        <!-- 診断タイプ -->
+                        <div class="dashboard__status__type">
+                            <p class="dashboard__status__label">診断タイプ</p>
+                            <ul class="dashboard__status__list">
+                                <div class="dashboard__status__select">
+                                    <input type="checkbox" id="義理人情家タイプ（ＩＯＴＰ型）" name="義理人情家タイプ（ＩＯＴＰ型）" />
+                                    <label for="義理人情家タイプ（ＩＯＴＰ型）">義理人情家タイプ（ＩＯＴＰ型）</label>
+                                  </div>
+                                  <div class="dashboard__status__select">
+                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
+                                    <label for="〇〇タイプ">〇〇タイプ</label>
+                                  </div>
+                                  <div class="dashboard__status__select">
+                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
+                                    <label for="〇〇タイプ">〇〇タイプ</label>
+                                  </div>
+                                  <div class="dashboard__status__select">
+                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
+                                    <label for="〇〇タイプ">〇〇タイプ</label>
+                                  </div>
+                                <div class="dashboard__status__select">
+                                    <input type="checkbox" id="義理人情家タイプ（ＩＯＴＰ型）" name="義理人情家タイプ（ＩＯＴＰ型）" />
+                                    <label for="義理人情家タイプ（ＩＯＴＰ型）">義理人情家タイプ（ＩＯＴＰ型）</label>
+                                  </div>
+                                  <div class="dashboard__status__select">
+                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
+                                    <label for="〇〇タイプ">〇〇タイプ</label>
+                                  </div>
+                                  <div class="dashboard__status__select">
+                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
+                                    <label for="〇〇タイプ">〇〇タイプ</label>
+                                  </div>
+                                  <div class="dashboard__status__select">
+                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
+                                    <label for="〇〇タイプ">〇〇タイプ</label>
+                                  </div>
+                            </ul>
+                        </div>
+                        <!-- 診断タイプ -->
+                    </div>
+                    <!-- status -->
+                        <!-- 語学 -->
+                        <div class="dashboard__language">
+                            <p class="dashboard__language__title">語学</p>
+                            <div class="dashboard__language__inner">
+                                <p class="dashboard__language__name">外国語資格1</p>
+                                <ul class="dashboard__language__list">
+                                    <li class="dashboard__language__item">
+                                        <p class="dashboard__language__type">言語選択</p>
+                                        <label class="dashboard__language__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                    <li class="dashboard__language__item">
+                                        <p class="dashboard__language__type">資格</p>
+                                        <label class="dashboard__language__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                    <li class="dashboard__language__item">
+                                        <p class="dashboard__language__type">レベル</p>
+                                        <label class="dashboard__language__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dashboard__language__button">追加する</div>
+                        </div>
+                        <!-- 語学 -->
+                        <!-- コンピュータ言語 -->
+                        <div class="dashboard__language">
+                            <p class="dashboard__language__title">コンピュータ言語</p>
+                            <div class="dashboard__language__inner">
+                                <p class="dashboard__language__name">コンピュータ言語開発経験1</p>
+                                <ul class="dashboard__language__list">
+                                    <li class="dashboard__language__item">
+                                        <p class="dashboard__language__type">言語</p>
+                                        <label class="dashboard__language__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                    <li class="dashboard__language__item">
+                                        <p class="dashboard__language__type">経験年数</p>
+                                        <label class="dashboard__language__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                    <li class="dashboard__language__item">
+                                        <p class="dashboard__language__type">開発経験</p>
+                                        <label class="dashboard__language__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dashboard__language__button">追加する</div>
+                        </div>
+                        <!-- コンピュータ言語 -->
+                        <!-- 趣味や特技など -->
+                        <div class="dashboard__person">
+                            <div class="dashboard__person__content">
+                                <p class="dashboard__person__name">趣味や特技など</p>
+                                <div class="dashboard__person__list">
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">大カテゴリ</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">小カテゴリ</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 趣味や特技など -->
+                        <!-- 人物像 -->
+                        <div class="dashboard__person">
+                            <div class="dashboard__person__content">
+                                <p class="dashboard__person__name">人物像</p>
+                                <div class="dashboard__person__list">
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">キャリア目標</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">アプローチ</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">価値観</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">優先</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">協力スタイル</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">意思決定スタイル</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">リスク志向</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">新しい問題に直面した時のアプローチ</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">知識習得のスタイル</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">成果を出す</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">目指す成功</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">得意なコミュニケーション</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">働く環境の好み</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">好きな取り組むプロジェクトの規模</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="dashboard__person__item">
+                                        <p class="dashboard__person__type">チームで働く際に重要視している要素</p>
+                                        <label class="dashboard__person__selectbox">
+                                            <select>
+                                                <option>選択してください</option>
+                                                <option>選択リスト１</option>
+                                                <option>選択リスト２</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 人物像 -->
+                        <div class="dashboard__buttons">
+                            <div class="dashboard__button dashboard__button--blue">
+                                <a href="#">上記の条件で検索</a>
+                            </div>
+                            <div class="dashboard__button dashboard__button--gray">
+                                <a href="#">X　　閉じる</a>
+                            </div>
+                        </div>
+                </div>
+                <!-- inner -->
+            </div>
+        </div>
+
+    <main>
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <div class="l-footer__container">
+            <p class="l-footer__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-footer__nav">
+                <ul class="l-footer__menu">
+                    <li class="l-footer__list"><a href="#">利用規約</a></li>
+                    <li class="l-footer__list"><a href="#">プライバシーポリシー</a></li>
+                    <li class="l-footer__list"><a href="#">運営会社</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- /footer -->
+</body>
+</html>

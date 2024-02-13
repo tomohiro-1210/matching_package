@@ -31,6 +31,7 @@
     &__img {
         width: 30px;
         height: 30px;
+        margin-right: 10px;
     }
     &__company {
         font-weight: 500;
@@ -56,6 +57,9 @@
         color: #346cb5; 
         margin-left: 10px;
     }
+    &__triangle.hide{
+        transform: rotate(-90deg);
+    }
     &__humburgur {
         display: none;
     }
@@ -78,17 +82,50 @@
         &__humburgur {
             display: block;
             margin-left: 0px;
+            transition: all 0.3s;
             span{
                 width: 30px;
                 height: 2px;
                 background-color: #104069;
+                transition: all 0.3s;
             }
-            span:nth-child(1),
+            span:nth-child(1){
+                margin-bottom: 8px;
+            }
             span:nth-child(2){
                 margin-bottom: 8px;
+                opacity: 1;
             }
             span:nth-child(3){
                 width: 20px;
+            }
+        }
+        &__humburgur.hide {
+            display: block;
+            margin-left: 0px;
+            position: relative;
+            span{
+                width: 30px;
+                height: 2px;
+                background-color: #104069;
+                transition: all 0.3s;
+            }
+            span:nth-child(1){
+                margin-top: 8px;
+                position: absolute;
+                top: -30%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+            span:nth-child(2){
+                opacity: 0;
+            }
+            span:nth-child(3){
+                width: 30px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
             }
         }
     }

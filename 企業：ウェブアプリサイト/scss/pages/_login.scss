@@ -1,0 +1,16 @@
+.p-login {
+    margin-top: 148px;
+&__content {
+    padding: 40px 0 70px;
+}
+}
+
+
+@media screen and (max-width:768px) {
+    .p-login {
+        margin-top: 118px;
+    &__content {
+        padding: 30px 0 50px;
+    }
+    }
+}
