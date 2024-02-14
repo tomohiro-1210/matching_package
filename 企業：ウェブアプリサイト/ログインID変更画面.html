@@ -1,6 +1,3 @@
-<!-- 
-    このhtmlフォルダはヘッダーやフッターなどの共通部分のみ集約しています。
- -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -9,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>就活マッチングサイト</title>
+    <title>就活マッチングサイト　ログインID変更</title>
 </head>
 <body>
     <!-- header -->
@@ -66,8 +63,25 @@
         <div class="l-inner">
             <div class="l-container">
                 <div class="l-container__main">
-                    <h1 class="c-secTitle--left">メインタイトルレフト</h1>
-                    <h1 class="c-secTitle--center">メインタイトルセンター</h1>
+                    <h1 class="c-secTitle--left" style="margin-bottom: 20px;">ログインID変更</h1>
+                    <div class="c-form__page">
+                    <form action="#" id="login-form">
+                        <div class="c-form__item --flex">
+                            <label for="mail" >
+                                現在のログインID（メールアドレス）
+                            </label>
+                            <p>sample@sample.com</p>
+                        </div>
+                        <div class="c-form__item --flex">
+                            <label for="mail">
+                                新しいログインID（メールアドレス）
+                            </label>
+                                <input type="text" placeholder="例：人事部">
+                        </div>
+                        <div class="c-button lite-gratation"><a href="#">ログインIDを変更する</a></div>
+                        
+                    </form>
+                    </div>
                 </div>
                 <aside class="l-container__side">
                     <div class="l-container__side__search pc-on">

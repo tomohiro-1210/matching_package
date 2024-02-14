@@ -1,0 +1,192 @@
+.p-setting {
+    
+    &__tabs {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    &__tab {
+        padding: 18px 42px;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #4893C6;
+        border-radius: 10px 10px 0 0;
+        background-color: #fff;
+        margin-right: 20px;
+    }
+    &__tab.hide {
+        color: #fff;
+        background-color: #4893C6;
+    }
+    &__content {
+        padding: 30px 30px 50px;
+        background-color: #fff;
+        border-radius: 0 0 10px 10px;
+
+    }
+    &__status {
+        margin-bottom: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    &__img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        img{
+            border-radius: 50px;
+        }
+    }
+    &__date {
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #abc8e2;
+        margin-bottom: 12px;
+    }
+    &__name {
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #4893c6;
+    }
+    &__jobs {
+    }
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #111;
+        margin-bottom: 20px;
+        img{
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+        }
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 20px 60px 20px 30px; 
+        border-radius: 5px;
+        border: solid 1px #4893C6;
+        width: fit-content;
+        margin-bottom: 20px;
+        box-shadow: 0px 1px 8px 0px rgba($color: #000000, $alpha: 0.2);
+        &__arrow {
+            width: 20px;
+            height: 20px;
+            margin-right: 18px;
+        }
+        &__number,
+        &__title {
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            line-height: 22px;
+            text-align: center;
+        }
+        &__number{
+            color: #104069;
+            margin-right: 21px;
+        }
+        &__title {
+            color: #111111;
+        }
+        &__number.--white {
+            color: #fff;
+            margin-right: 0;
+        }
+    }
+    &__button.--blue{
+        border: solid 1px #fff;
+        background-color: #4893C6;
+        margin-bottom: 0;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .p-setting {
+        
+        &__tab {
+            padding: 15px 30px;
+            font-size: 14px;
+            margin-right: 15px;
+        }
+        &__content {
+            padding: 20px 20px 40px;
+    
+        }
+        &__status {
+            margin-bottom: 20px;
+        }
+        &__img {
+            width: 50px;
+            height: 50px;
+        }
+        &__date {
+            font-weight: normal;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #abc8e2;
+            margin-bottom: 10px;
+        }
+        &__name {
+            font-size: 14px;
+        }
+        &__title {
+            font-size: 16px;
+            margin-bottom: 20px;
+            img{
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+            }
+        }
+        &__button {
+            flex-wrap: wrap;
+            padding: 15px 40px 15px 25px; 
+            &__arrow {
+                width: 15px;
+                height: 15px;
+                margin-right: 15px;
+                margin-bottom: 10px;
+            }
+            &__number,
+            &__title {
+                font-size: 12px;
+                line-height: 18px;
+            }
+            &__number{
+                margin-bottom: 10px;
+            }
+            &__title {
+                width: 100%;
+                text-align: left;
+            }
+            &__number.--white {
+                color: #fff;
+                margin-bottom: 0;
+            }
+        }
+        &__button.--blue{
+            border: solid 1px #fff;
+            background-color: #4893C6;
+        }
+        &__button.--blue .p-setting__button__arrow{
+            margin-bottom: 0;
+        }
+    }
+}

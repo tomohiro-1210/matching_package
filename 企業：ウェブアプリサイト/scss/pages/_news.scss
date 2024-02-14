@@ -1,0 +1,354 @@
+.p-news {
+    // コンテンツ本体
+    &__content {
+
+    }
+    // 既読・未読
+    &__select {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-bottom: 25px;
+        .c-form__check{
+            margin-bottom: 0;
+        }
+    }
+    &__read {
+        padding: 12px 25px;
+        width: fit-content;
+        background-color: #4893C6;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #fff;
+        margin-left: 10px;
+    }
+    &__read.check{
+        background-color: #EFEFEF;
+        color: #CCCCCC;
+
+    }
+    // ニュースリスト
+    &__lists {
+        margin-bottom: 80px;
+    }
+    &__list {
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        border-bottom: solid 1px #4893C6;
+    }
+    &__inner {
+        padding: 10px 35px 10px 10px ;
+        background-color: #fff;
+        border-radius: 20px;
+        position: relative;
+    }
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+    }
+    &__contain {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    &__check {
+        width: 20px;
+        margin-right: 10px;
+        input{
+            width: 20px;
+            height: 20px;
+            border-color: #4893C6;
+        }
+    }
+    &__desc {
+
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+    }
+    &__date {
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #abc8e2;   
+        margin-right: 23px;     
+        position: relative;
+    }
+    &__dot{
+        width: 10px;
+        height: 10px;
+        background-color: #DE2D28;
+        border-radius: 5px;
+        position: absolute;
+        top: 25%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    }
+    &__label {
+        padding: 4px 28px;
+        width: fit-content;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+    &__label.--news {
+        background-color: #A5BACC;
+    }
+    &__label.--profile {
+        background-color: #104069;
+    }
+    &__label.--agreement {
+        background: linear-gradient(to left, #346CB5, #97A7D5);
+    }
+    &__label.--message {
+        background-color: #4893C6;
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    &__icon {
+        margin-right: 20px;
+        width: 60px;
+        height: 60px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        line-height: 22px;
+        text-align: left;
+        color: #0058a3;
+    }
+
+    // お知らせsingleページ
+    &__single {
+        max-width: 900px;
+        margin: 0 auto 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px 20px 50px;
+    }
+    &__single-top {
+        margin-bottom: 30px;
+    }
+    &__flex {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__single-title {
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 0.05em;
+        line-height: 36px;
+        text-align: left;
+        color: #0058a3;
+
+    }
+    &__text {
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        line-height: 32px;
+        text-align: left;
+        color: #111;
+        margin-bottom: 20px;
+        span{
+            display: inline-block;
+            font-weight: bold;
+        }
+    }
+    &__link {
+        margin-bottom: 30px;
+        a{
+            font-family: "Noto Sans CJK JP";
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            line-height: 32px;
+            text-align: left;
+            color: #346cb5;
+        }
+    }
+    &__single__list{
+        margin-bottom: 30px;
+    }
+    &__single__item {
+        font-family: "Noto Sans CJK JP";
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        line-height: 28px;
+        text-align: left;
+        color: #111;
+        padding-left: 25px;
+        position: relative;
+    }
+    &__single__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    // 以下疑似要素で・が付いたところを表現
+    &__single__item::before {
+        content: '・';
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #4893C6;
+        font-size: 25px;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+    }
+    &__single-button.c-button{
+        background-color: #4893C6;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        border: solid 2px #4893C6;
+        box-shadow: 0px 1px 8px 0px rgba($color: #000000, $alpha: 0.2);
+        a{
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    &__single-button.c-button:hover{
+        background-color: #fff;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        box-shadow: 0px 1px 8px 0px rgba($color: #000000, $alpha: 0.2);
+        a{
+            font-size: 16px;
+            color: #4893C6;
+        }
+    }
+    &__single__img{
+        max-width: 600px;
+        height: fit-content;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+   .p-news {
+    // コンテンツ本体
+    &__content {
+
+    }
+    // 既読・未読
+    &__select {
+        display: block;
+        margin-bottom: 20px;
+    }
+    &__read {
+        margin: 10px 10px 0 0;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    // ニュースリスト
+    &__lists {
+        margin-bottom: 60px;
+    }
+    &__inner {
+        padding: 10px 35px 10px 10px ;
+        background-color: #fff;
+        border-radius: 20px;
+        position: relative;
+    }
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+    }
+    &__check {
+        input{
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &__date {
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #abc8e2;   
+        margin-right: 23px;     
+    }
+    &__label {
+        padding: 3px 20px;
+        font-size: 12px;
+    }
+    &__icon {
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+    &__title {
+        font-weight: bold;
+        line-height: 18px;
+    }
+
+    // お知らせsingleページ
+        &__single {
+            margin: 0 auto 30px;
+            padding: 20px;
+        }
+        &__single-top {
+            margin-bottom: 20px;
+        }
+        &__flex {
+            margin-bottom: 20px;
+        }
+        &__link {
+            margin-bottom: 20px;
+            a{
+                font-size: 14px;
+            }
+        }
+        &__single__list{
+            margin-bottom: 30px;
+        }
+        &__single__item {
+            font-size: 14px;
+            line-height: 21px;
+            padding-left: 20px;
+        }
+        // 以下疑似要素で・が付いたところを表現
+        &__single__item::before {
+            font-size: 20px;
+        }
+        // ボタン
+        &__single-button.c-button{
+            max-width: 310px;
+            width: calc(100% - 40px);
+            height: 50px;
+            margin: 30px auto 20px;
+            a{
+                white-space: nowrap;
+            }
+        }
+}
+}
