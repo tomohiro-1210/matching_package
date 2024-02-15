@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>就活マッチングサイト　基本情報編集＿採用情報一覧</title>
+    <title>就活マッチングサイト　基本情報編集＿会社情報</title>
 </head>
 <body>
     <!-- header -->
@@ -66,50 +66,219 @@
                     <h1 class="c-secTitle--left">基本情報編集</h1>
                     <div class="p-setting">
                         <div class="p-setting__tabs">
-                            <div class="p-setting__tab show">企業情報</div>
-                            <div class="p-setting__tab">採用情報</div>
+                            <div class="p-setting__tab">企業情報</div>
+                            <div class="p-setting__tab show">採用情報</div>
                         </div>
-                        <!-- 企業データー -->
-                        <div class="p-setting__status">
-                            <div class="p-setting__img">
-                                <img src="./assets/img/news/news-img.png" alt="profile-img">
+                        <div class="p-setting__content">
+                            <!-- 企業データー -->
+                            <div class="p-setting__status">
+                                <div class="p-setting__img">
+                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                </div>
+                                <div class="p-setting__company">
+                                    <p class="p-setting__date">2024.04.01</p>
+                                    <p class="p-setting__name">株式会社ヤマモト</p>
+                                </div>
                             </div>
-                            <div class="p-setting__company">
-                                <p class="p-setting__date">2024.04.01</p>
-                                <p class="p-setting__name">株式会社ヤマモト</p>
-                            </div>
-                        </div>
-                        <!-- /企業データー -->
+                            <!-- /企業データー -->
+                            <!-- 企業編集 -->
                             <div class="p-setting__jobs">
-                                <div class="p-setting__title"><img src="./assets/img/setting/setting-circle.png" alt="setting-circle">募集中の仕事一覧</div>
-                                <div class="p-setting__button">
-                                    <div class="p-setting__button__arrow">
-                                        <img src="./assets/img/common/arrow-lite-blue.png" alt="arrow-lite-blue">
-                                    </div>
-                                    <div class="p-setting__button__number">募集No:001</div>
-                                    <div class="p-setting__button__title">募集タイトル募集タイトル</div>
-                                </div>
-                                <div class="p-setting__button">
-                                    <div class="p-setting__button__arrow">
-                                        <img src="./assets/img/common/arrow-lite-blue.png" alt="arrow-lite-blue">
-                                    </div>
-                                    <div class="p-setting__button__number">募集No:002</div>
-                                    <div class="p-setting__button__title">募集タイトル募集タイトル募集タイトル募集タイトル</div>
-                                </div>
-                                <div class="p-setting__button">
-                                    <div class="p-setting__button__arrow">
-                                        <img src="./assets/img/common/arrow-lite-blue.png" alt="arrow-lite-blue">
-                                    </div>
-                                    <div class="p-setting__button__number">募集No:003</div>
-                                    <div class="p-setting__button__title">募集タイトル募集タイトル</div>
-                                </div>
-                                <div class="p-setting__button --blue">
-                                    <div class="p-setting__button__arrow">
-                                        <img src="./assets/img/setting/setting-plus.png" alt="setting-plus">
-                                    </div>
-                                    <div class="p-setting__button__number --white">新規採用ページ制作</div>
-                                </div>
+                                <ul class="p-setting__lists">
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>会社名</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <input type="text" class="p-setting__input--long" placeholder="株式会社ヤマモト">
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>業種</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <label class="p-setting__selectbox">
+                                                <select>
+                                                    <option>選択してください</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>採用詳細ページ</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <input type="text" class="p-setting__input--long" placeholder="貴社の採用詳細ページがあればURLを記載">
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>採用担当者名</p>
+                                        </div>
+                                        <div class="p-setting__right --flex">
+                                            <div class="p-setting__sei">
+                                                <label>性</label>
+                                                <input type="text" class="p-setting__input--name">
+                                            </div>
+                                            <div class="p-setting__sei">
+                                                <label>名</label>
+                                                <input type="text" class="p-setting__input--name">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>フリガナ</p>
+                                        </div>
+                                        <div class="p-setting__right --flex">
+                                            <div class="p-setting__sei">
+                                                <label>性</label>
+                                                <input type="text" class="p-setting__input--name">
+                                            </div>
+                                            <div class="p-setting__sei">
+                                                <label>名</label>
+                                                <input type="text" class="p-setting__input--name">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>本社住所</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <div class="p-setting__address">
+                                                <label for="mail">
+                                                    郵便番号
+                                                </label>
+                                                <input type="text" class="p-setting__input--short" placeholder="6110021">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p></p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <div class="p-setting__address">
+                                                <label for="mail">
+                                                    都道府県
+                                                </label>
+                                                <input type="text" class="p-setting__input--short" placeholder="京都府">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p></p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <div class="p-setting__address">
+                                                <label for="mail">
+                                                    市区町村
+                                                </label>
+                                                <input type="text" class="p-setting__input--address" placeholder="宇治市宇治">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p></p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <div class="p-setting__address">
+                                                <label for="mail">
+                                                    それ以降<br class="sp-on">の住所
+                                                </label>
+                                                <input type="text" class="p-setting__input--address" placeholder="番地やマンション名、部屋番号が入ります">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>主な勤務地</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <input type="text" class="p-setting__input--long" placeholder="例：鳥羽市内の支店または営業所">
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>第二志望制度</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">受け付ける</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>電話番号</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <input type="text" class="p-setting__input--long" placeholder="0123-456-789">
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>メールアドレス</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <input type="text" class="p-setting__input--long" placeholder="例：sample@sample.com">
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>Google<br class="pc-on">カレンダー</p>
+                                            <a href="#">
+                                                <img src="./assets/img/setting/setting-question.png" alt="setting-question">
+                                            </a>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <input type="text" class="p-setting__input--long" placeholder="日程調整に使用するGoogleカレンダーの埋め込みURL">
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list --top">
+                                        <div class="p-setting__left">
+                                            <p>PR項目</p>
+                                        </div>
+                                        <div class="p-setting__right --text">
+                                            <textarea name="" id="" cols="30" rows="10" placeholder="貴社の魅力など記載ください"></textarea>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list --top">
+                                        <div class="p-setting__left">
+                                            <p>画像</p>
+                                            <p class="six">6枚まで掲載可能</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <ul class="p-setting__images">
+                                                <li class="p-setting__image">
+                                                    <img src="./assets/img/setting/setting-img.png" alt="setting-img">
+                                                </li>
+                                                <li class="p-setting__image">
+                                                    <img src="./assets/img/setting/setting-img.png" alt="setting-img">
+                                                </li>
+                                                <li class="p-setting__image">
+                                                    <img src="./assets/img/setting/setting-img.png" alt="setting-img">
+                                                </li>
+                                                <li class="p-setting__image">
+                                                    <img src="./assets/img/setting/setting-img.png" alt="setting-img">
+                                                </li>
+                                                <li class="p-setting__image">
+                                                    <img src="./assets/img/setting/setting-add.png" alt="setting-img">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
+                            <!-- 企業編集 -->
+                            <div class="c-button gratation left"><a href="#">登録する</a></div>
                         </div>
                     </div>
                 </div>

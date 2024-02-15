@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>就活マッチングサイト　基本情報編集＿採用情報編集詳細</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <div class="l-header__wrap">
+            <p class="l-header__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-header__nav">
+                <div class="l-header__img">
+                    <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                </div>
+                <p class="l-header__company"><span>株式会社〇〇〇グループ</span>  さん</p>
+                <p class="l-header__triangle">◀</p>
+                <div class="l-header__humburgur">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <!-- menu -->
+    <div class="p-menu">
+        <div class="p-menu__inner">
+            <ul class="p-menu__content">
+                    <li class="p-menu__item">
+                        <a href="#" class="bold">アカウント設定<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#" class="bold">パスワード再発行<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#" class="bold">メール通知の設定<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">お問い合わせ<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">ヘルプ<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">運営からのお知らせ<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">ログアウト<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /menu -->
+
+    <main>
+        <div class="l-inner">
+            <div class="l-container">
+                <div class="l-container__main">
+                    <h1 class="c-secTitle--left">基本情報編集</h1>
+                    <div class="p-setting">
+                        <div class="p-setting__tabs">
+                            <div class="p-setting__tab show">企業情報</div>
+                            <div class="p-setting__tab">採用情報</div>
+                        </div>
+                        <div class="p-setting__content">
+                            <!-- 企業データー -->
+                            <div class="p-setting__status">
+                                <div class="p-setting__img">
+                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                </div>
+                                <div class="p-setting__company">
+                                    <p class="p-setting__date">2024.04.01</p>
+                                    <p class="p-setting__name">株式会社ヤマモト</p>
+                                </div>
+                            </div>
+                            <!-- /企業データー -->
+                            <!-- 企業編集 -->
+                            <div class="p-setting__jobs">
+                                <ul class="p-setting__lists">
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>募集ID</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <input type="text" class="p-setting__input--short" placeholder="001">
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>募集タイトル</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <input type="text" class="p-setting__input--long" placeholder="募集タイトル募集タイトル募集タイトル">
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>業種</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <label class="p-setting__selectbox">
+                                                <select>
+                                                    <option>選択してください</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>勤務地住所</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <div class="p-setting__address">
+                                                <label for="mail">
+                                                    郵便番号
+                                                </label>
+                                                <input type="text" class="p-setting__input--short" placeholder="030-0846">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p></p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <div class="p-setting__address">
+                                                <label for="mail">
+                                                    都道府県
+                                                </label>
+                                                <input type="text" class="p-setting__input--short" placeholder="青森県">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p></p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <div class="p-setting__address">
+                                                <label for="mail">
+                                                    市区町村
+                                                </label>
+                                                <input type="text" class="p-setting__input--address" placeholder="青森市青葉">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p></p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <div class="p-setting__address">
+                                                <label for="mail">
+                                                    それ以降<br class="sp-on">の住所
+                                                </label>
+                                                <input type="text" class="p-setting__input--address" placeholder="番地やマンション名、部屋番号が入ります">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>業務内容</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <input type="text" class="p-setting__input--long" placeholder="卸売業務の営業・販売・配送、商品管理、受発注業務など">
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>試用期間</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <label class="p-setting__selectbox">
+                                                <select>
+                                                    <option>有り、3ヶ月間</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left --2col">
+                                            <p>勤務開始時間</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <label class="p-setting__selectbox">
+                                                <select class="time">
+                                                    <option>9:00〜</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="p-setting__left --2col">
+                                            <p>勤務終了時間</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <label class="p-setting__selectbox">
+                                                <select class="time">
+                                                    <option>〜17:30</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>週休</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <label class="p-setting__selectbox">
+                                                <select>
+                                                    <option>週休2日制（土・日）</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>年間休日日数</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <input type="text" class="p-setting__input--middle" placeholder="120"><span>日</span>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>時間外労働</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <label class="p-setting__selectbox">
+                                                <select>
+                                                    <option>有り、月平均20時間程度</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left --2col">
+                                            <p>基本給<span>（大学院卒）</span></p>
+                                        </div>
+                                        <div class="p-setting__right --flex">
+                                            <label class="p-setting__selectbox --price">
+                                                <select>
+                                                    <option>月給22万円</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                            <p>～</p>
+                                            <label class="p-setting__selectbox --price">
+                                                <select>
+                                                    <option>月給24万円</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left --2col">
+                                            <p>基本給<span>（大学卒）</span></p>
+                                        </div>
+                                        <div class="p-setting__right --flex">
+                                            <label class="p-setting__selectbox --price">
+                                                <select>
+                                                    <option>月給20万円</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                            <p>～</p>
+                                            <label class="p-setting__selectbox --price">
+                                                <select>
+                                                    <option>月給22万円</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left --2col">
+                                            <p>基本給<span>（短大卒）</span></p>
+                                        </div>
+                                        <div class="p-setting__right --flex">
+                                            <label class="p-setting__selectbox --price">
+                                                <select>
+                                                    <option>月給18万円</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                            <p>～</p>
+                                            <label class="p-setting__selectbox --price">
+                                                <select>
+                                                    <option>月給20万円</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left --2col">
+                                            <p>基本給<span>（短大卒）</span></p>
+                                        </div>
+                                        <div class="p-setting__right --flex">
+                                            <label class="p-setting__selectbox --price">
+                                                <select>
+                                                    <option>月給18万円</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                            <p>～</p>
+                                            <label class="p-setting__selectbox --price">
+                                                <select>
+                                                    <option>月給20万円</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list --top">
+                                        <div class="p-setting__left">
+                                            <p>加入保険</p>
+                                        </div>
+                                        <div class="p-setting__right --flex">
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">健康保険</label>
+                                            </div>
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">厚生年金</label>
+                                            </div>
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">雇用保険</label>
+                                            </div>
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">労災保険</label>
+                                            </div>
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">その他</label>
+                                            </div>
+                                            <textarea name="" id="" cols="30" rows="10" placeholder="その他加入保険をご入力ください"></textarea>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list --top">
+                                        <div class="p-setting__left">
+                                            <p>福利厚生</p>
+                                        </div>
+                                        <div class="p-setting__right --flex">
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">退職金制度</label>
+                                            </div>
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">財形貯蓄制度</label>
+                                            </div>
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">育児・介護休業制度</label>
+                                            </div>
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">慶弔見舞金制度</label>
+                                            </div>
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">社員旅行</label>
+                                            </div>
+                                            <div class="p-setting__checks">
+                                                <input type="checkbox">
+                                                <label for="text">その他</label>
+                                            </div>
+                                            <textarea name="" id="" cols="30" rows="10" placeholder="その他福利厚生をご入力ください"></textarea>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list">
+                                        <div class="p-setting__left">
+                                            <p>受動喫煙防止</p>
+                                        </div>
+                                        <div class="p-setting__right">
+                                            <label class="p-setting__selectbox">
+                                                <select>
+                                                    <option>屋内禁煙</option>
+                                                    <option>選択リスト１</option>
+                                                    <option>選択リスト２</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list --top">
+                                        <div class="p-setting__left">
+                                            <p>採用までの流れ</p>
+                                        </div>
+                                        <div class="p-setting__right --text">
+                                            <textarea name="" id="" cols="30" rows="10" placeholder="1. エントリーシートの提出"></textarea>
+                                        </div>
+                                    </li>
+                                    <li class="p-setting__list --top">
+                                        <div class="p-setting__left">
+                                            <p>PR項目</p>
+                                        </div>
+                                        <div class="p-setting__right --text">
+                                            <textarea name="" id="" cols="30" rows="10" placeholder="女性社員の活躍推進、新入社員研修、資格取得支援、社員のワークライフバランスの充実など"></textarea>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 企業編集 -->
+                            <div class="c-button gratation left"><a href="#">登録する</a></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <aside class="l-container__side">
+                    <div class="l-container__side__search pc-on">
+                        <a href="#"><img src="./assets/img/common/side-search.png" alt="side-search">学生を検索する</a>
+                    </div>
+                    <!-- 会社情報 -->
+                    <div class="l-container__side__content pc-on">
+                        <p class="l-container__side__title"><img src="./assets/img/common/side-circle.png" alt="side-circle">会社情報</p>
+                        <ul class="l-container__side__list">
+                            <li class="l-container__side__item"><a href="#">基本情報<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                            <li class="l-container__side__item"><a href="#">募集中の仕事作成・編集<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                            <li class="l-container__side__item"><a href="#">内定者一覧<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                            <li class="l-container__side__item"><a href="#">日程調整<span>（Googleカレンダー）</span><img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                        </ul>
+                    </div><!-- 会社情報 -->
+
+                    <!-- 検討リスト -->
+                    <div class="l-container__side__content pc-on">
+                        <p class="l-container__side__title"><img src="./assets/img/common/side-list.png" alt="side-list" class="consider">検討リスト</p>
+                        <ul class="l-container__side__list">
+                            <li class="l-container__side__item"><a href="#">検討リストを見る<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                        </ul>
+                    </div><!-- 検討リスト -->
+
+                    <!-- オファーしているユーザー -->
+                    <div class="l-container__side__content">
+                        <p class="l-container__side__title"><img src="./assets/img/common/side-file.png" alt="side-list" class="content">オファーしているユーザー</p>
+                        <ul class="l-container__side__list">
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__status">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__status">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__status">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__status">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__status">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <a href="#" class="l-container__side__button">一覧を見る<img src="./assets/img/common/side-archive.png" alt="side-archive"></a>
+                        </ul>
+                    </div><!-- オファーしているユーザー -->
+                    
+                    <!-- 応募が来ているユーザー -->
+                    <div class="l-container__side__content pc-on">
+                        <p class="l-container__side__title"><img src="./assets/img/common/side-file.png" alt="side-list" class="offer">応募が来ているユーザー</p>
+                        <ul class="l-container__side__list">
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__status">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__status">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <a href="#" class="l-container__side__button">一覧を見る<img src="./assets/img/common/side-archive.png" alt="side-archive"></a>
+                        </ul>
+                    </div><!-- 応募が来ているユーザー -->
+
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <div class="l-footer__container">
+            <p class="l-footer__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-footer__nav">
+                <ul class="l-footer__menu">
+                    <li class="l-footer__list"><a href="#">利用規約</a></li>
+                    <li class="l-footer__list"><a href="#">プライバシーポリシー</a></li>
+                    <li class="l-footer__list"><a href="#">運営会社</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- /footer -->
+    <!-- jquery/js -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+      <script src="./assets/js/common.js"></script>
+</body>
+</html>
