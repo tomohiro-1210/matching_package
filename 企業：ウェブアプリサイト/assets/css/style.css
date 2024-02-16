@@ -3065,6 +3065,261 @@ main {
     margin-top: 10px;
   }
 }
+.p-search__words {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+.p-search__text, .p-search__word {
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #4893c6;
+}
+.p-search__text {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.p-search__text:not(:last-child) {
+  padding-right: 40px;
+}
+.p-search__slice {
+  padding: 0 10px;
+}
+.p-search__lists {
+  margin-bottom: 50px;
+}
+.p-search__list {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.p-search__list__arrow, .p-search__list__consider {
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+}
+.p-search__list__arrow {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(50%, 50%);
+}
+.p-search__list__consider {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform: translate(50%, -50%);
+}
+.p-search__list__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-search__list__up, .p-search__list__down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-search__list__up {
+  margin-bottom: 10px;
+}
+.p-search__list__img {
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  position: relative;
+}
+.p-search__list__img img {
+  border-radius: 50px;
+}
+.p-search__list__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #DE2D28;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+.p-search__list__top {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.p-search__list__label {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #fff;
+  padding: 3px 5px;
+  background-color: #0489C6;
+}
+.p-search__list__graduation, .p-search__list__gender {
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #104069;
+  margin-left: 10px;
+}
+.p-search__list__school {
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #4893c6;
+  margin-bottom: 5px;
+}
+.p-search__list__bottom {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.p-search__list__faculty, .p-search__list__course {
+  font-family: "Noto Sans JP";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.p-search__list__faculty {
+  color: #0058a3;
+}
+.p-search__list__course {
+  color: #104069;
+  margin-left: 10px;
+}
+.p-search__list__login, .p-search__list__login--date {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #abc8e2;
+}
+.p-search__list__login--date {
+  margin-left: 24px;
+}
+.p-search__list__hopes {
+  margin-right: 40px;
+}
+.p-search__list__hope {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.p-search__list__hope:not(:last-child) {
+  margin-bottom: 10px;
+}
+.p-search__list__hope--type {
+  padding: 2px 5px;
+  background-color: #EAF2F4;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #104069;
+  margin-right: 10px;
+}
+.p-search__list__hope--result {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #333;
+}
+.p-search__list__type {
+  width: 180px;
+  height: 110px;
+  background-color: #EAF2F4;
+  position: relative;
+}
+.p-search__list__type__contain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.p-search__list__type--image {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 12px;
+}
+.p-search__list__type--image img {
+  border-radius: 40px;
+}
+.p-search__list__type--result {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #104069;
+}
+.p-search__list:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .p-search__words {
+    padding: 0 20px;
+  }
+  .p-search__text:not(:last-child) {
+    padding-right: 20px;
+  }
+  .p-search__slice {
+    padding: 0 10px;
+  }
+  .p-search__lists {
+    margin-bottom: 40px;
+  }
+  .p-search__list {
+    display: block;
+  }
+  .p-search__list__top {
+    margin-bottom: 10px;
+  }
+  .p-search__list__img {
+    width: 60px;
+    height: 60px;
+  }
+  .p-search__list__top {
+    margin-bottom: 5px;
+  }
+  .p-search__list__up {
+    justify-content: center;
+  }
+  .p-search__list__down {
+    display: flex;
+  }
+  .p-search__list__hopes {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 10px;
+  }
+  .p-search__list__hope {
+    justify-content: left;
+  }
+  .p-search__list__type {
+    margin: 0 auto;
+  }
+}
 .p-profile__tabs {
   display: flex;
   align-items: center;
