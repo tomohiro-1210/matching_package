@@ -421,7 +421,7 @@
         height: 60px;
         margin: 0 30px 0 0;
         box-shadow: 0px 1px 8px 0 rgba($color: #000000, $alpha: 0.2);
-        a{
+        a, p{
             white-space: nowrap;
         }
     }
@@ -429,7 +429,7 @@
         border: solid 2px #4893C6;
     }
     &__button.c-button:hover{
-        a{
+        a, p{
             color: #0489C6;
         }
     }
@@ -613,7 +613,7 @@
             width: 260px;
             height: 50px;
             margin: 0 auto 20px;
-            a{
+            a, p{
                 font-size: 14px;
                 white-space: nowrap;
             }

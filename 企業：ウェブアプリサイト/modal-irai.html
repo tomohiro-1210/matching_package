@@ -1,0 +1,78 @@
+<!-- 
+    このhtmlフォルダはヘッダーやフッターなどの共通部分のみ集約しています。
+ -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <div class="l-header__wrap">
+            <p class="l-header__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-header__nav">
+                <div class="l-header__img">
+                    <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                </div>
+                <p class="l-header__company"><span>株式会社〇〇〇グループ</span>  さん</p>
+                <p class="l-header__triangle">◀</p>
+                <div class="l-header__humburgur">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+        <!-- プロフィール充実依頼 -->
+        <div class="p-modal-profile appear">
+            <div class="p-modal-profile__content">
+                <div class="p-modal-profile__close">X</div>
+                <!-- inner -->
+                <div class="p-modal-profile__inner">
+                        <!-- プロフィール充実依頼項目 -->
+                                    <p class="p-modal-profile__title">プロフィール充実依頼項目</p>
+                                    <label class="p-modal-profile__selectbox">
+                                        <select>
+                                            <option>選択してください</option>
+                                            <option>選択リスト１</option>
+                                            <option>選択リスト２</option>
+                                        </select>
+                                    </label>
+                        <!-- プロフィール充実依頼項目 -->
+                            <div class="p-modal-profile__button p-modal-profile__button--blue">
+                                <a href="#">プロフィール充実依頼をする</a>
+                            </div>
+                        </div>
+                </div>
+                <!-- inner -->
+            </div>
+        </div>
+        <!-- プロフィール充実依頼 -->
+
+    <main>
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <div class="l-footer__container">
+            <p class="l-footer__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-footer__nav">
+                <ul class="l-footer__menu">
+                    <li class="l-footer__list"><a href="#">利用規約</a></li>
+                    <li class="l-footer__list"><a href="#">プライバシーポリシー</a></li>
+                    <li class="l-footer__list"><a href="#">運営会社</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- /footer -->
+</body>
+</html>

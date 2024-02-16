@@ -1,8 +1,9 @@
-.dashboard {
+.p-modal-dashboard {
+    display: none;
     background-color: rgba($color: #000000, $alpha: 0.7);
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: calc(100vw - 40px);
     height: calc(100% - 100px);
     overflow-y: scroll;
     z-index: 99999;
@@ -85,7 +86,7 @@
         .search-form-1 button::before{
             width: 16px;
             height: 16px;
-            background-image: url("../img/dashboard-search.png");
+            background-image: url("../img/common/p-modal-dashboard-search.png");
             background-repeat: no-repeat;
             background-size: contain;
             content: '';
@@ -369,7 +370,7 @@
     &__button {    
         width: 290px;
         height: 60px;
-        border-radius: 290px;
+        border-radius: 90px;
         margin: 0 auto;
         position: relative; 
         a{        
@@ -382,7 +383,7 @@
     }
     &__button--blue {
         background-color: #4893C6;
-        border: solid 2px #fff;
+        border: solid 2px #4893C6;
         margin-bottom: 30px;
         box-shadow: 0px 1px 8px rgba($color: #000000, $alpha: 0.5);
         a{
@@ -404,11 +405,13 @@
             font-weight: normal;
         }
     }
-    
+}
+.p-modal-dashboard.appear{
+    display: block;
 }
 
 @media screen and (max-width:768px) {
-    .dashboard {
+    .p-modal-dashboard {
         width: calc(100vw - 40px);
         height: calc(100% - 100px);
         padding: 50px 20px;
@@ -637,3 +640,181 @@
     }
     
 }}}
+
+// プロフィール充実依頼項目
+.p-modal-profile {
+    display: none;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    padding: 50px 20px;
+    &__content {
+        background-color: #fff;
+        border-radius: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        padding: 50px 0;
+    }
+    // 閉じるボタン
+    &__close {
+        width: 60px;
+        height: 60px;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #fff;
+        line-height: 60px;
+        border-radius: 30px;
+        background-color: #333333;
+        border: solid 1px #fff;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        transform: translate(50%, -50%);
+    }
+    &__inner {
+        padding: 75px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #111;
+        margin-bottom: 20px;
+    }
+    &__selectbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        max-width: 600px;
+        width: calc(100% - 60px);
+        margin: 0 auto 20px;
+    }
+    &__selectbox::after {
+        position: absolute;
+        right: 15px;
+        width: 10px;
+        height: 7px;
+        background-color: #535353;
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        content: '';
+        pointer-events: none;
+    }
+    &__selectbox select {
+        appearance: none;
+        min-width: 600px;
+        width: calc(100% - 40px);
+        font-weight: bold;
+        height: 2.8em;
+        padding: .4em .8em;
+        border: 1px solid #a5bacc;
+        border-radius: 3px;
+        background-color: #fff;
+        color: #333333;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    // ボタン
+    &__buttons {
+        margin-top: 50px;
+    }
+    &__button {    
+        width: 310px;
+        height: 60px;
+        border-radius: 290px;
+        margin: 0 auto;
+        position: relative; 
+        a{        
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            white-space: nowrap;
+        }
+    }
+    &__button--blue {
+        background-color: #4893C6;
+        border: solid 2px #4893C6;
+        margin-bottom: 30px;
+        box-shadow: 0px 1px 8px rgba($color: #000000, $alpha: 0.5);
+        a{
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    &__button--blue:hover {
+        background-color: #fff;
+        margin-bottom: 30px;
+        a{
+            color: #4893C6;
+        }
+    }
+}
+.p-modal-profile.appear{
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    .p-modal-profile {
+        width: calc(100% - 40px);
+        height: 100vh;
+        padding: 50px 20px;
+        &__content {
+            width: 100%;
+            padding: 50px 0;
+        }
+        // 閉じるボタン
+        &__close {
+            width: 40px;
+            height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            border-radius: 30px;
+        }
+        &__inner {
+            padding: 50px 20px;
+            margin: 0 auto;
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__selectbox {
+            max-width: 600px;
+            width: calc(100% - 40px);
+            margin: 0 auto 20px;
+        }
+        &__selectbox select {
+            min-width: 200px;
+            width: 100%;
+        }
+        // ボタン
+        &__buttons {
+            margin-top: 50px;
+        }
+        &__button {   
+            max-width: 310px; 
+            width: 100%;
+            height: 60px;
+            border-radius: 90px;
+            margin: 0 auto;
+            position: relative; 
+            a{        
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 16px;
+                white-space: nowrap;
+            }
+        }
+    }
+}

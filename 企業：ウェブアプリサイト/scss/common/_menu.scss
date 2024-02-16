@@ -14,7 +14,7 @@
         border: solid 1px #4893C6;
         border-radius: 10px;
         position: absolute;
-        width: 320px;
+        width: calc(100% - 40px);
         right: 0;
     }
     &__content {
@@ -61,5 +61,8 @@
         width: 100%;
         margin: 0 auto;
         height: max-content;
+        &__inner {
+            width: 400px;
+        }
     }
 }
