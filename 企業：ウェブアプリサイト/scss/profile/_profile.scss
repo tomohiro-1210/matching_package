@@ -354,6 +354,61 @@
         }
     }
 
+    // パーソナリティ情報
+   &__personality {
+        margin-bottom: 50px;
+        &__lists {
+            
+        }
+        &__list {
+            display: flex;
+            justify-content: left;
+            align-items: flex-start;
+        }
+        &__list:not(:last-child) {
+            margin-bottom: 50px;        
+        }
+        &__left {
+            width: 20%;
+            margin-right: 30px;
+        }
+        &__category {
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #111;
+        }
+        &__supplement {
+            font-weight: normal;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #111;
+        }
+        &__right {
+            width: calc(80% - 30px);
+        }
+        &__question {
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #111;
+            margin-bottom: 10px;
+        }
+        &__answer {
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #111;                
+        }
+        &__answer:not(:last-child) {
+            margin-bottom: 25px;        
+        }
+    }
+
     // ボタン
     &__buttons{
         display: flex;
@@ -517,6 +572,38 @@
             margin-bottom: 20px;
             padding: 10px 10px 30px;
         }
+
+        // パーソナリティ情報
+       &__personality {
+            margin-bottom: 40px;
+            &__list:not(:last-child) {
+                margin-bottom: 40px;        
+            }
+            &__left {
+                width: 25%;
+                margin-right: 20px;
+            }
+            &__category {
+                font-size: 16px;
+            }
+            &__supplement {
+                font-size: 16px;
+            }
+            &__right {
+                width: calc(75% - 20px);
+            }
+            &__question {
+                font-size: 14px;
+            }
+            &__answer {
+                font-size: 14px;            
+            }
+            &__answer:not(:last-child) {
+                margin-bottom: 20px;        
+            }
+        }
+        
+        
         // ボタン
         &__buttons{
             display: block;

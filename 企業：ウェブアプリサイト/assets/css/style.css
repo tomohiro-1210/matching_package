@@ -3401,6 +3401,56 @@ main {
   color: #333;
   line-height: 19px;
 }
+.p-profile__personality {
+  margin-bottom: 50px;
+}
+.p-profile__personality__list {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+}
+.p-profile__personality__list:not(:last-child) {
+  margin-bottom: 50px;
+}
+.p-profile__personality__left {
+  width: 20%;
+  margin-right: 30px;
+}
+.p-profile__personality__category {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #111;
+}
+.p-profile__personality__supplement {
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #111;
+}
+.p-profile__personality__right {
+  width: calc(80% - 30px);
+}
+.p-profile__personality__question {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #111;
+  margin-bottom: 10px;
+}
+.p-profile__personality__answer {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #111;
+}
+.p-profile__personality__answer:not(:last-child) {
+  margin-bottom: 25px;
+}
 .p-profile__buttons {
   display: flex;
   justify-content: center;
@@ -3546,6 +3596,34 @@ main {
   .p-profile__pr {
     margin-bottom: 20px;
     padding: 10px 10px 30px;
+  }
+  .p-profile__personality {
+    margin-bottom: 40px;
+  }
+  .p-profile__personality__list:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .p-profile__personality__left {
+    width: 25%;
+    margin-right: 20px;
+  }
+  .p-profile__personality__category {
+    font-size: 16px;
+  }
+  .p-profile__personality__supplement {
+    font-size: 16px;
+  }
+  .p-profile__personality__right {
+    width: calc(75% - 20px);
+  }
+  .p-profile__personality__question {
+    font-size: 14px;
+  }
+  .p-profile__personality__answer {
+    font-size: 14px;
+  }
+  .p-profile__personality__answer:not(:last-child) {
+    margin-bottom: 20px;
   }
   .p-profile__buttons {
     display: block;
