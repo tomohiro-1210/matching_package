@@ -17,29 +17,13 @@ $(".l-header__humburgur").click(function () {
 $(".p-search__window__button").click(function () {
     $(".p-modal-dashboard").addClass('appear');
 });
-
-// 検索モーダル閉じる
-$('[ data-closeButton]').click(function () {
-    $(".p-modal-dashboard").removeClass('appear');
-});
-
 // プロフィール充実依頼モーダル出現
 $(".irai-button").click(function () {
     $(".p-modal-profile").addClass('appear');
 });
-
-// プロフィール充実依頼モーダル閉じる
-$(document).on("click", ".profile-close", function() {
+// 検索モーダル閉じる
+$('[data-closeButton]').click(function () {
+    $(".p-modal-dashboard").removeClass('appear');
     $(".p-modal-profile").removeClass('appear');
 });
 
-
-
-// X押したときメニューを閉じる
-$(".sp-menu__close").click(function () {
-    $(".sp-menu").removeClass('open');
-});
-// メニュー押したときメニューを閉じる
-$(".sp-menu__item").click(function () {
-    $(".sp-menu").removeClass('open');
-});
