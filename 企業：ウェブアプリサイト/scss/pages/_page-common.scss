@@ -9,9 +9,11 @@
     text-align: left;
     color: #111;
     margin-top: 20px;
+    padding: 0 20px;
     a{
         color: #0058a3;
         text-decoration-color: #0058a3;
+        text-decoration: underline;
     }
 }
 
@@ -23,9 +25,5 @@
     .c-text{
         font-size: 14px;
         margin-top: 15px;
-        a{
-            color: #0058a3;
-            text-decoration-color: #0058a3;
-        }
     }
 }

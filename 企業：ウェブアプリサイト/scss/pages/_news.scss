@@ -44,6 +44,10 @@
         background-color: #fff;
         border-radius: 20px;
         position: relative;
+        transition: all 0.3s;
+    }
+    &__inner:hover{
+        background-color: #e5f2fd;
     }
     &__arrow {
         position: absolute;
@@ -268,12 +272,6 @@
     // ニュースリスト
     &__lists {
         margin-bottom: 60px;
-    }
-    &__inner {
-        padding: 10px 35px 10px 10px ;
-        background-color: #fff;
-        border-radius: 20px;
-        position: relative;
     }
     &__arrow {
         position: absolute;

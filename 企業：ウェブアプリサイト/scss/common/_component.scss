@@ -49,6 +49,57 @@
 }
 
 
+@media screen and (max-width:768px) {
+    .c-news {
+        margin-bottom: 30px;
+        &__lists {
+            background-color: #fff;
+            padding: 30px;
+    
+        }
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        &__list:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &__dot {
+            width: 10px;
+            height: 10px;
+            background-color: #DE2D28;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        &__dot.read{
+            background-color: #fff;
+        }
+        &__date {
+            font-family: "Noto Sans JP";
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #abc8e2;
+            margin-right: 20px;
+        }
+        &__title {
+            font-family: "Noto Sans JP";
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #0058a3;
+            text-decoration-color: #0058a3;        
+        }
+        &__title.read{
+            font-weight: normal;
+        }
+    }
+}
+
 // ボタン
 .c-buttons{
     background-color: #fff;
@@ -468,6 +519,9 @@
         text-align: left;
 
     }
+    .forgot{
+        color: #0489C6;
+    }
 }
 .c-form__item .c-form__item__selectbox {
     margin: 0 auto;
@@ -685,6 +739,7 @@
         }
         label{
             margin-bottom: 10px;
+            margin-right: 0;
         }
         input{
             width: calc(100% - 30px);
@@ -768,6 +823,7 @@
     color: #fff;
     margin-right: 20px;
     margin-bottom: 20px;
+    transition: all 0.3s;
 }
 .c-tag.--white {
     background-color: #fff;

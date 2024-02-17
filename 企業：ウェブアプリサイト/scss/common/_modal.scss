@@ -86,7 +86,7 @@
         .search-form-1 button::before{
             width: 16px;
             height: 16px;
-            background-image: url("../img/common/p-modal-dashboard-search.png");
+            background-image: url("../img/common/dashboard-search.png");
             background-repeat: no-repeat;
             background-size: contain;
             content: '';
@@ -647,10 +647,10 @@
     background-color: rgba($color: #000000, $alpha: 0.7);
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: calc(100vw - 80px);
     height: 100vh;
     z-index: 99999;
-    padding: 50px 20px;
+    padding: 50px 40px;
     &__content {
         background-color: #fff;
         border-radius: 20px;

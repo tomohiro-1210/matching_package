@@ -87,6 +87,7 @@
         border-radius: 5px;
         border: solid 1px #4893C6;
         width: fit-content;
+        transition: all 0.3s;
         margin-bottom: 20px;
         box-shadow: 0px 1px 8px 0px rgba($color: #000000, $alpha: 0.2);
         &__arrow {
@@ -114,10 +115,17 @@
             margin-right: 0;
         }
     }
+    &__button:hover{
+        background-color: #caddee;
+    }
     &__button.--blue{
         border: solid 1px #fff;
         background-color: #4893C6;
         margin-bottom: 0;
+    }
+    &__button.blue:hover{
+        background-color: #fff;
+        color: #0489C6;
     }
 
     // 企業編集画面
@@ -412,6 +420,7 @@
         &__button {
             flex-wrap: wrap;
             padding: 15px 40px 15px 25px; 
+            transition: all 0.3s;
             &__arrow {
                 width: 15px;
                 height: 15px;
@@ -434,10 +443,6 @@
                 color: #fff;
                 margin-bottom: 0;
             }
-        }
-        &__button.--blue{
-            border: solid 1px #fff;
-            background-color: #4893C6;
         }
         &__button.--blue .p-setting__button__arrow{
             margin-bottom: 0;

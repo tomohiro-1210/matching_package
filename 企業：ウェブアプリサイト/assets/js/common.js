@@ -19,7 +19,7 @@ $(".p-search__window__button").click(function () {
 });
 
 // 検索モーダル閉じる
-$(".p-modal-dashboard__close").click(function () {
+$('[ data-closeButton]').click(function () {
     $(".p-modal-dashboard").removeClass('appear');
 });
 
@@ -29,9 +29,11 @@ $(".irai-button").click(function () {
 });
 
 // プロフィール充実依頼モーダル閉じる
-$(".p-modal-profile__close").click(function () {
+$(document).on("click", ".profile-close", function() {
     $(".p-modal-profile").removeClass('appear');
 });
+
+
 
 // X押したときメニューを閉じる
 $(".sp-menu__close").click(function () {
