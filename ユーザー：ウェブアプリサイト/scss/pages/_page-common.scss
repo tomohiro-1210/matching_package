@@ -1,0 +1,29 @@
+.c-texts {
+    margin-bottom: 20px;
+}
+.c-text{
+    font-family: "Noto Sans CJK JP";
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #111;
+    margin-top: 20px;
+    padding: 0 20px;
+    a{
+        color: #0058a3;
+        text-decoration-color: #0058a3;
+        text-decoration: underline;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .c-texts {
+        margin-bottom: 15px;
+    }
+    .c-text{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>就活マッチングサイト　ログイン画面</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <div class="l-header__wrap">
+            <p class="l-header__title"><a href="#">就活マッチングサイト</a></p>
+            <!-- <div class="l-header__contain">
+                <div class="l-header__menu">
+                    <a href="#" class="l-header__link">ホーム</a>
+                    <a href="#" class="l-header__link">オファー</a>
+                    <a href="#" class="l-header__link">企業検索</a>
+                    <a href="#" class="l-header__link">適性診断</a>
+                    <a href="#" class="l-header__link">お知らせ</a>
+                </div>
+                <nav class="l-header__nav">
+                    <div class="l-header__img">
+                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                    </div>
+                    <p class="l-header__name"><span>お名前太郎</span>  さん</p>
+                    <p class="l-header__triangle">◀</p>
+                </nav>
+                <div class="l-header__bell">
+                    <img src="./assets/img/common/menu-bell.png" alt="menu-bell">
+                    <p class="l-header__notice">23</p>
+                </div>
+                    
+                <div class="l-header__humburgur">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <!-- /header -->
+
+    <!-- menu -->
+    <div class="p-menu">
+        <div class="p-menu__inner">
+            <ul class="p-menu__content">
+                    <li class="p-menu__item">
+                        <a href="#" class="bold">アカウント設定<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#" class="bold">パスワード再発行<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#" class="bold">メール通知の設定<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">お問い合わせ<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">ヘルプ<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">運営からのお知らせ<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">ログアウト<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /menu -->
+    <main>
+        <div class="p-login">
+            <div class="pc-on">
+                <h2 class="c-secTitle--left">採用企業向けログイン</h2>
+            </div>
+            <div class="sp-on">
+                <h2 class="c-secTitle--center">採用企業向けログイン</h2>
+            </div>
+            <div class="p-login__inner">
+                <div class="p-login__content">
+                    <div class="c-form__box">
+                        <p class="c-form__title">メールアドレスで登録</p>
+                        <form action="#" id="login-form">
+                            <p class="c-form__item">
+                                <label for="mail">
+                                    ログインID(メールアドレス)
+                                    <span>必須</span>
+                                </label>
+                                <input type="text" placeholder="Mail address">
+                            </p>
+                            <p class="c-form__item">
+                                <label for="mail">
+                                    パスワード
+                                    <span>必須</span>
+                                </label>
+                                <input type="text" placeholder="Password">
+                            </p>
+                            
+                            <p class="c-form__text"><a href="#" class="forgot">パスワードを忘れてしまった方</a></p>
+                            <div class="c-button lite-gratation"><a href="#">ログイン</a></div>
+                            <div class="c-form__check --autologin">
+                                <input type="checkbox">
+                                <a href="#">次回から自動ログイン</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="p-login__content">
+                    <div class="c-form__box">
+                        <p class="c-form__title">ソーシャルアカウント</p>
+                        <div class="p-social">
+                            <p class="p-social__text">ソーシャルアカウントで登録すると、<br>
+                                次回ログイン時が簡単になるのでおすすめです。</p>
+                            <ul class="p-social__logins">
+                                <li class="p-social__login">
+                                    <p class="p-social__name">LINE</p>
+                                    <div class="p-social__img p-social__img--line">
+                                        <img src="./assets/img/common/login-line.png" alt="login-line">
+                                    </div>
+                                    <p class="p-social__alignment">連携されていません</p>
+                                    <div class="p-social__button">連携する</div>
+                                </li>
+                                <li class="p-social__login">
+                                    <p class="p-social__name">Facebook</p>
+                                    <div class="p-social__img p-social__img--fb">
+                                        <img src="./assets/img/common/login-facebook.png" alt="login-line">
+                                    </div>
+                                    <p class="p-social__alignment">連携されていません</p>
+                                    <div class="p-social__button">連携する</div>
+                                </li>
+                                <li class="p-social__login">
+                                    <p class="p-social__name">Twitter</p>
+                                    <div class="p-social__img p-social__img--x">
+                                        <img src="./assets/img/common/login-twitter.png" alt="login-line">
+                                    </div>
+                                    <p class="p-social__alignment">連携されていません</p>
+                                    <div class="p-social__button">連携する</div>
+                                </li>
+                                <li class="p-social__login">
+                                    <p class="p-social__name">Google</p>
+                                    <div class="p-social__img p-social__img--google">
+                                        <img src="./assets/img/common/login-google.png" alt="login-line">
+                                    </div>
+                                    <p class="p-social__alignment">連携されていません</p>
+                                    <div class="p-social__button">連携する</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <div class="l-footer__container">
+            <p class="l-footer__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-footer__nav">
+                <ul class="l-footer__menu">
+                    <li class="l-footer__list"><a href="#">利用規約</a></li>
+                    <li class="l-footer__list"><a href="#">プライバシーポリシー</a></li>
+                    <li class="l-footer__list"><a href="#">運営会社</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- /footer -->
+    <!-- jquery/js -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script src="./assets/js/common.js"></script>
+</body>
+</html>

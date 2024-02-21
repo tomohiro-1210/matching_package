@@ -1,0 +1,37 @@
+.p-logout {
+    margin-top: 80px;
+    width: 100%;
+    height: calc(100vh - 160px);
+    position: relative;
+    &__inner {
+        padding: 0 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+    &__text {
+        font-weight: bold;
+        font-size: 28px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #111;
+        margin-bottom: 53px;
+    }
+    .c-button{
+        margin: 0 auto 53px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .p-logout {
+        margin-top: 60px;
+        height: calc(100vh - 60px - 278px);
+        &__text {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+}

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>就活マッチングサイト　学生・パート検索（キーワード）</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <div class="l-header__wrap">
+            <p class="l-header__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-header__nav">
+                <div class="l-header__img">
+                    <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                </div>
+                <p class="l-header__company"><span>株式会社〇〇〇グループ</span>  さん</p>
+                <p class="l-header__triangle">◀</p>
+                <div class="l-header__humburgur">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <!-- menu -->
+    <div class="p-menu">
+        <div class="p-menu__inner">
+            <ul class="p-menu__content">
+                    <li class="p-menu__item">
+                        <a href="#" class="bold">アカウント設定<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#" class="bold">パスワード再発行<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#" class="bold">メール通知の設定<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">お問い合わせ<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">ヘルプ<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">運営からのお知らせ<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#">ログアウト<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /menu -->
+
+    <main>
+        <div class="l-inner">
+            <div class="l-container">
+                <!-- メインコンテンツ -->
+                <div class="l-container__main">
+                    <h1 class="c-secTitle--left">学生・パート検索</h1>
+
+                    <!-- 学生検索コンテンツ -->
+                    <div class="p-search">
+                        <!-- 検索されているキーワード -->
+                        <div class="p-search__words">
+                            <p class="p-search__text">検索されているキーワード：</p>
+                            <p class="p-search__text">
+                                <span class="p-search__word">検討リスト</span><span class="p-search__slice">/</span><span class="p-search__word">青森大学</span>
+                            </p>
+                        </div>
+                        <!-- 検索されているキーワード -->
+                        
+                        <!-- 学生検索結果 -->
+                        <div class="p-search__contain">
+                            <div class="p-search__lists">
+                                
+                                <!-- 学生のリスト -->
+                                <a href="#" class="p-search__list">
+
+                                    <div class="p-search__list__up">
+                                        <!-- アイコンと赤丸通知 -->
+                                        <div class="p-search__list__img">
+                                            <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                            <span class="p-search__list__dot"></span>
+                                        </div>
+                                        <!-- 〇〇大学など -->
+                                        <div class="p-search__list__student">
+                                            <div class="p-search__list__top">
+                                                <p class="p-search__list__label">学生</p>
+                                                <p class="p-search__list__graduation">2024年3月卒業予定</p>
+                                                <p class="p-search__list__gender">男性</p>
+                                            </div>
+                                            <p class="p-search__list__school">○○大学</p>
+                                            <div class="p-search__list__bottom">
+                                                <p class="p-search__list__faculty">社会学部</p>
+                                                <p class="p-search__list__course">社会学科</p>
+                                            </div>
+                                            <p class="p-search__list__login">最終ログイン<span class="p-search__list__login--date">1日前</span></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-search__list__down">
+                                        <!-- 志望業界など -->
+                                        <div class="p-search__list__hopes">
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望業界</p>
+                                                <p class="p-search__list__hope--result">金融業界</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望職種</p>
+                                                <p class="p-search__list__hope--result">投資銀行業務</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">インターンシップ</p>
+                                                <p class="p-search__list__hope--result">受けたい</p>
+                                            </div>
+                                        </div>
+                                        <!-- 診断結果 -->
+                                        <div class="p-search__list__type">
+                                            <div class="p-search__list__type__contain">
+                                                <div class="p-search__list__type--image">
+                                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                                </div>
+                                                <p class="p-search__list__type--result">〇〇〇タイプ</p>
+                                            </div>
+                                            <!-- ☆など -->
+                                            <div class="p-search__list__arrow">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="profile-img">
+                                            </div>
+                                            <div class="p-search__list__consider">
+                                                <img src="./assets/img/common/side-list.png" alt="consider">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- 学生のリスト -->
+                                <a href="#" class="p-search__list">
+
+                                    <div class="p-search__list__up">
+                                        <!-- アイコンと赤丸通知 -->
+                                        <div class="p-search__list__img">
+                                            <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                            <span class="p-search__list__dot"></span>
+                                        </div>
+                                        <!-- 〇〇大学など -->
+                                        <div class="p-search__list__student">
+                                            <div class="p-search__list__top">
+                                                <p class="p-search__list__label">学生</p>
+                                                <p class="p-search__list__graduation">2024年3月卒業予定</p>
+                                                <p class="p-search__list__gender">男性</p>
+                                            </div>
+                                            <p class="p-search__list__school">○○大学</p>
+                                            <div class="p-search__list__bottom">
+                                                <p class="p-search__list__faculty">社会学部</p>
+                                                <p class="p-search__list__course">社会学科</p>
+                                            </div>
+                                            <p class="p-search__list__login">最終ログイン<span class="p-search__list__login--date">1日前</span></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-search__list__down">
+                                        <!-- 志望業界など -->
+                                        <div class="p-search__list__hopes">
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望業界</p>
+                                                <p class="p-search__list__hope--result">金融業界</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望職種</p>
+                                                <p class="p-search__list__hope--result">投資銀行業務</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">インターンシップ</p>
+                                                <p class="p-search__list__hope--result">受けたい</p>
+                                            </div>
+                                        </div>
+                                        <!-- 診断結果 -->
+                                        <div class="p-search__list__type">
+                                            <div class="p-search__list__type__contain">
+                                                <div class="p-search__list__type--image">
+                                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                                </div>
+                                                <p class="p-search__list__type--result">〇〇〇タイプ</p>
+                                            </div>
+                                            <!-- ☆など -->
+                                            <div class="p-search__list__arrow">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="profile-img">
+                                            </div>
+                                            <div class="p-search__list__consider">
+                                                <img src="./assets/img/common/side-list.png" alt="consider">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- 学生のリスト -->
+                                <a href="#" class="p-search__list">
+
+                                    <div class="p-search__list__up">
+                                        <!-- アイコンと赤丸通知 -->
+                                        <div class="p-search__list__img">
+                                            <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                            <span class="p-search__list__dot"></span>
+                                        </div>
+                                        <!-- 〇〇大学など -->
+                                        <div class="p-search__list__student">
+                                            <div class="p-search__list__top">
+                                                <p class="p-search__list__label">学生</p>
+                                                <p class="p-search__list__graduation">2024年3月卒業予定</p>
+                                                <p class="p-search__list__gender">男性</p>
+                                            </div>
+                                            <p class="p-search__list__school">○○大学</p>
+                                            <div class="p-search__list__bottom">
+                                                <p class="p-search__list__faculty">社会学部</p>
+                                                <p class="p-search__list__course">社会学科</p>
+                                            </div>
+                                            <p class="p-search__list__login">最終ログイン<span class="p-search__list__login--date">1日前</span></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-search__list__down">
+                                        <!-- 志望業界など -->
+                                        <div class="p-search__list__hopes">
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望業界</p>
+                                                <p class="p-search__list__hope--result">金融業界</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望職種</p>
+                                                <p class="p-search__list__hope--result">投資銀行業務</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">インターンシップ</p>
+                                                <p class="p-search__list__hope--result">受けたい</p>
+                                            </div>
+                                        </div>
+                                        <!-- 診断結果 -->
+                                        <div class="p-search__list__type">
+                                            <div class="p-search__list__type__contain">
+                                                <div class="p-search__list__type--image">
+                                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                                </div>
+                                                <p class="p-search__list__type--result">〇〇〇タイプ</p>
+                                            </div>
+                                            <!-- ☆など -->
+                                            <div class="p-search__list__arrow">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="profile-img">
+                                            </div>
+                                            <div class="p-search__list__consider">
+                                                <img src="./assets/img/common/side-list2.png" alt="consider">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- 学生のリスト -->
+                                <a href="#" class="p-search__list">
+
+                                    <div class="p-search__list__up">
+                                        <!-- アイコンと赤丸通知 -->
+                                        <div class="p-search__list__img">
+                                            <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                            <span class="p-search__list__dot"></span>
+                                        </div>
+                                        <!-- 〇〇大学など -->
+                                        <div class="p-search__list__student">
+                                            <div class="p-search__list__top">
+                                                <p class="p-search__list__label">学生</p>
+                                                <p class="p-search__list__graduation">2024年3月卒業予定</p>
+                                                <p class="p-search__list__gender">男性</p>
+                                            </div>
+                                            <p class="p-search__list__school">○○大学</p>
+                                            <div class="p-search__list__bottom">
+                                                <p class="p-search__list__faculty">社会学部</p>
+                                                <p class="p-search__list__course">社会学科</p>
+                                            </div>
+                                            <p class="p-search__list__login">最終ログイン<span class="p-search__list__login--date">1日前</span></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-search__list__down">
+                                        <!-- 志望業界など -->
+                                        <div class="p-search__list__hopes">
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望業界</p>
+                                                <p class="p-search__list__hope--result">金融業界</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望職種</p>
+                                                <p class="p-search__list__hope--result">投資銀行業務</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">インターンシップ</p>
+                                                <p class="p-search__list__hope--result">受けたい</p>
+                                            </div>
+                                        </div>
+                                        <!-- 診断結果 -->
+                                        <div class="p-search__list__type">
+                                            <div class="p-search__list__type__contain">
+                                                <div class="p-search__list__type--image">
+                                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                                </div>
+                                                <p class="p-search__list__type--result">〇〇〇タイプ</p>
+                                            </div>
+                                            <!-- ☆など -->
+                                            <div class="p-search__list__arrow">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="profile-img">
+                                            </div>
+                                            <div class="p-search__list__consider">
+                                                <img src="./assets/img/common/side-list2.png" alt="consider">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- 学生のリスト -->
+                                <a href="#" class="p-search__list">
+
+                                    <div class="p-search__list__up">
+                                        <!-- アイコンと赤丸通知 -->
+                                        <div class="p-search__list__img">
+                                            <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                            <span class="p-search__list__dot"></span>
+                                        </div>
+                                        <!-- 〇〇大学など -->
+                                        <div class="p-search__list__student">
+                                            <div class="p-search__list__top">
+                                                <p class="p-search__list__label">学生</p>
+                                                <p class="p-search__list__graduation">2024年3月卒業予定</p>
+                                                <p class="p-search__list__gender">男性</p>
+                                            </div>
+                                            <p class="p-search__list__school">○○大学</p>
+                                            <div class="p-search__list__bottom">
+                                                <p class="p-search__list__faculty">社会学部</p>
+                                                <p class="p-search__list__course">社会学科</p>
+                                            </div>
+                                            <p class="p-search__list__login">最終ログイン<span class="p-search__list__login--date">1日前</span></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-search__list__down">
+                                        <!-- 志望業界など -->
+                                        <div class="p-search__list__hopes">
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望業界</p>
+                                                <p class="p-search__list__hope--result">金融業界</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望職種</p>
+                                                <p class="p-search__list__hope--result">投資銀行業務</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">インターンシップ</p>
+                                                <p class="p-search__list__hope--result">受けたい</p>
+                                            </div>
+                                        </div>
+                                        <!-- 診断結果 -->
+                                        <div class="p-search__list__type">
+                                            <div class="p-search__list__type__contain">
+                                                <div class="p-search__list__type--image">
+                                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                                </div>
+                                                <p class="p-search__list__type--result">〇〇〇タイプ</p>
+                                            </div>
+                                            <!-- ☆など -->
+                                            <div class="p-search__list__arrow">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="profile-img">
+                                            </div>
+                                            <div class="p-search__list__consider">
+                                                <img src="./assets/img/common/side-list2.png" alt="consider">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- 学生のリスト -->
+                                <a href="#" class="p-search__list">
+
+                                    <div class="p-search__list__up">
+                                        <!-- アイコンと赤丸通知 -->
+                                        <div class="p-search__list__img">
+                                            <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                            <span class="p-search__list__dot"></span>
+                                        </div>
+                                        <!-- 〇〇大学など -->
+                                        <div class="p-search__list__student">
+                                            <div class="p-search__list__top">
+                                                <p class="p-search__list__label">学生</p>
+                                                <p class="p-search__list__graduation">2024年3月卒業予定</p>
+                                                <p class="p-search__list__gender">男性</p>
+                                            </div>
+                                            <p class="p-search__list__school">○○大学</p>
+                                            <div class="p-search__list__bottom">
+                                                <p class="p-search__list__faculty">社会学部</p>
+                                                <p class="p-search__list__course">社会学科</p>
+                                            </div>
+                                            <p class="p-search__list__login">最終ログイン<span class="p-search__list__login--date">1日前</span></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-search__list__down">
+                                        <!-- 志望業界など -->
+                                        <div class="p-search__list__hopes">
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望業界</p>
+                                                <p class="p-search__list__hope--result">金融業界</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望職種</p>
+                                                <p class="p-search__list__hope--result">投資銀行業務</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">インターンシップ</p>
+                                                <p class="p-search__list__hope--result">受けたい</p>
+                                            </div>
+                                        </div>
+                                        <!-- 診断結果 -->
+                                        <div class="p-search__list__type">
+                                            <div class="p-search__list__type__contain">
+                                                <div class="p-search__list__type--image">
+                                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                                </div>
+                                                <p class="p-search__list__type--result">〇〇〇タイプ</p>
+                                            </div>
+                                            <!-- ☆など -->
+                                            <div class="p-search__list__arrow">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="profile-img">
+                                            </div>
+                                            <div class="p-search__list__consider">
+                                                <img src="./assets/img/common/side-list2.png" alt="consider">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- 学生のリスト -->
+                                <a href="#" class="p-search__list">
+
+                                    <div class="p-search__list__up">
+                                        <!-- アイコンと赤丸通知 -->
+                                        <div class="p-search__list__img">
+                                            <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                            <span class="p-search__list__dot"></span>
+                                        </div>
+                                        <!-- 〇〇大学など -->
+                                        <div class="p-search__list__student">
+                                            <div class="p-search__list__top">
+                                                <p class="p-search__list__label">学生</p>
+                                                <p class="p-search__list__graduation">2024年3月卒業予定</p>
+                                                <p class="p-search__list__gender">男性</p>
+                                            </div>
+                                            <p class="p-search__list__school">○○大学</p>
+                                            <div class="p-search__list__bottom">
+                                                <p class="p-search__list__faculty">社会学部</p>
+                                                <p class="p-search__list__course">社会学科</p>
+                                            </div>
+                                            <p class="p-search__list__login">最終ログイン<span class="p-search__list__login--date">1日前</span></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-search__list__down">
+                                        <!-- 志望業界など -->
+                                        <div class="p-search__list__hopes">
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望業界</p>
+                                                <p class="p-search__list__hope--result">金融業界</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望職種</p>
+                                                <p class="p-search__list__hope--result">投資銀行業務</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">インターンシップ</p>
+                                                <p class="p-search__list__hope--result">受けたい</p>
+                                            </div>
+                                        </div>
+                                        <!-- 診断結果 -->
+                                        <div class="p-search__list__type">
+                                            <div class="p-search__list__type__contain">
+                                                <div class="p-search__list__type--image">
+                                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                                </div>
+                                                <p class="p-search__list__type--result">〇〇〇タイプ</p>
+                                            </div>
+                                            <!-- ☆など -->
+                                            <div class="p-search__list__arrow">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="profile-img">
+                                            </div>
+                                            <div class="p-search__list__consider">
+                                                <img src="./assets/img/common/side-list2.png" alt="consider">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- 学生のリスト -->
+                                <a href="#" class="p-search__list">
+
+                                    <div class="p-search__list__up">
+                                        <!-- アイコンと赤丸通知 -->
+                                        <div class="p-search__list__img">
+                                            <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                            <span class="p-search__list__dot"></span>
+                                        </div>
+                                        <!-- 〇〇大学など -->
+                                        <div class="p-search__list__student">
+                                            <div class="p-search__list__top">
+                                                <p class="p-search__list__label">学生</p>
+                                                <p class="p-search__list__graduation">2024年3月卒業予定</p>
+                                                <p class="p-search__list__gender">男性</p>
+                                            </div>
+                                            <p class="p-search__list__school">○○大学</p>
+                                            <div class="p-search__list__bottom">
+                                                <p class="p-search__list__faculty">社会学部</p>
+                                                <p class="p-search__list__course">社会学科</p>
+                                            </div>
+                                            <p class="p-search__list__login">最終ログイン<span class="p-search__list__login--date">1日前</span></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-search__list__down">
+                                        <!-- 志望業界など -->
+                                        <div class="p-search__list__hopes">
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望業界</p>
+                                                <p class="p-search__list__hope--result">金融業界</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望職種</p>
+                                                <p class="p-search__list__hope--result">投資銀行業務</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">インターンシップ</p>
+                                                <p class="p-search__list__hope--result">受けたい</p>
+                                            </div>
+                                        </div>
+                                        <!-- 診断結果 -->
+                                        <div class="p-search__list__type">
+                                            <div class="p-search__list__type__contain">
+                                                <div class="p-search__list__type--image">
+                                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                                </div>
+                                                <p class="p-search__list__type--result">〇〇〇タイプ</p>
+                                            </div>
+                                            <!-- ☆など -->
+                                            <div class="p-search__list__arrow">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="profile-img">
+                                            </div>
+                                            <div class="p-search__list__consider">
+                                                <img src="./assets/img/common/side-list2.png" alt="consider">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- 学生のリスト -->
+                                <a href="#" class="p-search__list">
+
+                                    <div class="p-search__list__up">
+                                        <!-- アイコンと赤丸通知 -->
+                                        <div class="p-search__list__img">
+                                            <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                            <span class="p-search__list__dot"></span>
+                                        </div>
+                                        <!-- 〇〇大学など -->
+                                        <div class="p-search__list__student">
+                                            <div class="p-search__list__top">
+                                                <p class="p-search__list__label">学生</p>
+                                                <p class="p-search__list__graduation">2024年3月卒業予定</p>
+                                                <p class="p-search__list__gender">男性</p>
+                                            </div>
+                                            <p class="p-search__list__school">○○大学</p>
+                                            <div class="p-search__list__bottom">
+                                                <p class="p-search__list__faculty">社会学部</p>
+                                                <p class="p-search__list__course">社会学科</p>
+                                            </div>
+                                            <p class="p-search__list__login">最終ログイン<span class="p-search__list__login--date">1日前</span></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-search__list__down">
+                                        <!-- 志望業界など -->
+                                        <div class="p-search__list__hopes">
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望業界</p>
+                                                <p class="p-search__list__hope--result">金融業界</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望職種</p>
+                                                <p class="p-search__list__hope--result">投資銀行業務</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">インターンシップ</p>
+                                                <p class="p-search__list__hope--result">受けたい</p>
+                                            </div>
+                                        </div>
+                                        <!-- 診断結果 -->
+                                        <div class="p-search__list__type">
+                                            <div class="p-search__list__type__contain">
+                                                <div class="p-search__list__type--image">
+                                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                                </div>
+                                                <p class="p-search__list__type--result">〇〇〇タイプ</p>
+                                            </div>
+                                            <!-- ☆など -->
+                                            <div class="p-search__list__arrow">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="profile-img">
+                                            </div>
+                                            <div class="p-search__list__consider">
+                                                <img src="./assets/img/common/side-list2.png" alt="consider">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <!-- 学生のリスト -->
+                                <a href="#" class="p-search__list">
+
+                                    <div class="p-search__list__up">
+                                        <!-- アイコンと赤丸通知 -->
+                                        <div class="p-search__list__img">
+                                            <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                            <span class="p-search__list__dot"></span>
+                                        </div>
+                                        <!-- 〇〇大学など -->
+                                        <div class="p-search__list__student">
+                                            <div class="p-search__list__top">
+                                                <p class="p-search__list__label">学生</p>
+                                                <p class="p-search__list__graduation">2024年3月卒業予定</p>
+                                                <p class="p-search__list__gender">男性</p>
+                                            </div>
+                                            <p class="p-search__list__school">○○大学</p>
+                                            <div class="p-search__list__bottom">
+                                                <p class="p-search__list__faculty">社会学部</p>
+                                                <p class="p-search__list__course">社会学科</p>
+                                            </div>
+                                            <p class="p-search__list__login">最終ログイン<span class="p-search__list__login--date">1日前</span></p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="p-search__list__down">
+                                        <!-- 志望業界など -->
+                                        <div class="p-search__list__hopes">
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望業界</p>
+                                                <p class="p-search__list__hope--result">金融業界</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">志望職種</p>
+                                                <p class="p-search__list__hope--result">投資銀行業務</p>
+                                            </div>
+                                            <div class="p-search__list__hope">
+                                                <p class="p-search__list__hope--type">インターンシップ</p>
+                                                <p class="p-search__list__hope--result">受けたい</p>
+                                            </div>
+                                        </div>
+                                        <!-- 診断結果 -->
+                                        <div class="p-search__list__type">
+                                            <div class="p-search__list__type__contain">
+                                                <div class="p-search__list__type--image">
+                                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                                </div>
+                                                <p class="p-search__list__type--result">〇〇〇タイプ</p>
+                                            </div>
+                                            <!-- ☆など -->
+                                            <div class="p-search__list__arrow">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="profile-img">
+                                            </div>
+                                            <div class="p-search__list__consider">
+                                                <img src="./assets/img/common/side-list2.png" alt="consider">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+
+                            </div>
+                        </div>
+                        <!-- 学生検索結果 -->
+                                
+                                <!-- ページャー -->
+                                <div class="c-pager">
+                                    <ul class="c-pager__list">
+                                        <li class="c-pager__arrow--1">
+                                            <a href="#">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="news-arrow">
+                                            </a>
+                                        </li>
+                                        <li class="c-pager__number">
+                                            <a href="#">01</a>
+                                        </li>
+                                        <li class="c-pager__number">
+                                            <a href="#">02</a>
+                                        </li>
+                                        <li class="c-pager__number">
+                                            <a href="#">03</a>
+                                        </li>
+                                        <li class="c-pager__number">
+                                            <p>・・・</p>
+                                        </li>
+                                        <li class="c-pager__number">
+                                            <a href="#">16</a>
+                                        </li>
+                                        <li class="c-pager__arrow--2">
+                                            <a href="#">
+                                                <img src="./assets/img/common/arrow-lite-blue.png" alt="news-arrow">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /ページャー -->
+
+                    </div>
+                    <!-- 学生検索コンテンツ -->
+                    
+                </div>
+                <!-- メインコンテンツ -->
+                
+                <!-- サイドバー -->
+                <aside class="l-container__side">
+                    <div class="l-container__side__search pc-on">
+                        <a href="#"><img src="./assets/img/common/side-search.png" alt="side-search">学生を検索する</a>
+                    </div>
+                    <!-- 会社情報 -->
+                    <div class="l-container__side__content pc-on">
+                        <p class="l-container__side__title"><img src="./assets/img/common/side-circle.png" alt="side-circle">会社情報</p>
+                        <ul class="l-container__side__list">
+                            <li class="l-container__side__item"><a href="#">基本情報<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                            <li class="l-container__side__item"><a href="#">募集中の仕事作成・編集<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                            <li class="l-container__side__item"><a href="#">内定者一覧<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                            <li class="l-container__side__item"><a href="#">日程調整<span>（Googleカレンダー）</span><img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                        </ul>
+                    </div><!-- 会社情報 -->
+
+                    <!-- 検討リスト -->
+                    <div class="l-container__side__content pc-on">
+                        <p class="l-container__side__title"><img src="./assets/img/common/side-list.png" alt="consider">検討リスト</p>
+                        <ul class="l-container__side__list">
+                            <li class="l-container__side__item"><a href="#">検討リストを見る<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                        </ul>
+                    </div><!-- 検討リスト -->
+
+                    <!-- オファーしているユーザー -->
+                    <div class="l-container__side__content">
+                        <p class="l-container__side__title"><img src="./assets/img/common/side-file.png" alt="side-list" class="content">オファーしているユーザー</p>
+                        <ul class="l-container__side__list">
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__up">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__up">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__up">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__up">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__up">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <a href="#" class="l-container__side__button">一覧を見る<img src="./assets/img/common/side-archive.png" alt="side-archive"></a>
+                        </ul>
+                    </div><!-- オファーしているユーザー -->
+                    
+                    <!-- 応募が来ているユーザー -->
+                    <div class="l-container__side__content pc-on">
+                        <p class="l-container__side__title"><img src="./assets/img/common/side-file.png" alt="side-list" class="offer">応募が来ているユーザー</p>
+                        <ul class="l-container__side__list">
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__up">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <li class="l-container__user">
+                                <div class="l-container__user__top">
+                                    <div class="l-container__user__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__user__dot"></span>
+                                    </div>
+                                    <div class="l-container__user__up">
+                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
+                                        <div class="l-container__user__center">
+                                            <p class="l-container__user__label">学生</p>
+                                            <p class="l-container__user__faculty">経済学部</p>
+                                            <p class="l-container__user__department">経済学科</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="l-container__user__bottom">
+                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
+                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                </div>
+                            </li>
+                            <a href="#" class="l-container__side__button">一覧を見る<img src="./assets/img/common/side-archive.png" alt="side-archive"></a>
+                        </ul>
+                    </div><!-- 応募が来ているユーザー -->
+
+                </aside>
+                <!-- サイドバー -->
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <div class="l-footer__container">
+            <p class="l-footer__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-footer__nav">
+                <ul class="l-footer__menu">
+                    <li class="l-footer__list"><a href="#">利用規約</a></li>
+                    <li class="l-footer__list"><a href="#">プライバシーポリシー</a></li>
+                    <li class="l-footer__list"><a href="#">運営会社</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- /footer -->
+    <!-- jquery/js -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+      <script src="./assets/js/common.js"></script>
+</body>
+</html>
