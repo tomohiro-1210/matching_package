@@ -82,6 +82,129 @@
         }
     }
     
+    // 職歴
+    &__job {
+        margin-bottom: 30px;
+        
+        &__title {
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #111;     
+            margin: 0 0 10px 20px;               
+        }
+        &__inner {
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #111;   
+            padding: 36px 30px;
+            background-color: #EAF2F4; 
+            border-radius: 10px;
+            margin-bottom: 22px;    
+        }
+        &__history {
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #111;     
+            margin-bottom: 23px;           
+        }
+        &__list {
+        }
+        &__item {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        &__item.--top{
+            align-items: flex-start;
+        }
+        &__item:not(:last-child){
+            margin-bottom: 20px;
+        }
+        &__name {
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #111;    
+            margin-bottom: 11px;   
+            width: 30%; 
+            span{
+                font-weight: normal;
+            }
+        }
+        &__content {
+            width: 70%;
+            input,textarea{
+                border: solid 1px #4893C6;
+                border-radius: 5px;
+                padding: 15px 20px;
+                width: calc(100% - 42px) !important;
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                line-height: 30px;
+                text-align: left;
+                color: #ccc;
+            }
+            textarea{
+                height: 200px;
+            }
+        }
+        &__selectbox {
+            display: flex;
+            align-items: center;
+            max-width: 320px;
+            width: 100% !important;
+            position: relative;
+        }
+        &__selectbox::after {
+            position: absolute;
+            right: 15px;
+            top: 35%;
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+            border-bottom: solid 3px #0489C6;
+            border-right: solid 3px #0489C6;
+            content: '';
+            pointer-events: none;
+        }
+        &__selectbox select {
+            border: solid 1px #4893C6;
+            appearance: none;
+            min-width: 0px;
+            font-size: 16px;
+            width: 100% !important;
+            font-weight: bold;
+            padding: 15px 20px;
+            border: 1px solid #a5bacc;
+            border-radius: 3px;
+            background-color: #fff;
+            color: #333333;
+            cursor: pointer;
+        }
+        &__button {
+            max-width: 106px;
+            height: 44px;
+            background-color: #4893c6;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: #fff;
+            line-height: 44px;
+            border-radius: 22px;
+            margin-left: auto;
+        }
+
+    }
+
     // 語学
     &__language {
         margin-bottom: 30px;
@@ -286,6 +409,68 @@
 
 @media screen and (max-width:1024px) {
     .p-setting{
+        // 職歴
+        &__job {
+            &__title{
+                font-size: 20px;
+            }
+            &__item {
+                display: block;
+            }
+            &__inner{
+                padding: 20px;
+            }
+            &__item.--top{
+                align-items: flex-start;
+            }
+            &__item:not(:last-child){
+                margin-bottom: 20px;
+            }
+            &__name { 
+                width: 100%; 
+                span{
+                    font-weight: normal;
+                    display: inline-block;
+                }
+            }
+            &__content {
+                width: 100%;
+                input{
+                    border: solid 1px #4893C6;
+                    border-radius: 5px;
+                    padding: 10px 15px;
+                    width: calc(100% - 32px) !important;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+                textarea{
+                    border: solid 1px #4893C6;
+                    border-radius: 5px;
+                    padding: 10px 15px;
+                    width: calc(100% - 32px) !important;
+                    font-size: 14px;
+                    line-height: 21px;
+                    height: 200px;
+                }
+            }
+            &__selectbox {
+                max-width: 100%;
+            }
+            &__button {
+                max-width: 106px;
+                height: 44px;
+                background-color: #4893c6;
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                text-align: center;
+                color: #fff;
+                line-height: 44px;
+                border-radius: 22px;
+                margin-left: auto;
+            }
+    
+        }
         // 趣味や特技など・人物像
         &__person {
             margin: 30px auto;
