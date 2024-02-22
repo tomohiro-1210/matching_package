@@ -13,28 +13,46 @@
     <header class="l-header">
         <div class="l-header__wrap">
             <p class="l-header__title"><a href="#">就活マッチングサイト</a></p>
-            <nav class="l-header__nav">
-                <div class="l-header__img">
-                    <img src="./assets/img/common/user-icon.png" alt="user-icon">
+            <div class="l-header__contain">
+                <div class="l-header__menu">
+                    <a href="#" class="l-header__link">ホーム</a>
+                    <a href="#" class="l-header__link">オファー</a>
+                    <a href="#" class="l-header__link">企業検索</a>
+                    <a href="#" class="l-header__link">適性診断</a>
+                    <a href="#" class="l-header__link">お知らせ</a>
                 </div>
-                <p class="l-header__company"><span>株式会社〇〇〇グループ</span>  さん</p>
-                <p class="l-header__triangle">◀</p>
+                <nav class="l-header__nav">
+                    <div class="l-header__img">
+                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                    </div>
+                    <p class="l-header__name"><span>お名前太郎</span>  さん</p>
+                    <p class="l-header__triangle">◀</p>
+                </nav>
+                <div class="l-header__bell">
+                    <img src="./assets/img/common/menu-bell.png" alt="menu-bell">
+                    <p class="l-header__notice">23</p>
+                </div>
+                    
                 <div class="l-header__humburgur">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-            </nav>
+            </div>
         </div>
     </header>
     <!-- /header -->
 
+    
     <!-- menu -->
     <div class="p-menu">
         <div class="p-menu__inner">
             <ul class="p-menu__content">
                     <li class="p-menu__item">
                         <a href="#" class="bold">アカウント設定<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
+                    </li>
+                    <li class="p-menu__item">
+                        <a href="#" class="bold">SNSアカウントと連携<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
                     </li>
                     <li class="p-menu__item">
                         <a href="#" class="bold">パスワード再発行<img src="./assets/img/common/arrow-white.png" alt="arrow-white"></a>
@@ -72,8 +90,9 @@
                                     <a href="#" class="c-tag">すべて</a>
                                     <a href="#" class="c-tag --white">運営会社からのお知らせ</a>
                                     <a href="#" class="c-tag --white">あなたへのお知らせ</a>
-                                    <a href="#" class="c-tag --white">オファー承諾</a>
-                                    <a href="#" class="c-tag --white">プロフィールが入力されました</a>
+                                    <a href="#" class="c-tag --white">オファー</a>
+                                    <a href="#" class="c-tag --white">募集</a>
+                                    <a href="#" class="c-tag --white">プロフィール充実依頼</a>
                                     <a href="#" class="c-tag --white">メッセージ</a>
                                 </div>
                             </div>
@@ -145,13 +164,13 @@
                                             <div class="p-news__desc">
                                                 <div class="p-news__top">
                                                     <p class="p-news__date"><span class="p-news__dot"></span>2024.04.01</p>
-                                                    <p class="p-news__label --profile">プロフィールを入力されました</p>
+                                                    <p class="p-news__label --profile">プロフィール充実依頼</p>
                                                 </div>
                                                 <div class="p-news__bottom">
                                                     <div class="p-news__icon">
                                                         <img src="./assets/img/news/news-user.png" alt="news-user">
                                                     </div>
-                                                    <p class="p-news__title">$ユーザー$がプロフィールを入力しました</p>
+                                                    <p class="p-news__title">株式会社〇〇様からプロフィール充実依頼が来ています</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -189,7 +208,7 @@
                                             </div>
                                             <div class="p-news__desc">
                                                 <div class="p-news__top">
-                                                    <p class="p-news__date"><span class="p-news__dot"></span>2024.04.01</p>
+                                                    <p class="p-news__date">2024.04.01</p>
                                                     <p class="p-news__label --news">運営会社からのお知らせ</p>
                                                 </div>
                                                 <div class="p-news__bottom">
@@ -211,13 +230,13 @@
                                             <div class="p-news__desc">
                                                 <div class="p-news__top">
                                                     <p class="p-news__date"><span class="p-news__dot"></span>2024.04.01</p>
-                                                    <p class="p-news__label --agreement">オファー承諾</p>
+                                                    <p class="p-news__label --agreement">オファー</p>
                                                 </div>
                                                 <div class="p-news__bottom">
                                                     <div class="p-news__icon">
                                                         <img src="./assets/img/news/news-user.png" alt="news-user">
                                                     </div>
-                                                    <p class="p-news__title">$ユーザー$様がオファーを受けました</p>
+                                                    <p class="p-news__title">$企業名企業名$様からオファーが届いております！</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -259,13 +278,13 @@
                                             <div class="p-news__desc">
                                                 <div class="p-news__top">
                                                     <p class="p-news__date"><span class="p-news__dot"></span>2024.04.01</p>
-                                                    <p class="p-news__label --message">メッセージ</p>
+                                                    <p class="p-news__label --message">募集</p>
                                                 </div>
                                                 <div class="p-news__bottom">
                                                     <div class="p-news__icon">
                                                         <img src="./assets/img/news/news-user.png" alt="news-user">
                                                     </div>
-                                                    <p class="p-news__title">$ユーザー$様からメッセージが届いております。</p>
+                                                    <p class="p-news__title">$企業名企業名$様が新しい採用ページを追加しました！</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -308,184 +327,226 @@
                         </div>
                     </div>
                 </div>
+                <!-- サイドバー -->
                 <aside class="l-container__side">
-                    <div class="l-container__side__search pc-on">
-                        <a href="#"><img src="./assets/img/common/side-search.png" alt="side-search">学生を検索する</a>
+                    <div class="l-container__side__search ">
+                        <a href="#"><img src="./assets/img/common/side-search.png" alt="side-search">企業を検索する</a>
                     </div>
                     <!-- 会社情報 -->
-                    <div class="l-container__side__content pc-on">
-                        <p class="l-container__side__title"><img src="./assets/img/common/side-circle.png" alt="side-circle">会社情報</p>
+                    <div class="l-container__side__content">
+                        <p class="l-container__side__title"><img src="./assets/img/common/side-circle.png" alt="side-circle">プロフィール編集</p>
                         <ul class="l-container__side__list">
-                            <li class="l-container__side__item"><a href="#">基本情報<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
-                            <li class="l-container__side__item"><a href="#">募集中の仕事作成・編集<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
-                            <li class="l-container__side__item"><a href="#">内定者一覧<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
-                            <li class="l-container__side__item"><a href="#">日程調整<span>（Googleカレンダー）</span><img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                            <li class="l-container__side__item">
+                                <a href="#">基本情報<img src="./assets/img/common/plus-lite-blue.png" alt="plus-lite-blue.png"></a>
+                            </li>
+                            <li class="l-container__side__item">
+                                <p class="l-container__side__input">プロフィール入力達成率<span class="percent">10<span class="up">%UP!</span></span></p>
+                                <a href="#">基本情報<img src="./assets/img/common/arrow-white.png" alt="arrow-white.png"></a>
+                            </li>
+                            <li class="l-container__side__item">
+                                <p class="l-container__side__input">プロフィール入力達成率<span class="percent">10<span class="up">%UP!</span></span></p>
+                                <a href="#">基本情報<img src="./assets/img/common/arrow-white.png" alt="arrow-white.png"></a>
+                            </li>
+                            <li class="l-container__side__item">
+                                <p class="l-container__side__input">プロフィール入力達成率<span class="percent">10<span class="up">%UP!</span></span></p>
+                                <a href="#">基本情報<img src="./assets/img/common/arrow-white.png" alt="arrow-white.png"></a>
+                            </li>
+                            <li class="l-container__side__item">
+                                <p class="l-container__side__input">プロフィール入力達成率<span class="percent">10<span class="up">%UP!</span></span></p>
+                                <a href="#">基本情報<img src="./assets/img/common/arrow-white.png" alt="arrow-white.png"></a>
+                            </li>
                         </ul>
                     </div><!-- 会社情報 -->
 
                     <!-- 検討リスト -->
-                    <div class="l-container__side__content pc-on">
-                        <p class="l-container__side__title"><img src="./assets/img/common/side-list.png" alt="side-list" class="consider">検討リスト</p>
+                    <div class="l-container__side__content">
+                        <p class="l-container__side__title"><img src="./assets/img/common/list.png" alt="list" class="consider">適性診断</p>
                         <ul class="l-container__side__list">
-                            <li class="l-container__side__item"><a href="#">検討リストを見る<img src="./assets/img/common/side-arrow.png" alt="side-arrow"></a></li>
+                            <li class="l-container__side__item">
+                                <p class="l-container__side__input" style="padding: 0 10px 10px;">プロフィール入力達成率<span class="percent">10<span class="up">%UP!</span></span></p>
+                                <div class="l-container__side__bottom">
+                                    <a href="#" class="l-container__side__button l-container__side__button--blue">受検する</a>
+                                    <a href="#" class="l-container__side__button l-container__side__button--white">受検結果を見る</a>
+                                </div>
+                            </li>
                         </ul>
                     </div><!-- 検討リスト -->
 
-                    <!-- オファーしているユーザー -->
+                    <!-- オファーリスト -->
                     <div class="l-container__side__content">
-                        <p class="l-container__side__title"><img src="./assets/img/common/side-file.png" alt="side-list" class="content">オファーしているユーザー</p>
+                        <p class="l-container__side__title"><img src="./assets/img/common/side-file.png" alt="side-list" class="content">オファーリスト</p>
                         <ul class="l-container__side__list">
-                            <li class="l-container__user">
-                                <div class="l-container__user__top">
-                                    <div class="l-container__user__img">
+                            <li class="l-container__company">
+                                <div class="l-container__company__top">
+                                    <div class="l-container__company__img">
                                         <img src="./assets/img/common/user-icon.png" alt="user-icon">
-                                        <span class="l-container__user__dot"></span>
+                                        <span class="l-container__company__dot"></span>
                                     </div>
-                                    <div class="l-container__user__status">
-                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
-                                        <div class="l-container__user__center">
-                                            <p class="l-container__user__label">学生</p>
-                                            <p class="l-container__user__faculty">経済学部</p>
-                                            <p class="l-container__user__department">経済学科</p>
-                                        </div>
+                                    <div class="l-container__company__status">
+                                        <p class="l-container__company__name">株式会社〇〇〇〇</p>
                                     </div>
                                 </div>
-                                <div class="l-container__user__bottom">
-                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
-                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                <div class="l-container__company__bottom">
+                                    <div class="l-container__company__arrow">
+                                        <img src="./assets/img/common/arrow-white.png" alt="side-arrow">
+                                    </div>
                                 </div>
                             </li>
-                            <li class="l-container__user">
-                                <div class="l-container__user__top">
-                                    <div class="l-container__user__img">
+                            <li class="l-container__company">
+                                <div class="l-container__company__top">
+                                    <div class="l-container__company__img">
                                         <img src="./assets/img/common/user-icon.png" alt="user-icon">
-                                        <span class="l-container__user__dot"></span>
+                                        <span class="l-container__company__dot"></span>
                                     </div>
-                                    <div class="l-container__user__status">
-                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
-                                        <div class="l-container__user__center">
-                                            <p class="l-container__user__label">学生</p>
-                                            <p class="l-container__user__faculty">経済学部</p>
-                                            <p class="l-container__user__department">経済学科</p>
-                                        </div>
+                                    <div class="l-container__company__status">
+                                        <p class="l-container__company__name">株式会社〇〇〇〇</p>
                                     </div>
                                 </div>
-                                <div class="l-container__user__bottom">
-                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
-                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                <div class="l-container__company__bottom">
+                                    <div class="l-container__company__arrow">
+                                        <img src="./assets/img/common/arrow-white.png" alt="side-arrow">
+                                    </div>
                                 </div>
                             </li>
-                            <li class="l-container__user">
-                                <div class="l-container__user__top">
-                                    <div class="l-container__user__img">
+                            <li class="l-container__company">
+                                <div class="l-container__company__top">
+                                    <div class="l-container__company__img">
                                         <img src="./assets/img/common/user-icon.png" alt="user-icon">
-                                        <span class="l-container__user__dot"></span>
+                                        <span class="l-container__company__dot"></span>
                                     </div>
-                                    <div class="l-container__user__status">
-                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
-                                        <div class="l-container__user__center">
-                                            <p class="l-container__user__label">学生</p>
-                                            <p class="l-container__user__faculty">経済学部</p>
-                                            <p class="l-container__user__department">経済学科</p>
-                                        </div>
+                                    <div class="l-container__company__status">
+                                        <p class="l-container__company__name">株式会社〇〇〇〇</p>
                                     </div>
                                 </div>
-                                <div class="l-container__user__bottom">
-                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
-                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                <div class="l-container__company__bottom">
+                                    <div class="l-container__company__arrow">
+                                        <img src="./assets/img/common/arrow-white.png" alt="side-arrow">
+                                    </div>
                                 </div>
                             </li>
-                            <li class="l-container__user">
-                                <div class="l-container__user__top">
-                                    <div class="l-container__user__img">
+                            <li class="l-container__company">
+                                <div class="l-container__company__top">
+                                    <div class="l-container__company__img">
                                         <img src="./assets/img/common/user-icon.png" alt="user-icon">
-                                        <span class="l-container__user__dot"></span>
+                                        <span class="l-container__company__dot"></span>
                                     </div>
-                                    <div class="l-container__user__status">
-                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
-                                        <div class="l-container__user__center">
-                                            <p class="l-container__user__label">学生</p>
-                                            <p class="l-container__user__faculty">経済学部</p>
-                                            <p class="l-container__user__department">経済学科</p>
-                                        </div>
+                                    <div class="l-container__company__status">
+                                        <p class="l-container__company__name">株式会社〇〇〇〇</p>
                                     </div>
                                 </div>
-                                <div class="l-container__user__bottom">
-                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
-                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                <div class="l-container__company__bottom">
+                                    <div class="l-container__company__arrow">
+                                        <img src="./assets/img/common/arrow-white.png" alt="side-arrow">
+                                    </div>
                                 </div>
                             </li>
-                            <li class="l-container__user">
-                                <div class="l-container__user__top">
-                                    <div class="l-container__user__img">
+                            <li class="l-container__company">
+                                <div class="l-container__company__top">
+                                    <div class="l-container__company__img">
                                         <img src="./assets/img/common/user-icon.png" alt="user-icon">
-                                        <span class="l-container__user__dot"></span>
+                                        <span class="l-container__company__dot"></span>
                                     </div>
-                                    <div class="l-container__user__status">
-                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
-                                        <div class="l-container__user__center">
-                                            <p class="l-container__user__label">学生</p>
-                                            <p class="l-container__user__faculty">経済学部</p>
-                                            <p class="l-container__user__department">経済学科</p>
-                                        </div>
+                                    <div class="l-container__company__status">
+                                        <p class="l-container__company__name">株式会社〇〇〇〇</p>
                                     </div>
                                 </div>
-                                <div class="l-container__user__bottom">
-                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
-                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                <div class="l-container__company__bottom">
+                                    <div class="l-container__company__arrow">
+                                        <img src="./assets/img/common/arrow-white.png" alt="side-arrow">
+                                    </div>
                                 </div>
                             </li>
-                            <a href="#" class="l-container__side__button">一覧を見る<img src="./assets/img/common/side-archive.png" alt="side-archive"></a>
+                            <a href="#" class="l-container__company__button">一覧を見る<img src="./assets/img/common/side-archive.png" alt="side-archive"></a>
                         </ul>
-                    </div><!-- オファーしているユーザー -->
-                    
-                    <!-- 応募が来ているユーザー -->
-                    <div class="l-container__side__content pc-on">
-                        <p class="l-container__side__title"><img src="./assets/img/common/side-file.png" alt="side-list" class="offer">応募が来ているユーザー</p>
+                    </div><!-- オファーリスト -->
+
+                    <!-- 応募した企業 -->
+                    <div class="l-container__side__content">
+                        <p class="l-container__side__title"><img src="./assets/img/common/side-file.png" alt="side-list" class="content">応募した企業</p>
                         <ul class="l-container__side__list">
-                            <li class="l-container__user">
-                                <div class="l-container__user__top">
-                                    <div class="l-container__user__img">
+                            <li class="l-container__company">
+                                <div class="l-container__company__top">
+                                    <div class="l-container__company__img">
                                         <img src="./assets/img/common/user-icon.png" alt="user-icon">
-                                        <span class="l-container__user__dot"></span>
+                                        <span class="l-container__company__dot"></span>
                                     </div>
-                                    <div class="l-container__user__status">
-                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
-                                        <div class="l-container__user__center">
-                                            <p class="l-container__user__label">学生</p>
-                                            <p class="l-container__user__faculty">経済学部</p>
-                                            <p class="l-container__user__department">経済学科</p>
-                                        </div>
+                                    <div class="l-container__company__status">
+                                        <p class="l-container__company__name">株式会社〇〇〇〇</p>
                                     </div>
                                 </div>
-                                <div class="l-container__user__bottom">
-                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
-                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                <div class="l-container__company__bottom">
+                                    <div class="l-container__company__arrow">
+                                        <img src="./assets/img/common/arrow-white.png" alt="side-arrow">
+                                    </div>
                                 </div>
                             </li>
-                            <li class="l-container__user">
-                                <div class="l-container__user__top">
-                                    <div class="l-container__user__img">
+                            <li class="l-container__company">
+                                <div class="l-container__company__top">
+                                    <div class="l-container__company__img">
                                         <img src="./assets/img/common/user-icon.png" alt="user-icon">
-                                        <span class="l-container__user__dot"></span>
+                                        <span class="l-container__company__dot"></span>
                                     </div>
-                                    <div class="l-container__user__status">
-                                        <p class="l-container__user__name">山田太郎<span>様</span></p>
-                                        <div class="l-container__user__center">
-                                            <p class="l-container__user__label">学生</p>
-                                            <p class="l-container__user__faculty">経済学部</p>
-                                            <p class="l-container__user__department">経済学科</p>
-                                        </div>
+                                    <div class="l-container__company__status">
+                                        <p class="l-container__company__name">株式会社〇〇〇〇</p>
                                     </div>
                                 </div>
-                                <div class="l-container__user__bottom">
-                                    <a href="#" class="l-container__user__button l-container__user__button--blue">メッセージ</a>
-                                    <a href="#" class="l-container__user__button l-container__user__button--white">詳細を見る</a>
+                                <div class="l-container__company__bottom">
+                                    <div class="l-container__company__arrow">
+                                        <img src="./assets/img/common/arrow-white.png" alt="side-arrow">
+                                    </div>
                                 </div>
                             </li>
-                            <a href="#" class="l-container__side__button">一覧を見る<img src="./assets/img/common/side-archive.png" alt="side-archive"></a>
+                            <li class="l-container__company">
+                                <div class="l-container__company__top">
+                                    <div class="l-container__company__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__company__dot"></span>
+                                    </div>
+                                    <div class="l-container__company__status">
+                                        <p class="l-container__company__name">株式会社〇〇〇〇</p>
+                                    </div>
+                                </div>
+                                <div class="l-container__company__bottom">
+                                    <div class="l-container__company__arrow">
+                                        <img src="./assets/img/common/arrow-white.png" alt="side-arrow">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="l-container__company">
+                                <div class="l-container__company__top">
+                                    <div class="l-container__company__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__company__dot"></span>
+                                    </div>
+                                    <div class="l-container__company__status">
+                                        <p class="l-container__company__name">株式会社〇〇〇〇</p>
+                                    </div>
+                                </div>
+                                <div class="l-container__company__bottom">
+                                    <div class="l-container__company__arrow">
+                                        <img src="./assets/img/common/arrow-white.png" alt="side-arrow">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="l-container__company">
+                                <div class="l-container__company__top">
+                                    <div class="l-container__company__img">
+                                        <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                                        <span class="l-container__company__dot"></span>
+                                    </div>
+                                    <div class="l-container__company__status">
+                                        <p class="l-container__company__name">株式会社〇〇〇〇</p>
+                                    </div>
+                                </div>
+                                <div class="l-container__company__bottom">
+                                    <div class="l-container__company__arrow">
+                                        <img src="./assets/img/common/arrow-white.png" alt="side-arrow">
+                                    </div>
+                                </div>
+                            </li>
+                            <a href="#" class="l-container__company__button">一覧を見る<img src="./assets/img/common/side-archive.png" alt="side-archive"></a>
                         </ul>
-                    </div><!-- 応募が来ているユーザー -->
+                    </div><!-- 応募した企業 -->
 
                 </aside>
             </div>

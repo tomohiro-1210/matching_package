@@ -1,13 +1,16 @@
 .p-setting {
-    // 希望条件
-    &__hope {
-        display: flex;
-        align-items: flex-start;
-        justify-content: left;
+    // 設定リスト
+    &__lists {
         margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-top: 38px;
         &__name {
             width: 20%;
-            margin-right: 20px;
+            margin-right: 30px;
             font-family: "Noto Sans JP";
             font-weight: bold;
             font-size: 18px;
@@ -15,25 +18,107 @@
             text-align: left;
             color: #111;
         }
-        &__lists {
-            width: calc(80% - 20px);
+        &__content {
+            width: calc(80% - 30px);
         }
-        &__list {
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            flex-wrap: wrap;
-        }
-        &__list:not(:last-child){
-            margin-bottom: 10px;
-        }
-        &__number {
+        &__text {
             font-weight: normal;
             font-size: 16px;
             letter-spacing: 0.05em;
             line-height: 30px;
             text-align: left;
-            color: #111;
+            color: #111;            
+        }
+        &__content--flex {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        &__column{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            input{
+                padding: 15px 20px;
+                width: calc(100% - 40px);
+                max-width: 500px;
+                border: solid 1px #0489C6;
+                border-radius: 10px;
+            }
+
+        }
+        &__column.--2col {
+            width: calc(50% - 15px);
+            margin-right: 30px;
+            label{
+                font-weight: normal;
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                line-height: 30px;
+                text-align: left;
+                color: #111;
+                margin-right: 10px;
+            }
+            input{
+                padding: 15px 20px;
+                width: calc(100% - 40px);
+                border: solid 1px #0489C6;
+                border-radius: 10px;
+            }
+        }
+        &__column.--2col:last-child{
+            margin-right: 0;
+        }
+        &__column.--4col {
+            width: calc(25% - 15px);
+        }
+        &__column.--radio{
+            input{
+                margin-right: 10px;
+                padding: 5px;
+                width: fit-content;
+                border: solid 1px #0489C6;
+            }
+            label{
+                margin-right: 20px;
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                line-height: 30px;
+                text-align: left;
+                color: #111;
+                white-space: nowrap;
+            }
+            label:last-child{
+                margin-right: 0;
+            }
+        }
+        &__column.--year{
+            max-width: 240px;
+            p{
+                font-family: "Noto Sans JP";
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                line-height: 30px;
+                text-align: left;
+                color: #111;
+                margin-left: 10px;
+            }
+        }
+        &__column.--month{
+            max-width: 120px;
+            margin-left: 20px;
+            p{
+                font-family: "Noto Sans JP";
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                line-height: 30px;
+                text-align: left;
+                color: #111;
+                margin-left: 10px;
+            }
 
         }
         &__selectbox {
@@ -71,15 +156,199 @@
             font-weight: bold;
             min-width: 0;
             width: 100% !important;
-            height: 2.8em;
-            padding: .4em calc(.8em + 30px) .4em .8em;
+            padding: 15px 20px;
             border: 1px solid #a5bacc;
             border-radius: 3px;
             background-color: #fff;
             color: #333333;
-            font-size: 1em;
             cursor: pointer;
         }
+    }
+    &__list.--top{
+        align-items: flex-start;
+    }
+        
+    // 名前・プロフィール写真
+    &__profile {
+        // プロフィール写真
+        &__top {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            padding-bottom: 30px;
+            border-bottom: dotted 2px #AEBBC7;
+        }
+        &__left {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-right: 87px;
+        }
+        &__thumbnail {
+            width: 130px;
+            height: 130px;
+            margin-right: 20px;
+        }
+        &__text--large {
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 0.05em;
+            line-height: 30px;
+            text-align: left;
+            color: #3b4043;
+            margin-bottom: 20px;            
+        }
+        &__text--little {
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            line-height: 26px;
+            text-align: left;
+            color: #3b4043;            
+        }
+        &__right {
+        }
+        &__button {
+            padding: 10px 30px;
+            border-radius: 30px;
+            background-color: #0489C6;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            line-height: 26px;
+            text-align: left;
+            color: #fff;
+            border: solid 1px #4893C6;
+            width: fit-content;
+            display: inline-block;
+        }
+        &__delete {
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: #333;
+            line-height: 29px;
+            width: 29px;
+            height: 29px;
+            margin-left: 10px;
+            background-color: #CCCCCC;
+            display: inline-block;
+            border-radius: 29px;
+        }
+        &__caution {
+            font-family: "Noto Sans JP";
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            line-height: 22px;
+            text-align: left;
+            color: #3b4043;
+            margin-top: 20px;
+        }
+    }
+   
+    // 希望条件
+    &__hope {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-bottom: 30px;
+        &__name {
+            width: 25%;
+            margin-right: 20px;
+            font-family: "Noto Sans JP";
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #111;
+            white-space: nowrap;
+        }
+        &__lists{
+            width: 75%;
+        }
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            flex-wrap: wrap;
+            input{
+                padding: 15px 20px;
+                width: calc(100% - 60px - 140px);
+                border: solid 1px #0489C6;
+                border-radius: 10px;
+                margin-left: 20px;
+            }
+        }
+        &__list:not(:last-child){
+            margin-bottom: 10px;
+        }
+        &__number {
+            width: 120px;
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            line-height: 30px;
+            text-align: left;
+            color: #111;
+
+        }
+        &__input{
+            width: 80%;
+            input{
+                padding: 15px 20px;
+                width: calc(100% - 42px) !important;
+                border: solid 1px #0489C6;
+                border-radius: 10px;
+                margin-left: 0px;
+            }
+        }
+        &__selectbox {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 100% !important;
+            &--short{
+                max-width: 320px;
+                margin-left: 20px;
+            }
+            &--long{
+                max-width: 100%;
+                margin-top: 5px;
+            }
+            &--solo{
+                max-width: 320px;
+                margin-left: 0;
+            }
+        }
+        &__selectbox::after {
+            position: absolute;
+            right: 15px;
+            top: 35%;
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+            border-bottom: solid 3px #0489C6;
+            border-right: solid 3px #0489C6;
+            content: '';
+            pointer-events: none;
+        }
+        &__selectbox select {
+            appearance: none;
+            font-weight: bold;
+            min-width: 0;
+            width: 100% !important;
+            padding: 15px 20px;
+            border: 1px solid #a5bacc;
+            border-radius: 10px;
+            background-color: #fff;
+            color: #333333;
+            cursor: pointer;
+        }
+    }
+    &__hope.--top{
+        align-items: flex-start;
     }
     
     // 職歴
@@ -374,6 +643,33 @@
         }
     
     }
+
+    // ボタン
+    &__button{
+        display: flex;
+        &__list{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            .percent{
+                margin-left: 20px;
+            }
+        }
+        &__list:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+    &__button.c-button{
+        width: 260px;
+        white-space: nowrap;
+        margin: 0 20px 0 0;
+    }
+    &__button.c-button.--short{
+        width: 210px;
+        white-space: nowrap;
+        margin: 0 20px 0 0;
+    }
+
 }
 @media screen and (max-width:1200px) {
     .p-setting{
@@ -409,6 +705,113 @@
 
 @media screen and (max-width:1024px) {
     .p-setting{
+        // 希望条件
+        &__hope {
+            display: block;
+            align-items: flex-start;
+            justify-content: left;
+            margin-bottom: 30px;
+            &__name {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            &__lists {
+                width: 100%;
+            }
+            &__input{
+                width: 100%;
+            }
+            &__list{
+                input{
+                    width: 100%;
+                }
+            }
+            &__selectbox {
+                display: flex;
+                align-items: center;
+                position: relative;
+                width: 100% !important;
+                &--short,
+                &--long,
+                &--solo{
+                    max-width: 100%;
+                    margin-top: 5px;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        // 名前・プロフィール写真
+        &__profile {
+            // プロフィール写真
+            &__top {
+                display: block;
+                align-items: center;
+                justify-content: left;
+                padding-bottom: 20px;
+                border-bottom: dotted 2px #AEBBC7;
+            }
+            &__left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+            &__thumbnail {
+                width: 100px;
+                height: 100px;
+                margin-right: 30px;
+            }
+            &__text--large {
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                line-height: 20px;
+                margin-bottom: 10px;            
+            }
+            &__text--little {
+                font-size: 12px;
+                line-height: 12px;           
+            }
+            &__right {
+                text-align: center;
+            }
+            &__caution {
+                text-align: center;
+            }
+        }
+
+        // 設定リスト
+        &__lists {
+            margin-bottom: 25px;
+        }
+        &__list {
+            display: block;
+            margin-top: 30px;
+            &__name {
+                width: 100%;
+                margin-right: 0px;
+                margin-bottom: 10px;
+            }
+            &__content {
+                width: 100%;
+            }
+            &__column{
+                input{
+                    padding: 10px;
+                    width: calc(100% - 20px);
+                }
+    
+            }
+            &__column.--2col {
+                width: calc(50% - 10px);
+                margin-right: 10px;
+            }
+            &__selectbox select {
+                padding: 10px;
+            }
+        }   
+
         // 職歴
         &__job {
             &__title{
@@ -524,49 +927,61 @@
                 width: 100% !important;
             }
         }
+        
+        
         // ボタン
-        &__buttons {
-            margin-top: 50px;
-        }
-        &__button {    
-            width: 290px;
-            height: 60px;
-            border-radius: 290px;
-            margin: 0 auto;
-            position: relative; 
-            a{        
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 16px;
+        &__button{
+            display: flex;
+            &__list{
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                .percent{
+                    margin-left: 20px;
+                }
+            }
+            &__list:not(:last-child){
+                margin-bottom: 20px;
             }
         }
-        &__button--blue {
-            background-color: #4893C6;
-            border: solid 2px #fff;
-            margin-bottom: 30px;
-            box-shadow: 0px 1px 8px rgba($color: #000000, $alpha: 0.5);
-            a{
-                color: #fff;
-                font-weight: bold;
-            }
+        &__button.c-button{
+            width: 260px;
+            white-space: nowrap;
+            margin: 0 20px 0 0;
         }
-        &__button--blue:hover {
-            background-color: #fff;
-            margin-bottom: 30px;
-            a{
-                color: #4893C6;
-            }
-        }
-        &__button--gray {
-            background-color: #EFEFEF;
-            a{
-                color: #111111;
-                font-weight: normal;
-            }
+        &__button.c-button.--short{
+            width: 210px;
+            white-space: nowrap;
+            margin: 0 20px 0 0;
         }
         
+        }
+
+        // ボタン
+        &__button{
+            display: flex;
+            &__list{
+                display: block;
+                .percent{
+                    margin-left: 20px;
+                }
+                .l-container__side__input{
+                    justify-content: center;
+                }
+            }
+            &__list:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+        &__button.c-button{
+            width: 260px;
+            white-space: nowrap;
+            margin: 0 auto 0;
+        }
+        &__button.c-button.--short{
+            width: 210px;
+            white-space: nowrap;
+            margin: 0 auto 0;
         }
         
     }
@@ -574,33 +989,6 @@
 
 @media screen and (max-width:768px) {
     .p-setting {
-        // 希望条件
-        &__hope {
-            display: block;
-            align-items: flex-start;
-            justify-content: left;
-            margin-bottom: 30px;
-            &__name {
-                width: 100%;
-                margin-bottom: 10px;
-            }
-            &__lists {
-                width: 100%;
-            }
-            &__selectbox {
-                display: flex;
-                align-items: center;
-                position: relative;
-                width: 100% !important;
-                &--short,
-                &--long,
-                &--solo{
-                    max-width: 100%;
-                    margin-top: 5px;
-                    margin-left: 0;
-                }
-            }
-        }
                 
         // 語学・資格情報
         &__language {

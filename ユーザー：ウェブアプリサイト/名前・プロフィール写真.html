@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>就活マッチングサイト　お知らせ詳細</title>
+    <title>就活マッチングサイト　名前・プロフィール写真</title>
 </head>
 <body>
     <!-- header -->
@@ -43,7 +43,6 @@
     </header>
     <!-- /header -->
 
-    
     <!-- menu -->
     <div class="p-menu">
         <div class="p-menu__inner">
@@ -80,50 +79,174 @@
     <main>
         <div class="l-inner">
             <div class="l-container">
+                <!-- コンテンツ -->
                 <div class="l-container__main">
-                    <h1 class="c-secTitle--left">お知らせ</h1>
-                    <div class="p-news">
-                        <div class="p-news__single">
-                            <!-- 記事本体 -->
-                            <div class="p-news__single-top">
-                                <div class="p-news__flex">
-                                    <p class="p-news__date">2024.04.01</p>
-                                    <p class="p-news__label --news">運営会社からのお知らせ</p>
+                    <h1 class="c-secTitle--left" style="margin-bottom: 20px;">名前・プロフィール写真</h1>
+                    <!-- コンテンツ本体 -->
+                    <div class="l-container__inner">
+
+                        <!-- 名前・プロフィール写真 -->
+                        <div class="p-setting__profile">
+                            <div class="p-setting__profile__top">
+                                <div class="p-setting__profile__left">
+                                    <div class="p-setting__profile__thumbnail">
+                                        <img src="./assets/img/common/chat-icon.png" alt="chat-icon">
+                                    </div>
+                                    <div class="p-setting__profile">
+                                        <p class="p-setting__profile__text--large">プロフィール写真変更</p>
+                                        <p class="p-setting__profile__text--little">あなたの人柄が伝わる写真を選びましょう</p>
+                                    </div>
                                 </div>
-                                <p class="p-news__single-title">運営からの新着お知らせ運営からの新着お知らせ運営からの新着お知らせ運営からの新着お知らせ運…</p>
+                                <div class="p-setting__profile__right">
+                                    <div class="p-setting__profile__button">ファイルを選択</div>
+                                    <div class="p-setting__profile__delete">×</div>
+                                    <p class="p-setting__profile__caution">※アップロード容量：5 MB以下<br>※自動で正方形に切り取られます</p>
+                                </div>
                             </div>
-                            <p class="p-news__text"><span>強調協調</span>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <p class="p-news__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <p class="p-news__link"><a href="#">リンクテキスト</a></p>
-                            <p class="p-news__link"><a href="#">ダウンロードリンク（PDFなど）</a></p>
-                            <ul class="p-news__single__list">
-                                <li class="p-news__single__item">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
-                                <li class="p-news__single__item">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
-                                <li class="p-news__single__item">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</li>
+                            <!-- ユーザーIDなど -->
+                            <ul class="p-setting__lists">
+                                <!-- ユーザーID -->
+                                <li class="p-setting__list">
+                                    <p class="p-setting__list__name">ユーザーID</p>
+                                    <div class="p-setting__list__content">
+                                        <p class="p-setting__list__text">1234567</p>
+                                    </div>
+                                </li>
+                                <!-- お名前 -->
+                                <li class="p-setting__list">
+                                    <p class="p-setting__list__name">お名前</p>
+                                    <div class="p-setting__list__content p-setting__list__content--flex">
+                                        <div class="p-setting__list__column --2col">    
+                                            <label for="text">姓</label>
+                                            <input type="text" placeholder="お名前">
+                                        </div>
+                                        <div class="p-setting__list__column --2col">    
+                                            <label for="text">名</label>
+                                            <input type="text" placeholder="太郎">
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- フリガナ -->
+                                <li class="p-setting__list">
+                                    <p class="p-setting__list__name">フリガナ</p>
+                                    <div class="p-setting__list__content p-setting__list__content--flex">
+                                        <div class="p-setting__list__column --2col">    
+                                            <label for="text">姓</label>
+                                            <input type="text" placeholder="オナマエ">
+                                        </div>
+                                        <div class="p-setting__list__column --2col">    
+                                            <label for="text">名</label>
+                                            <input type="text" placeholder="タロウ">
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- 性別 -->
+                                <li class="p-setting__list">
+                                    <p class="p-setting__list__name">性別</p>
+                                    <div class="p-setting__list__content">
+                                        <div class="p-setting__list__column --radio">
+                                            <label for="text">
+                                                <input type="radio" name="性別" value="男性">男性
+                                            </label>
+                                            <label for="text">
+                                                <input type="radio" name="性別" value="女性">女性
+                                            </label>
+                                            <label for="text">
+                                                <input type="radio" name="性別" value="その他">その他
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- 生年月日 -->
+                                <li class="p-setting__list">
+                                    <p class="p-setting__list__name">生年月日</p>
+                                    <div class="p-setting__list__content">
+                                        <div class="p-setting__list__column --flex">
+                                            <div class="p-setting__list__column --year">    
+                                                <label class="p-setting__list__selectbox">
+                                                    <select>
+                                                        <option>1999（平成11年）</option>
+                                                        <option>選択リスト１</option>
+                                                        <option>選択リスト２</option>
+                                                    </select>
+                                                </label>
+                                                <p>年</p>
+                                            </div>
+                                            <div class="p-setting__list__column --month">    
+                                                <label class="p-setting__list__selectbox">
+                                                    <select>
+                                                        <option>12</option>
+                                                        <option>選択リスト１</option>
+                                                        <option>選択リスト２</option>
+                                                    </select>
+                                                </label>
+                                                <p>月</p>
+                                            </div>
+                                            <div class="p-setting__list__column --month">   
+                                                <label class="p-setting__list__selectbox">
+                                                    <select>
+                                                        <option>26</option>
+                                                        <option>選択リスト１</option>
+                                                        <option>選択リスト２</option>
+                                                    </select>
+                                                </label>
+                                                <p>日</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- 出身 -->
+                                <li class="p-setting__list">
+                                    <p class="p-setting__list__name">出身</p>
+                                    <div class="p-setting__list__content">
+                                        <div class="p-setting__list__column">
+                                            <input type="text" placeholder="例：兵庫県加古川市">
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- 就職活動状況 -->
+                                <li class="p-setting__list">
+                                    <p class="p-setting__list__name">就職活動状況</p>
+                                    <div class="p-setting__list__content">
+                                        <div class="p-setting__list__column --radio">
+                                            <label for="text">
+                                                <input type="radio" name="就職活動状況" value="準備中">準備中
+                                            </label>
+                                            <label for="text">
+                                                <input type="radio" name="就職活動状況" value="活動中">活動中
+                                            </label>
+                                            <label for="text">
+                                                <input type="radio" name="就職活動状況" value="活動終了">活動終了
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- 希望勤務地 -->
+                                <li class="p-setting__list --top">
+                                    <p class="p-setting__list__name">希望勤務地</p>
+                                    <div class="p-setting__list__content">
+                                        <ul class="p-setting__hope__lists">
+                                            <li class="p-setting__hope__list">
+                                                <p class="p-setting__hope__number">第一希望</p>
+                                                <input type="text">
+                                            </li>
+                                            <li class="p-setting__hope__list">
+                                                <p class="p-setting__hope__number">第二希望</p>
+                                                <input type="text">
+                                            </li>
+                                            <li class="p-setting__hope__list">
+                                                <p class="p-setting__hope__number">第三希望</p>
+                                                <input type="text">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
                             </ul>
-                            <div class="p-news__single__img">
-                                <img src="./assets/img/news/news-img.png" alt="news-img">
-                            </div>
+                            
                         </div>
-                        
-                            
-                            <!-- 次のページ -->
-                            <div class="c-page__list single-pager">
-                                <div class="c-page__item">
-                                    <a href="#"><img src="./assets/img/common/arrow-lite-blue.png" alt="news-arrow">前のお知らせへ</a>
-                                </div>
-                                <div class="c-page__item">
-                                    <!-- ボタン -->
-                                    <div class="p-news__single-button c-button pc-on"><a href="#">一覧へ</a></div>
-                                </div>
-                                <div class="c-page__item">
-                                    <a href="#">次のお知らせへ<img src="./assets/img/common/arrow-lite-blue.png" alt="news-arrow"></a>
-                                </div>
-                            </div>
-                            <!-- /次のページ -->
-                            
-                            <!-- ボタン -->
-                            <div class="p-news__single-button c-button sp-on"><a href="#">一覧へ</a></div>
+
+                        <!-- ボタン -->
+                        <div class="c-button lite-gratation"><a href="#">登録する</a></div>
                     </div>
                 </div>
                 <!-- サイドバー -->
