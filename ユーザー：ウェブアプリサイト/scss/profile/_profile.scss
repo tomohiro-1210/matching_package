@@ -31,9 +31,9 @@
         border-radius: 0 0 10px 10px;
 
     }
+
     // 学生データー
     &__status {
-        position: relative;
         margin-bottom: 35px;
         display: flex;
         align-items: center;
@@ -47,97 +47,46 @@
             border-radius: 50px;
         }
     }
-    &__date {
-        font-weight: normal;
-        font-size: 12px;
-        letter-spacing: 0.05em;
-        text-align: left;
-        color: #abc8e2;
-        margin-bottom: 12px;
-    }
-    &__name {
-        font-weight: bold;
-        font-size: 18px;
-        letter-spacing: 0.05em;
-        text-align: left;
-        color: #4893c6;
-    }
-    &__student {
-        &__top {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        &__label {
-            font-weight: bold;
-            font-size: 12px;
-            letter-spacing: 0.05em;
-            text-align: left;
-            color: #fff;
-            padding: 3px 5px;
-            background-color: #0489C6;
-        }
-        &__graduation,
-        &__gender {
+    &__company {
+        &__date {
             font-weight: normal;
             font-size: 12px;
             letter-spacing: 0.05em;
             text-align: left;
-            color: #104069;
-            margin-left: 10px;
-        }
-        &__school {
-            font-family: "Noto Sans JP";
-            font-weight: bold;
-            font-size: 24px;
-            letter-spacing: 0.05em;
-            text-align: left;
-            color: #4893c6;
+            color: #abc8e2;
             margin-bottom: 10px;
         }
-        &__bottom {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-        }
-        &__faculty,
-        &__course, 
-        &__userid {
-            font-family: "Noto Sans JP";
+        &__name {
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
             letter-spacing: 0.05em;
             text-align: left;
-        }
-        &__faculty {
             color: #0058a3;
+            margin-bottom: 10px;
         }
-        &__course {
-            color: #104069;
-            margin-left: 10px;
-        }
-        &__userid{
-            font-size: 16px;
-            color: #104069;
-            position: absolute;
-            top: 10%;
-            right: 11%;
-            transform: translate(50%, -50%);
-
+        &__pic {
+            font-weight: normal;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #888;
         }
     }
     // チャット
     &__chat {
         &__list {
             margin-bottom: 20px;
+            // ボタン
+            .p-profile__button.c-button.lite-gratation{
+                margin: 30px auto 0;
+            }
         }
         &__contain {
             padding: 30px;
             background-color: #EAF2F4;
             border: solid 1px rgba($color: #000000, $alpha: 0.0);
             border-radius: 5px;
-            &--student {
+            &--company {
                 background-color: #fff;
                 border: solid 1px #0358A3;
             }
@@ -240,51 +189,6 @@
             border-radius: 5px;
         }
     }
-    
-    // 診断結果
-    &__diagnosis {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 30px;
-        background-color: #EAF2F4;
-        margin-bottom: 30px;
-        &__type {
-            font-weight: bold;
-            letter-spacing: 0.05em;
-            color: #104069;
-            white-space: nowrap;
-            margin-right: 40px;
-        }
-        &__type--ja {
-            font-size: 16px;
-            text-align: center;
-        }
-        &__type--en {
-            font-size: 12px;
-            text-align: center;
-        }
-        &__text {
-            font-weight: normal;
-            font-size: 14px;
-            letter-spacing: 0.05em;
-            text-align: left;
-            color: #333;
-            line-height: 19px;
-            margin-right: 20px;
-        }
-        &__button {
-            padding: 3px 20px;
-            font-weight: bold;
-            font-size: 14px;
-            letter-spacing: 0.05em;
-            text-align: left;
-            color: #fff;
-            white-space: nowrap;
-            background-color: #4893C6;
-            border-radius: 15px;
-        }
-    }
 
     // プロフィール詳細
     &__detail {
@@ -298,7 +202,7 @@
             align-items: center;
         }
         &__list:not(:last-child) {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         &__name {
             margin-right: 10px;
@@ -316,7 +220,7 @@
             background-color: rgba($color: #000000, $alpha: 0.0);
         }
         &__text {
-            font-family: "Noto Sans JP";
+            width: calc(100% - 150px);
             font-weight: normal;
             font-size: 14px;
             line-height: 20px;
@@ -328,30 +232,126 @@
                 font-weight: bold;
                 margin-right: 10px;
             }
+            a{
+                font-weight: bold;
+                color: #0489C6;
+                text-decoration: underline;
+                text-decoration-color: #0489C6;
+            }
         }
-    }
-    
-    // 自己PR
-    &__pr {
-        border: solid 2px #104069;
-        margin-bottom: 30px;
-        padding: 20px 20px 50px;
-        &__title {
-            font-weight: bold;
-            font-size: 16px;
-            letter-spacing: 0.05em;
-            text-align: left;
-            color: #104069;
-            margin-bottom: 10px;
-        }
-        &__text {
+        &__offer{
             font-weight: normal;
             font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+    }
+
+    // お仕事内容
+    &__job-detail{
+        padding: 30px;
+        background-color: #F8F8F8;
+        border-radius: 5px;
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        line-height: 22px;
+        text-align: left;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    // 画像一覧
+    &__images {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    &__image {
+        width: calc(100% / 3 - 40px / 3);
+        height: fit-content;
+        margin-right: 20px;
+    }
+    &__image:nth-child(3n) {
+        margin-right: 0;
+    }
+    &__image:nth-child(n + 4) {
+        margin-top: 20px;
+    }
+
+        // 募集中のお仕事一覧
+    &__jobs{
+        margin-bottom: 30px;
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-weight: bold;
+            font-size: 18px;
             letter-spacing: 0.05em;
             text-align: left;
-            color: #333;
-            line-height: 19px;
+            color: #111;
+            margin-bottom: 20px;
+            img{
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+            }
         }
+        &__list {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            padding: 20px 60px 20px 30px; 
+            border-radius: 5px;
+            border: solid 1px #4893C6;
+            width: fit-content;
+            transition: all 0.3s;
+            margin-bottom: 20px;
+            box-shadow: 0px 1px 8px 0px rgba($color: #000000, $alpha: 0.2);
+            &__arrow {
+                width: 20px;
+                height: 20px;
+                margin-right: 18px;
+            }
+            &__number,
+            &__title {
+                font-weight: bold;
+                font-size: 14px;
+                letter-spacing: 0.05em;
+                line-height: 22px;
+                text-align: center;
+            }
+            &__number{
+                color: #104069;
+                margin-right: 21px;
+            }
+            &__title {
+                color: #111111;
+            }
+            &__number.--white {
+                color: #fff;
+                margin-right: 0;
+            }
+        }
+        &__list:hover{
+            background-color: #caddee;
+        }
+        &__list.--blue{
+            border: solid 1px #fff;
+            background-color: #4893C6;
+            margin-bottom: 0;
+        }
+        &__list.blue:hover{
+            background-color: #fff;
+            color: #0489C6;
+        }
+
     }
 
     // パーソナリティ情報
@@ -411,15 +411,25 @@
 
     // ボタン
     &__buttons{
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        .question-mark{
+            position: absolute;
+            top: 0;
+            right: -30px;
+        }
+    }
+    &__buttons.--flex{
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
     }
     &__button.c-button,
     &__button.c-button.gratation.left{
-        width: 320px;
+        width: 290px;
         height: 60px;
-        margin: 0 30px 0 0;
+        margin: 0 0px 0 0;
         box-shadow: 0px 1px 8px 0 rgba($color: #000000, $alpha: 0.2);
         a, p{
             white-space: nowrap;
@@ -428,13 +438,17 @@
     &__button.c-button{
         border: solid 2px #4893C6;
     }
+    &__button.c-button.left{
+        margin-left: 30px;
+        margin-top: 0;
+    }
     &__button.c-button:hover{
         a, p{
             color: #0489C6;
         }
     }
     &__buton.c-button:last-child{
-        margin-right: 0;
+        margin-top: 0;
     }
 
     // snsログイン
@@ -489,7 +503,7 @@
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
     .p-profile {
         &__tab {
             padding: 10px 20px;
@@ -501,45 +515,104 @@
     
         }
         &__status {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
         &__img {
             width: 80px;
             height: 80px;
             margin-right: 20px;
         }
-        &__student {
-        
-            &__top {
-                margin-bottom: 5px;
-            }
-            &__label {
-                padding: 3px 5px;
-                background-color: #0489C6;
-            }
-            &__graduation,
-            &__gender {
-                margin-left: 10px;
-            }
-            &__school {
-                font-size: 20px;
-                margin-bottom: 5px;
-            }
-            &__faculty,
-            &__course {
-                font-size: 14px;
-            }
-            &__course {
-                color: #104069;
-                margin-left: 10px;
-            }
-            &__userid{
-                font-size: 16px;
-                color: #104069;
-                position: static;
-                transform: translate(0, 0);
+
+        // お仕事内容
+        &__job-detail{
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    
+        // 画像一覧
+        &__images {
+            margin-bottom: 30px;
+        }
+        &__image {
+            width: calc(100% / 2 - 15px / 2);
+            margin-right: 15px;
+        }
+        &__image:nth-child(3n) {
+            margin-right: 15px;
+        }
+        &__image:nth-child(2n) {
+            margin-right: 0;
+        }
+        &__image:nth-child(n + 3) {
+            margin-top: 15px;
+        }
+    
+            // 募集中のお仕事一覧
+        &__jobs{
+            margin-bottom: 30px;
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                font-weight: bold;
+                font-size: 18px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                color: #111;
                 margin-bottom: 20px;
+                img{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 10px;
+                }
             }
+            &__list {
+                padding: 20px; 
+                &__arrow {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 15px;
+                }
+                &__number{
+                    color: #104069;
+                    margin-right: 15px;
+                }
+            }
+    
+        }
+
+        // ボタン
+        &__buttons.--flex{
+            display: block;
+            align-items: center;
+            justify-content: center;
+        }
+        &__button.c-button.left{
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+    
+    }
+}
+@media screen and (max-width:768px) {
+    .p-profile {
+        // タブ
+        &__tab {
+            padding: 10px 20px;
+            font-size: 14px;
+            margin-right: 15px;
+        }
+        &__content {
+            padding: 20px 20px 40px;
+    
+        }
+        &__status {
+            margin-bottom: 30px;
+        }
+        &__img {
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
         }
         // チャット
         &__chat {
@@ -589,39 +662,6 @@
                 height: 100px;
             }
         }
-        // 診断結果
-        &__diagnosis {
-            display: block;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            background-color: #EAF2F4;
-            margin-bottom: 20px;
-            &__type {
-                margin-right: 0px;
-                margin-bottom: 10px;
-            }
-            &__type--ja {
-                margin-bottom: 5px;
-                span{
-                    text-align: center;
-                }
-            }
-            &__text {
-                margin-right: 00px;
-                margin-bottom: 10px;
-            }
-            &__button {
-                width: fit-content;
-                margin: 0 auto;
-            }
-        }
-        
-        // 自己PR
-        &__pr {
-            margin-bottom: 20px;
-            padding: 10px 10px 30px;
-        }
 
         // パーソナリティ情報
        &__personality {
@@ -657,6 +697,12 @@
         // ボタン
         &__buttons{
             display: block;
+            .question-mark{
+                position: absolute;
+                top: 0;
+                right: -20px;
+                z-index: 100;
+            }
         }
         &__button.c-button,
         &__button.c-button.gratation.left{
@@ -719,12 +765,18 @@
             &__list:not(:last-child) {
                 margin-bottom: 10px;
             }
+            &__text{
+                width: 100%;
+            }
             &__name {
                 margin-right: auto;
                 margin-bottom: 5px;
             }
             &__name.--nobg.pc-on {
                 display: none;
+            }
+            &__offer{
+                text-align: left;
             }
         }
         

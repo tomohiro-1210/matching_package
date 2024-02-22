@@ -109,6 +109,11 @@ main {
   display: none;
 }
 
+.question-mark {
+  width: 20px;
+  height: 20px;
+}
+
 @media screen and (max-width: 920px) {
   main {
     margin-top: 60px;
@@ -4522,7 +4527,6 @@ main {
   border-radius: 0 0 10px 10px;
 }
 .p-profile__status {
-  position: relative;
   margin-bottom: 35px;
   display: flex;
   align-items: center;
@@ -4536,82 +4540,34 @@ main {
 .p-profile__img img {
   border-radius: 50px;
 }
-.p-profile__date {
+.p-profile__company__date {
   font-weight: normal;
   font-size: 12px;
   letter-spacing: 0.05em;
   text-align: left;
   color: #abc8e2;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
-.p-profile__name {
+.p-profile__company__name {
   font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.05em;
   text-align: left;
-  color: #4893c6;
-}
-.p-profile__student__top {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  color: #0058a3;
   margin-bottom: 10px;
 }
-.p-profile__student__label {
-  font-weight: bold;
-  font-size: 12px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: #fff;
-  padding: 3px 5px;
-  background-color: #0489C6;
-}
-.p-profile__student__graduation, .p-profile__student__gender {
+.p-profile__company__pic {
   font-weight: normal;
   font-size: 12px;
   letter-spacing: 0.05em;
   text-align: left;
-  color: #104069;
-  margin-left: 10px;
-}
-.p-profile__student__school {
-  font-family: "Noto Sans JP";
-  font-weight: bold;
-  font-size: 24px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: #4893c6;
-  margin-bottom: 10px;
-}
-.p-profile__student__bottom {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-.p-profile__student__faculty, .p-profile__student__course, .p-profile__student__userid {
-  font-family: "Noto Sans JP";
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  text-align: left;
-}
-.p-profile__student__faculty {
-  color: #0058a3;
-}
-.p-profile__student__course {
-  color: #104069;
-  margin-left: 10px;
-}
-.p-profile__student__userid {
-  font-size: 16px;
-  color: #104069;
-  position: absolute;
-  top: 10%;
-  right: 11%;
-  transform: translate(50%, -50%);
+  color: #888;
 }
 .p-profile__chat__list {
   margin-bottom: 20px;
+}
+.p-profile__chat__list .p-profile__button.c-button.lite-gratation {
+  margin: 30px auto 0;
 }
 .p-profile__chat__contain {
   padding: 30px;
@@ -4619,7 +4575,7 @@ main {
   border: solid 1px rgba(0, 0, 0, 0);
   border-radius: 5px;
 }
-.p-profile__chat__contain--student {
+.p-profile__chat__contain--company {
   background-color: #fff;
   border: solid 1px #0358A3;
 }
@@ -4724,49 +4680,6 @@ main {
   border: none;
   border-radius: 5px;
 }
-.p-profile__diagnosis {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 30px;
-  background-color: #EAF2F4;
-  margin-bottom: 30px;
-}
-.p-profile__diagnosis__type {
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  color: #104069;
-  white-space: nowrap;
-  margin-right: 40px;
-}
-.p-profile__diagnosis__type--ja {
-  font-size: 16px;
-  text-align: center;
-}
-.p-profile__diagnosis__type--en {
-  font-size: 12px;
-  text-align: center;
-}
-.p-profile__diagnosis__text {
-  font-weight: normal;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: #333;
-  line-height: 19px;
-  margin-right: 20px;
-}
-.p-profile__diagnosis__button {
-  padding: 3px 20px;
-  font-weight: bold;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: #fff;
-  white-space: nowrap;
-  background-color: #4893C6;
-  border-radius: 15px;
-}
 .p-profile__detail {
   margin-bottom: 30px;
 }
@@ -4776,7 +4689,7 @@ main {
   align-items: center;
 }
 .p-profile__detail__list:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .p-profile__detail__name {
   margin-right: 10px;
@@ -4794,7 +4707,7 @@ main {
   background-color: rgba(0, 0, 0, 0);
 }
 .p-profile__detail__text {
-  font-family: "Noto Sans JP";
+  width: calc(100% - 150px);
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
@@ -4807,26 +4720,121 @@ main {
   font-weight: bold;
   margin-right: 10px;
 }
-.p-profile__pr {
-  border: solid 2px #104069;
-  margin-bottom: 30px;
-  padding: 20px 20px 50px;
-}
-.p-profile__pr__title {
+.p-profile__detail__text a {
   font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: #104069;
-  margin-bottom: 10px;
+  color: #0489C6;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #0489C6;
+          text-decoration-color: #0489C6;
 }
-.p-profile__pr__text {
+.p-profile__detail__offer {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+.p-profile__job-detail {
+  padding: 30px;
+  background-color: #F8F8F8;
+  border-radius: 5px;
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.05em;
+  line-height: 22px;
   text-align: left;
   color: #333;
-  line-height: 19px;
+  margin-bottom: 30px;
+}
+.p-profile__images {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.p-profile__image {
+  width: calc(33.3333333333% - 13.3333333333px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 20px;
+}
+.p-profile__image:nth-child(3n) {
+  margin-right: 0;
+}
+.p-profile__image:nth-child(n+4) {
+  margin-top: 20px;
+}
+.p-profile__jobs {
+  margin-bottom: 30px;
+}
+.p-profile__jobs__title {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #111;
+  margin-bottom: 20px;
+}
+.p-profile__jobs__title img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.p-profile__jobs__list {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 20px 60px 20px 30px;
+  border-radius: 5px;
+  border: solid 1px #4893C6;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.p-profile__jobs__list__arrow {
+  width: 20px;
+  height: 20px;
+  margin-right: 18px;
+}
+.p-profile__jobs__list__number, .p-profile__jobs__list__title {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 22px;
+  text-align: center;
+}
+.p-profile__jobs__list__number {
+  color: #104069;
+  margin-right: 21px;
+}
+.p-profile__jobs__list__title {
+  color: #111111;
+}
+.p-profile__jobs__list__number.--white {
+  color: #fff;
+  margin-right: 0;
+}
+.p-profile__jobs__list:hover {
+  background-color: #caddee;
+}
+.p-profile__jobs__list.--blue {
+  border: solid 1px #fff;
+  background-color: #4893C6;
+  margin-bottom: 0;
+}
+.p-profile__jobs__list.blue:hover {
+  background-color: #fff;
+  color: #0489C6;
 }
 .p-profile__personality {
   margin-bottom: 50px;
@@ -4879,14 +4887,26 @@ main {
   margin-bottom: 25px;
 }
 .p-profile__buttons {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.p-profile__buttons .question-mark {
+  position: absolute;
+  top: 0;
+  right: -30px;
+}
+.p-profile__buttons.--flex {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .p-profile__button.c-button, .p-profile__button.c-button.gratation.left {
-  width: 320px;
+  width: 290px;
   height: 60px;
-  margin: 0 30px 0 0;
+  margin: 0 0px 0 0;
   box-shadow: 0px 1px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .p-profile__button.c-button a, .p-profile__button.c-button p, .p-profile__button.c-button.gratation.left a, .p-profile__button.c-button.gratation.left p {
@@ -4895,11 +4915,15 @@ main {
 .p-profile__button.c-button {
   border: solid 2px #4893C6;
 }
+.p-profile__button.c-button.left {
+  margin-left: 30px;
+  margin-top: 0;
+}
 .p-profile__button.c-button:hover a, .p-profile__button.c-button:hover p {
   color: #0489C6;
 }
 .p-profile__buton.c-button:last-child {
-  margin-right: 0;
+  margin-top: 0;
 }
 .p-profile__logins {
   display: flex;
@@ -4954,6 +4978,84 @@ main {
   border-radius: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .p-profile__tab {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .p-profile__content {
+    padding: 20px 20px 40px;
+  }
+  .p-profile__status {
+    margin-bottom: 30px;
+  }
+  .p-profile__img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  .p-profile__job-detail {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .p-profile__images {
+    margin-bottom: 30px;
+  }
+  .p-profile__image {
+    width: calc(50% - 7.5px);
+    margin-right: 15px;
+  }
+  .p-profile__image:nth-child(3n) {
+    margin-right: 15px;
+  }
+  .p-profile__image:nth-child(2n) {
+    margin-right: 0;
+  }
+  .p-profile__image:nth-child(n+3) {
+    margin-top: 15px;
+  }
+  .p-profile__jobs {
+    margin-bottom: 30px;
+  }
+  .p-profile__jobs__title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #111;
+    margin-bottom: 20px;
+  }
+  .p-profile__jobs__title img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  .p-profile__jobs__list {
+    padding: 20px;
+  }
+  .p-profile__jobs__list__arrow {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+  .p-profile__jobs__list__number {
+    color: #104069;
+    margin-right: 15px;
+  }
+  .p-profile__buttons.--flex {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-profile__button.c-button.left {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .p-profile__tab {
     padding: 10px 20px;
@@ -4964,40 +5066,12 @@ main {
     padding: 20px 20px 40px;
   }
   .p-profile__status {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   .p-profile__img {
     width: 80px;
     height: 80px;
     margin-right: 20px;
-  }
-  .p-profile__student__top {
-    margin-bottom: 5px;
-  }
-  .p-profile__student__label {
-    padding: 3px 5px;
-    background-color: #0489C6;
-  }
-  .p-profile__student__graduation, .p-profile__student__gender {
-    margin-left: 10px;
-  }
-  .p-profile__student__school {
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-  .p-profile__student__faculty, .p-profile__student__course {
-    font-size: 14px;
-  }
-  .p-profile__student__course {
-    color: #104069;
-    margin-left: 10px;
-  }
-  .p-profile__student__userid {
-    font-size: 16px;
-    color: #104069;
-    position: static;
-    transform: translate(0, 0);
-    margin-bottom: 20px;
   }
   .p-profile__chat__list {
     margin-bottom: 20px;
@@ -5044,38 +5118,6 @@ main {
     width: calc(100% - 40px);
     height: 100px;
   }
-  .p-profile__diagnosis {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #EAF2F4;
-    margin-bottom: 20px;
-  }
-  .p-profile__diagnosis__type {
-    margin-right: 0px;
-    margin-bottom: 10px;
-  }
-  .p-profile__diagnosis__type--ja {
-    margin-bottom: 5px;
-  }
-  .p-profile__diagnosis__type--ja span {
-    text-align: center;
-  }
-  .p-profile__diagnosis__text {
-    margin-right: 0px;
-    margin-bottom: 10px;
-  }
-  .p-profile__diagnosis__button {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0 auto;
-  }
-  .p-profile__pr {
-    margin-bottom: 20px;
-    padding: 10px 10px 30px;
-  }
   .p-profile__personality {
     margin-bottom: 40px;
   }
@@ -5106,6 +5148,12 @@ main {
   }
   .p-profile__buttons {
     display: block;
+  }
+  .p-profile__buttons .question-mark {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    z-index: 100;
   }
   .p-profile__button.c-button, .p-profile__button.c-button.gratation.left {
     width: 260px;
@@ -5160,12 +5208,18 @@ main {
   .p-profile__detail__list:not(:last-child) {
     margin-bottom: 10px;
   }
+  .p-profile__detail__text {
+    width: 100%;
+  }
   .p-profile__detail__name {
     margin-right: auto;
     margin-bottom: 5px;
   }
   .p-profile__detail__name.--nobg.pc-on {
     display: none;
+  }
+  .p-profile__detail__offer {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
