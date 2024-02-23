@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>カレンダーのモーダル</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="l-header">
+        <div class="l-header__wrap">
+            <p class="l-header__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-header__nav">
+                <div class="l-header__img">
+                    <img src="./assets/img/common/user-icon.png" alt="user-icon">
+                </div>
+                <p class="l-header__company"><span>株式会社〇〇〇グループ</span>  さん</p>
+                <p class="l-header__triangle">◀</p>
+                <div class="l-header__humburgur">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+        <!-- 日程調整モーダル -->
+        <div class="p-modal p-modal-calendar appear">
+            <div class="p-modal__content">
+                <div class="p-modal__close" data-closeButton>X</div>
+                <!-- inner -->
+                <div class="p-modal__inner">
+
+                            <!-- 企業データー -->
+                            <div class="p-modal-job__status">
+                                <a href="#" class="question-mark"><img src="./assets/img/setting/setting-question.png" alt="setting-question"></a>
+                                <div class="p-modal-job__img">
+                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                </div>
+                                <div class="p-modal-job__company">
+                                    <p class="p-modal-job__company__date">2023.04.01</p>
+                                    <p class="p-modal-job__company__name">株式会社ヤマモト</p>
+                                    <p class="p-modal-job__company__pic">人事部採用担当：佐藤太郎</p>
+                                </div>
+                            </div>
+                            <!-- /企業データー -->
+
+                            <!-- Googleカレンダー -->
+                            <div class="p-modal-calendar__date">
+                                <iframe src="https://calendar.google.com/calendar/embed?src=06c2063f9ce440fb9155994fdf9e3d6bea27f89fc3ba94a6d05a4c27f2ab02cc%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                            </div>
+                            <!-- /Googleカレンダー -->
+
+                         <!-- ボタン -->
+                        <div class="p-modal__buttons">
+                            <div class="p-modal__button p-modal__button--gray" data-closeButton>
+                                <a href="#">X　日程を確認して閉じる</a>
+                            </div>
+
+                        </div>
+                        <!-- ボタン -->
+                </div>
+                <!-- inner -->
+            </div>
+        </div>
+        <!-- 日程調整モーダル -->
+
+    <main>
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <div class="l-footer__container">
+            <p class="l-footer__title"><a href="#">就活マッチングサイト</a></p>
+            <nav class="l-footer__nav">
+                <ul class="l-footer__menu">
+                    <li class="l-footer__list"><a href="#">利用規約</a></li>
+                    <li class="l-footer__list"><a href="#">プライバシーポリシー</a></li>
+                    <li class="l-footer__list"><a href="#">運営会社</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- /footer -->
+</body>
+</html>

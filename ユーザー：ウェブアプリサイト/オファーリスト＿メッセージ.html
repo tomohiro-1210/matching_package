@@ -77,6 +77,47 @@
     <!-- /menu -->
 
     <main>
+        <!-- 日程調整モーダル -->
+        <div class="p-modal p-modal-calendar">
+            <div class="p-modal__content">
+                <div class="p-modal__close" data-closeButton>X</div>
+                <!-- inner -->
+                <div class="p-modal__inner">
+
+                            <!-- 企業データー -->
+                            <div class="p-modal-job__status">
+                                <a href="#" class="question-mark"><img src="./assets/img/setting/setting-question.png" alt="setting-question"></a>
+                                <div class="p-modal-job__img">
+                                    <img src="./assets/img/news/news-img.png" alt="profile-img">
+                                </div>
+                                <div class="p-modal-job__company">
+                                    <p class="p-modal-job__company__date">2023.04.01</p>
+                                    <p class="p-modal-job__company__name">株式会社ヤマモト</p>
+                                    <p class="p-modal-job__company__pic">人事部採用担当：佐藤太郎</p>
+                                </div>
+                            </div>
+                            <!-- /企業データー -->
+
+                            <!-- Googleカレンダー -->
+                            <div class="p-modal-calendar__date">
+                                <iframe src="https://calendar.google.com/calendar/embed?src=06c2063f9ce440fb9155994fdf9e3d6bea27f89fc3ba94a6d05a4c27f2ab02cc%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                            </div>
+                            <!-- /Googleカレンダー -->
+
+                         <!-- ボタン -->
+                        <div class="p-modal__buttons">
+                            <div class="p-modal__button p-modal__button--gray" data-closeButton>
+                                <a href="#">X　日程を確認して閉じる</a>
+                            </div>
+
+                        </div>
+                        <!-- ボタン -->
+                </div>
+                <!-- inner -->
+            </div>
+        </div>
+        <!-- 日程調整モーダル -->
+
         <div class="l-inner">
             <div class="l-container">
                 <div class="l-container__main">
@@ -177,7 +218,7 @@
                                                 是非ともオファーをお受けさせていただきたいと思います。よろしくお願いいたします。</p>
                                         </div>
                                     </li>
-                                    <li class="p-profile__chat__list">
+                                    <li class="p-profile__chat__list" data-calendar>
                                         <div class="p-profile__chat__contain p-profile__chat__contain--template">
                                             <div class="p-profile__chat__arrow">
                                                 <img src="./assets/img/common/arrow-lite-blue.png" alt="arrow-lite-blue">
@@ -205,7 +246,7 @@
                             <!-- ボタン -->
                             <div class="p-profile__buttons --flex">
                                 <div class="p-profile__button c-button gratation"><a href="#">メッセージを投稿する</a></div>
-                                <div class="p-profile__button c-button left"><p>面談の日程を調整する</p></div>
+                                <div class="p-profile__button c-button left" data-calendar><p>面談の日程を調整する</p></div>
                             </div>
                             <!-- /ボタン -->
                         </div>

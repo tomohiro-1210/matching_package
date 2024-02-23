@@ -1,4 +1,4 @@
-.p-modal-dashboard {
+.p-modal {
     display: none;
     background-color: rgba($color: #000000, $alpha: 0.7);
     position: fixed;
@@ -35,7 +35,7 @@
         transform: translate(50%, -50%);
     }
     &__inner {
-        padding: 75px;
+        padding: 0px 75px;
         margin: 0 auto;
     }
     &__search {
@@ -92,12 +92,486 @@
             content: '';
         }
     }
+    // ボタン
+    &__buttons {
+        margin-top: 50px;
+    }
+    &__buttons.mt-30{
+        margin-top: 30px;
+    }
+    &__buttons.--flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        input{
+            padding: 15px 20px;
+            margin-right: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 8px rgba($color: #000000, $alpha: 0.5);
+            border: solid 1px #4893C6;
+        }
+        .p-modal__button{
+            margin: 0;
+        }
+    }
+    &__button {  
+        white-space: nowrap;  
+        width: 290px;
+        height: 60px;
+        border-radius: 90px;
+        margin: 0 auto;
+        position: relative; 
+        a{        
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+        }
+    }
+    &__button--gratation {
+        background: linear-gradient(to right, #0489C6, #C1D2E8);
+        border: solid 2px #4893C6;
+        margin-bottom: 30px;
+        transition: all 0.3s;
+        box-shadow: 0px 1px 8px rgba($color: #000000, $alpha: 0.5);
+        a{
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    &__button--gratation:hover {
+        background: #fff;
+        margin-bottom: 30px;
+        a{
+            color: #4893C6;
+        }
+    }
+    &__button--blue{
+        background: #4893C6;
+        border: solid 2px #4893C6;
+        transition: all 0.3s;
+        margin-bottom: 30px;
+        box-shadow: 0px 1px 8px rgba($color: #000000, $alpha: 0.5);
+        a{
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    &__button--blue:hover{
+        background: #fff;
+        a{
+            color: #4893C6;
+        }
+    }
+    &__button--gray {
+        background-color: #EFEFEF;
+        a{
+            color: #111111;
+            font-weight: normal;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .p-modal {
+        width: calc(100vw - 40px);
+        height: calc(100% - 100px);
+        padding: 50px 20px;
+        &__content {
+            background-color: #fff;
+            border-radius: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+            padding: 50px 20px;
+        }
+        // 閉じるボタン
+        &__close {
+            width: 40px;
+            height: 40px;
+            font-size: 12px;
+            line-height: 40px;
+            right: 5%;
+        }
+        &__inner {
+            padding: 20px 0px;
+            margin: 0 auto;
+        }
+        &__search {
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #F1F1F1;
+            padding: 10px 20px;
+        }
+    
+    // ボタン
+    &__buttons {
+        margin-top: 30px;
+    }
+    &__button {    
+        width: 290px;
+        height: 60px;
+        border-radius: 290px;
+        margin: 0 auto;
+        position: relative; 
+        a{        
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+        }
+    }
+    &__buttons.--flex{
+        display: block;
+        text-align: center;
+        input{
+            margin: 0 auto 20px;
+            padding: 10px 15px;
+            margin-right: 0px;
+        }
+        .p-modal__button{
+            margin: 0 auto;
+        }
+    }
+    &__button--gratation {
+        background-color: #4893C6;
+        margin-bottom: 30px;
+        box-shadow: 0px 1px 8px rgba($color: #000000, $alpha: 0.5);
+        a{
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    
+    }
+}
+
+// お仕事内容モーダル
+.p-modal-job{
+    // 企業データー
+    &__status {
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        position: relative;
+        .question-mark{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    &__img {
+        width: 100px;
+        height: 100px;
+        margin-right: 30px;
+        img{
+            border-radius: 50px;
+        }
+    }
+    &__company {
+        &__date {
+            font-weight: normal;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #abc8e2;
+            margin-bottom: 10px;
+        }
+        &__name {
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #0489C6;
+            margin-bottom: 10px;
+        }
+        &__pic {
+            font-weight: normal;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #888;
+        }
+    }
+
+    // 募集タイトル
+    &__title{
+        line-height: 24px;
+        margin-bottom: 25px;
+        &--id,
+        &--name{
+            display: inline-block;
+        }
+        &--id{
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            line-height: 24px;
+            text-align: left;
+            color: #0489C6;
+            margin-right: 20px;
+        }
+        &--name{
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: 0.05em;
+            line-height: 24px;
+            text-align: left;
+            color: #2589d0;
+        }
+    }
+
+    // 企業詳細
+    &__detail {
+        margin-bottom: 50px;  
+        &__lists {
+            
+        }
+        &__list {
+            display: flex;
+            justify-content: left;
+            align-items: flex-start;
+        }
+        &__list:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &__name {
+            margin-right: 10px;
+            width: 150px;
+            height: 20px;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: #104069;
+            background-color: #EAF2F4;
+        }
+        &__name.--nobg {
+            background-color: rgba($color: #000000, $alpha: 0.0);
+        }
+        &__text {
+            width: calc(100% - 150px);
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #333;
+            span{
+                display: inline-block;
+                font-weight: bold;
+            }
+            a{
+                font-weight: bold;
+                color: #0489C6;
+                text-decoration: underline;
+                text-decoration-color: #0489C6;
+            }
+        }
+        &__offer{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+    }
+}
+.p-modal-job.appear{
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+// お仕事内容
+.p-modal-job{
+    // 企業データー
+    &__img {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+    }
+
+    // 募集タイトル
+    &__title{
+        margin-bottom: 20px;
+        &--id,
+        &--name{
+            display: inline-block;
+        }
+        &--id{
+            font-size: 14px;
+            margin-right: 0px;
+            line-height: 14px;
+            margin-bottom: 10px;
+        }
+        &--name{
+            font-size: 20px;
+        }
+    }
+
+    // 企業詳細
+    &__detail {
+        margin-bottom: 30px;  
+        &__lists {
+            
+        }
+        &__list {
+            display: block;
+        }
+        &__list:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &__name {
+            margin-right: 0px;
+            margin-bottom: 10px;
+        }
+        &__text {
+            width: 100%;
+        }
+    }
+}
+}
+
+// 日程確認モーダル
+.p-modal-calendar{
+    display: none;
+    &__date{
+        iframe{
+            width: 100%;
+            height: 600px;
+        }
+    }
+}
+.p-modal-calendar.appear{
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    // 日程確認モーダル
+.p-modal-calendar{
+    &__date{
+        iframe{
+            height: 400px;
+        }
+    }
+}
+}
+
+// 内定モーダル
+.p-modal-naitei {
+    display: none;
+    &__decide {
+        font-family: "Noto Sans JP";
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 38px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #4893C6;  
+        margin-bottom: 33px;      
+    }
+    &__status {
+        margin-bottom: 33px;
+    }
+    &__img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px;
+        img{
+            border-radius: 50px;
+        }
+    }
+    &__company__name {
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #4893C6;
+        margin-bottom: 10px;
+    }
+    &__company__pic {
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #888;        
+    }
+    &__input {
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #4893C6;   
+        margin-bottom: 35px;          
+    }
+    &__payment {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #111;    
+        margin-bottom: 40px;
+        .question-mark {
+            display: inline-block;
+            margin-left: 20px;
+        }
+    }
+}
+.p-modal-naitei.appear{
+    display: block;
+}
+@media screen and (max-width:768px) {
+    // 内定モーダル
+    .p-modal-naitei {
+        display: none;
+        &__decide {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 20px;      
+        }
+        &__status {
+            margin-bottom: 20px;
+        }
+        &__img {
+            width: 80px;
+            height: 80px;
+        }
+        &__company__name {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__company__pic {
+            font-size: 12px;     
+        }
+        &__input {
+            margin-bottom: 20px;          
+        }
+        &__payment { 
+            margin-bottom: 20px;
+            .question-mark {
+                display: inline-block;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+// 検索条件
+.p-modal-dashboard {
+    display: none;
     // カテゴリーラベル
     &__categorys {
         display: flex;
         justify-content: left;
         align-items: center;
-        margin: 30px 0;
+        flex-wrap: wrap;
+        margin: 30px 0 0;
     }
     &__category {
         font-weight: bold;
@@ -109,10 +583,17 @@
         padding: 3px 20px;
         border: solid 1px #4893c6;
         border-radius: 22px;
+        margin-bottom: 20px;
+        transition: all 0.3s;
     }
+    &__category.white,
     &__category:hover {
         color: #4893c6;
         background-color: #fff;
+    }
+    &__category.white:hover{
+        color: #fff;
+        background-color: #0489C6;
     }
     &__category:not(:last-child) {
         margin-right: 20px;
@@ -300,7 +781,7 @@
         }
     }
     &__language:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 23px;
     }
     // 趣味や特技など・人物像
     &__person {
@@ -363,52 +844,11 @@
             cursor: pointer;
         }
     }
-    // ボタン
-    &__buttons {
-        margin-top: 50px;
-    }
-    &__button {    
-        width: 290px;
-        height: 60px;
-        border-radius: 90px;
-        margin: 0 auto;
-        position: relative; 
-        a{        
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 16px;
-        }
-    }
-    &__button--blue {
-        background-color: #4893C6;
-        border: solid 2px #4893C6;
-        margin-bottom: 30px;
-        box-shadow: 0px 1px 8px rgba($color: #000000, $alpha: 0.5);
-        a{
-            color: #fff;
-            font-weight: bold;
-        }
-    }
-    &__button--blue:hover {
-        background-color: #fff;
-        margin-bottom: 30px;
-        a{
-            color: #4893C6;
-        }
-    }
-    &__button--gray {
-        background-color: #EFEFEF;
-        a{
-            color: #111111;
-            font-weight: normal;
-        }
-    }
 }
 .p-modal-dashboard.appear{
     display: block;
 }
+
 
 @media screen and (max-width:768px) {
     .p-modal-dashboard {
@@ -542,8 +982,6 @@
         }
         
     }
-
-
     // 趣味や特技など・人物像
     &__person {
         max-width: 500px;
@@ -640,185 +1078,4 @@
             font-weight: normal;
         }
     }
-    
-    }
-}
-}
-
-// プロフィール充実依頼項目
-.p-modal-profile {
-    display: none;
-    background-color: rgba($color: #000000, $alpha: 0.7);
-    position: fixed;
-    top: 0;
-    width: calc(100vw - 80px);
-    height: 100vh;
-    z-index: 99999;
-    padding: 50px 40px;
-    &__content {
-        background-color: #fff;
-        border-radius: 20px;
-        max-width: 1000px;
-        margin: 0 auto;
-        position: relative;
-        padding: 50px 0;
-    }
-    // 閉じるボタン
-    &__close {
-        width: 60px;
-        height: 60px;
-        font-weight: bold;
-        font-size: 18px;
-        letter-spacing: 0.05em;
-        text-align: center;
-        color: #fff;
-        line-height: 60px;
-        border-radius: 30px;
-        background-color: #333333;
-        border: solid 1px #fff;
-        position: absolute;
-        top: 0%;
-        right: 0%;
-        transform: translate(50%, -50%);
-    }
-    &__inner {
-        padding: 75px;
-        margin: 0 auto;
-    }
-    &__title {
-        font-weight: bold;
-        font-size: 18px;
-        letter-spacing: 0.05em;
-        text-align: center;
-        color: #111;
-        margin-bottom: 20px;
-    }
-    &__selectbox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        max-width: 600px;
-        width: calc(100% - 60px);
-        margin: 0 auto 20px;
-    }
-    &__selectbox::after {
-        position: absolute;
-        right: 15px;
-        width: 10px;
-        height: 7px;
-        background-color: #535353;
-        clip-path: polygon(0 0, 100% 0, 50% 100%);
-        content: '';
-        pointer-events: none;
-    }
-    &__selectbox select {
-        appearance: none;
-        min-width: 600px;
-        width: calc(100% - 40px);
-        font-weight: bold;
-        height: 2.8em;
-        padding: .4em .8em;
-        border: 1px solid #a5bacc;
-        border-radius: 3px;
-        background-color: #fff;
-        color: #333333;
-        font-size: 1em;
-        cursor: pointer;
-    }
-    // ボタン
-    &__buttons {
-        margin-top: 50px;
-    }
-    &__button {    
-        width: 310px;
-        height: 60px;
-        border-radius: 290px;
-        margin: 0 auto;
-        position: relative; 
-        a{        
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 16px;
-            white-space: nowrap;
-        }
-    }
-    &__button--blue {
-        background-color: #4893C6;
-        border: solid 2px #4893C6;
-        margin-bottom: 30px;
-        box-shadow: 0px 1px 8px rgba($color: #000000, $alpha: 0.5);
-        a{
-            color: #fff;
-            font-weight: bold;
-        }
-    }
-    &__button--blue:hover {
-        background-color: #fff;
-        margin-bottom: 30px;
-        a{
-            color: #4893C6;
-        }
-    }
-}
-.p-modal-profile.appear{
-    display: block;
-}
-
-@media screen and (max-width:768px) {
-    .p-modal-profile {
-        width: calc(100% - 40px);
-        height: 100vh;
-        padding: 50px 20px;
-        &__content {
-            width: 100%;
-            padding: 50px 0;
-        }
-        // 閉じるボタン
-        &__close {
-            width: 40px;
-            height: 40px;
-            font-size: 14px;
-            line-height: 40px;
-            border-radius: 30px;
-        }
-        &__inner {
-            padding: 50px 20px;
-            margin: 0 auto;
-        }
-        &__title {
-            font-size: 18px;
-        }
-        &__selectbox {
-            max-width: 600px;
-            width: calc(100% - 40px);
-            margin: 0 auto 20px;
-        }
-        &__selectbox select {
-            min-width: 200px;
-            width: 100%;
-        }
-        // ボタン
-        &__buttons {
-            margin-top: 50px;
-        }
-        &__button {   
-            max-width: 310px; 
-            width: 100%;
-            height: 60px;
-            border-radius: 90px;
-            margin: 0 auto;
-            position: relative; 
-            a{        
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 16px;
-                white-space: nowrap;
-            }
-        }
-    }
-}
+}}}

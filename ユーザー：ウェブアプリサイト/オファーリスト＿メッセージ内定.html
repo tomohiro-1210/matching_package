@@ -75,6 +75,56 @@
         </div>
     </div>
     <!-- /menu -->
+        <!-- 内定モーダル -->
+        <div class="p-modal p-modal-naitei">
+            <div class="p-modal__content">
+                <div class="p-modal__close" data-closeButton>X</div>
+                <!-- inner -->
+                <div class="p-modal__inner">
+
+                    <!-- 内定 -->
+                    <p class="p-modal-naitei__decide">おめでとうございます！<br>下記企業との内定が<br class="sp-on">決まりました！</p>
+                    <!-- /内定 -->
+
+                    <!-- 企業データー -->
+                    <div class="p-modal-naitei__status">
+                        <div class="p-modal-naitei__img">
+                            <img src="./assets/img/news/news-img.png" alt="profile-img">
+                        </div>
+                        <div class="p-modal-naitei__company">
+                            <p class="p-modal-naitei__company__name">株式会社ヤマモト</p>
+                            <p class="p-modal-naitei__company__pic">人事部採用担当：佐藤太郎</p>
+                        </div>
+                    </div>
+                    <!-- /企業データー -->
+
+                    <!-- 入力くださいませ -->
+                    <p class="p-modal-naitei__input">運営会社からお祝い金を<br class="sp-on">お渡ししますので<br>
+                        下記をご入力くださいませ</p>
+                    <p class="p-modal-naitei__payment">お祝い金はPayPayでの<br class="sp-on">お支払いとなります<a href="#" class="question-mark"><img src="./assets/img/setting/setting-question.png" alt="setting-question"></a></p>
+                    <!-- 入力くださいませ -->
+                    
+                    <!-- paypay ID登録 -->
+                        <div class="p-modal__buttons --flex mt-30">
+                            <input type="text" placeholder="PayPay ID">
+                            <div class="p-modal__button p-modal__button--gratation">
+                                <a href="#">PaypayIDを登録</a>
+                            </div>
+                        </div>
+                        <!-- paypay ID登録 -->
+                    
+                    <!-- ボタン -->
+                        <div class="p-modal__buttons mt-30">
+                            <div class="p-modal__button p-modal__button--gray" data-closeButton>
+                                <a href="#">X　　閉じる</a>
+                            </div>
+                        </div>
+                        <!-- ボタン -->
+                </div>
+                <!-- inner -->
+            </div>
+        </div>
+        <!-- 内定モーダル -->
 
     <main>
         <div class="l-inner">
@@ -177,7 +227,7 @@
                                                 是非ともオファーをお受けさせていただきたいと思います。よろしくお願いいたします。</p>
                                         </div>
                                         <!-- ボタン -->
-                                            <div class="p-profile__button c-button lite-gratation"><a href="#">この企業に就職する</a></div>
+                                            <div class="p-profile__button c-button lite-gratation" data-naitei><p>この企業に就職する</p></div>
                                         <!-- /ボタン -->
                                     </li>
                                     <li class="p-profile__chat__list">

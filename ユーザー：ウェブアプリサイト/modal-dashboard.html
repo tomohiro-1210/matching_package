@@ -1,6 +1,3 @@
-<!-- 
-    このhtmlフォルダはヘッダーやフッターなどの共通部分のみ集約しています。
- -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -9,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+    <title>ダッシュボードモーダル</title>
 </head>
 <body>
     <!-- header -->
@@ -32,12 +29,12 @@
     </header>
     <!-- /header -->
         <!-- 検索モーダル -->
-        <div class="p-modal-dashboard appear">
-            <div class="p-modal-dashboard__content">
-                <div class="p-modal-dashboard__close">X</div>
+        <div class="p-modal p-modal-dashboard appear">
+            <div class="p-modal__content">
+                <div class="p-modal__close" data-closeButton>X</div>
                 <!-- inner -->
-                <div class="p-modal-dashboard__inner">
-                    <div class="p-modal-dashboard__search">
+                <div class="p-modal__inner">
+                    <div class="p-modal__search">
                         <!-- 検索窓 -->
                         <form action="#" class="search-form-1">
                             <label>
@@ -46,397 +43,167 @@
                             </label>
                         </form><!-- /検索窓 -->
                     </div>
-                    <!-- カテゴリーのラベル -->
+                    <!-- オファーを受けているか受けていないか -->
                     <div class="p-modal-dashboard__categorys">
                         <p class="p-modal-dashboard__category">すべて</p>
-                        <p class="p-modal-dashboard__category">検討リスト</p>
-                        <p class="p-modal-dashboard__category">オファーしたユーザー</p>
-                        <p class="p-modal-dashboard__category">内定者</p>
-                    </div>
-                    <!-- status -->
+                        <p class="p-modal-dashboard__category white">オファーを受けている企業</p>
+                        <p class="p-modal-dashboard__category white">オファーを受けていない企業</p>
+                        <p class="p-modal-dashboard__category white">試用期間あり</p>
+                        <p class="p-modal-dashboard__category white">カテゴリー名</p>
+                        <p class="p-modal-dashboard__category white">カテゴリー名</p>
+                        <p class="p-modal-dashboard__category white">カテゴリー名</p>
+                        <p class="p-modal-dashboard__category white">カテゴリー名</p>
+                    </div>                    
+                    <!-- 勤務時間・休日日数 -->
                     <div class="p-modal-dashboard__status">
                         <ul class="p-modal-dashboard__status__list">
                             <li class="p-modal-dashboard__status__item">
-                                <p class="p-modal-dashboard__status__label">卒業大学</p>
+                                <p class="p-modal-dashboard__status__label">勤務開始時間</p>
                                 <label class="p-modal-dashboard__status__selectbox">
                                     <select>
-                                        <option>選択してください</option>
+                                        <option>6:30～</option>
                                         <option>選択リスト１</option>
                                         <option>選択リスト２</option>
                                     </select>
                                 </label>
                             </li>
                             <li class="p-modal-dashboard__status__item">
-                                <p class="p-modal-dashboard__status__label">部活・サークル</p>
+                                <p class="p-modal-dashboard__status__label">勤務終了時間</p>
                                 <label class="p-modal-dashboard__status__selectbox">
                                     <select>
-                                        <option>選択してください</option>
+                                        <option>～22:00</option>
                                         <option>選択リスト１</option>
                                         <option>選択リスト２</option>
                                     </select>
                                 </label>
                             </li>
                             <li class="p-modal-dashboard__status__item">
-                                <p class="p-modal-dashboard__status__label">志望業界</p>
+                                <p class="p-modal-dashboard__status__label">週休</p>
                                 <label class="p-modal-dashboard__status__selectbox">
                                     <select>
-                                        <option>選択してください</option>
+                                        <option>週休2日制（土・日）</option>
                                         <option>選択リスト１</option>
                                         <option>選択リスト２</option>
                                     </select>
                                 </label>
                             </li>
                             <li class="p-modal-dashboard__status__item">
-                                <p class="p-modal-dashboard__status__label">希望職種</p>
+                                <p class="p-modal-dashboard__status__label">年間休日日数</p>
                                 <label class="p-modal-dashboard__status__selectbox">
                                     <select>
-                                        <option>選択してください</option>
-                                        <option>選択リスト１</option>
-                                        <option>選択リスト２</option>
-                                    </select>
-                                </label>
-                            </li>
-                            <li class="p-modal-dashboard__status__item">
-                                <p class="p-modal-dashboard__status__label">企業選びの軸</p>
-                                <label class="p-modal-dashboard__status__selectbox">
-                                    <select>
-                                        <option>選択してください</option>
-                                        <option>選択リスト１</option>
-                                        <option>選択リスト２</option>
-                                    </select>
-                                </label>
-                            </li>
-                            <li class="p-modal-dashboard__status__item">
-                                <p class="p-modal-dashboard__status__label">スカウト設定</p>
-                                <label class="p-modal-dashboard__status__selectbox">
-                                    <select>
-                                        <option>選択してください</option>
+                                        <option>120日</option>
                                         <option>選択リスト１</option>
                                         <option>選択リスト２</option>
                                     </select>
                                 </label>
                             </li>
                         </ul>
-                        <!-- status -->
-                        <!-- 診断タイプ -->
-                        <div class="p-modal-dashboard__status__type">
-                            <p class="p-modal-dashboard__status__label">診断タイプ</p>
-                            <ul class="p-modal-dashboard__status__list">
-                                <div class="p-modal-dashboard__status__select">
-                                    <input type="checkbox" id="義理人情家タイプ（ＩＯＴＰ型）" name="義理人情家タイプ（ＩＯＴＰ型）" />
-                                    <label for="義理人情家タイプ（ＩＯＴＰ型）">義理人情家タイプ（ＩＯＴＰ型）</label>
-                                  </div>
-                                  <div class="p-modal-dashboard__status__select">
-                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
-                                    <label for="〇〇タイプ">〇〇タイプ</label>
-                                  </div>
-                                  <div class="p-modal-dashboard__status__select">
-                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
-                                    <label for="〇〇タイプ">〇〇タイプ</label>
-                                  </div>
-                                  <div class="p-modal-dashboard__status__select">
-                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
-                                    <label for="〇〇タイプ">〇〇タイプ</label>
-                                  </div>
-                                <div class="p-modal-dashboard__status__select">
-                                    <input type="checkbox" id="義理人情家タイプ（ＩＯＴＰ型）" name="義理人情家タイプ（ＩＯＴＰ型）" />
-                                    <label for="義理人情家タイプ（ＩＯＴＰ型）">義理人情家タイプ（ＩＯＴＰ型）</label>
-                                  </div>
-                                  <div class="p-modal-dashboard__status__select">
-                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
-                                    <label for="〇〇タイプ">〇〇タイプ</label>
-                                  </div>
-                                  <div class="p-modal-dashboard__status__select">
-                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
-                                    <label for="〇〇タイプ">〇〇タイプ</label>
-                                  </div>
-                                  <div class="p-modal-dashboard__status__select">
-                                    <input type="checkbox" id="〇〇タイプ" name="〇〇タイプ" />
-                                    <label for="〇〇タイプ">〇〇タイプ</label>
-                                  </div>
-                            </ul>
-                        </div>
-                        <!-- 診断タイプ -->
                     </div>
-                    <!-- status -->
-                        <!-- 語学 -->
-                        <div class="p-modal-dashboard__language">
-                            <p class="p-modal-dashboard__language__title">語学</p>
-                            <div class="p-modal-dashboard__language__inner">
-                                <p class="p-modal-dashboard__language__name">外国語資格1</p>
-                                <ul class="p-modal-dashboard__language__list">
-                                    <li class="p-modal-dashboard__language__item">
-                                        <p class="p-modal-dashboard__language__type">言語選択</p>
-                                        <label class="p-modal-dashboard__language__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </li>
-                                    <li class="p-modal-dashboard__language__item">
-                                        <p class="p-modal-dashboard__language__type">資格</p>
-                                        <label class="p-modal-dashboard__language__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </li>
-                                    <li class="p-modal-dashboard__language__item">
-                                        <p class="p-modal-dashboard__language__type">レベル</p>
-                                        <label class="p-modal-dashboard__language__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="p-modal-dashboard__language__button">追加する</div>
-                        </div>
-                        <!-- 語学 -->
-                        <!-- コンピュータ言語 -->
-                        <div class="p-modal-dashboard__language">
-                            <p class="p-modal-dashboard__language__title">コンピュータ言語</p>
-                            <div class="p-modal-dashboard__language__inner">
-                                <p class="p-modal-dashboard__language__name">コンピュータ言語開発経験1</p>
-                                <ul class="p-modal-dashboard__language__list">
-                                    <li class="p-modal-dashboard__language__item">
-                                        <p class="p-modal-dashboard__language__type">言語</p>
-                                        <label class="p-modal-dashboard__language__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </li>
-                                    <li class="p-modal-dashboard__language__item">
-                                        <p class="p-modal-dashboard__language__type">経験年数</p>
-                                        <label class="p-modal-dashboard__language__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </li>
-                                    <li class="p-modal-dashboard__language__item">
-                                        <p class="p-modal-dashboard__language__type">開発経験</p>
-                                        <label class="p-modal-dashboard__language__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="p-modal-dashboard__language__button">追加する</div>
-                        </div>
-                        <!-- コンピュータ言語 -->
-                        <!-- 趣味や特技など -->
-                        <div class="p-modal-dashboard__person">
-                            <div class="p-modal-dashboard__person__content">
-                                <p class="p-modal-dashboard__person__name">趣味や特技など</p>
-                                <div class="p-modal-dashboard__person__list">
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">大カテゴリ</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">小カテゴリ</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 趣味や特技など -->
-                        <!-- 人物像 -->
-                        <div class="p-modal-dashboard__person">
-                            <div class="p-modal-dashboard__person__content">
-                                <p class="p-modal-dashboard__person__name">人物像</p>
-                                <div class="p-modal-dashboard__person__list">
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">キャリア目標</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">アプローチ</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">価値観</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">優先</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">協力スタイル</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">意思決定スタイル</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">リスク志向</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">新しい問題に直面した時のアプローチ</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">知識習得のスタイル</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">成果を出す</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">目指す成功</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">得意なコミュニケーション</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">働く環境の好み</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">好きな取り組むプロジェクトの規模</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                    <div class="p-modal-dashboard__person__item">
-                                        <p class="p-modal-dashboard__person__type">チームで働く際に重要視している要素</p>
-                                        <label class="p-modal-dashboard__person__selectbox">
-                                            <select>
-                                                <option>選択してください</option>
-                                                <option>選択リスト１</option>
-                                                <option>選択リスト２</option>
-                                            </select>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 人物像 -->
-                        <div class="p-modal-dashboard__buttons">
-                            <div class="p-modal-dashboard__button p-modal-dashboard__button--blue">
+                    <!-- 休みの条件 -->
+                    <div class="p-modal-dashboard__categorys">
+                        <p class="p-modal-dashboard__category">祝日休み</p>
+                        <p class="p-modal-dashboard__category white">年末年始休み</p>
+                        <p class="p-modal-dashboard__category white">夏季休暇あり</p>
+                        <p class="p-modal-dashboard__category white">特別休暇あり</p>
+                    </div>                    
+                    <!-- 勤務時間・休日日数 -->
+                    <div class="p-modal-dashboard__status">
+                        <ul class="p-modal-dashboard__status__list">
+                            <li class="p-modal-dashboard__status__item">
+                                <p class="p-modal-dashboard__status__label">時間外労働</p>
+                                <label class="p-modal-dashboard__status__selectbox">
+                                    <select>
+                                        <option>有り、月平均20時間程度</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <!-- レイアウト用・消去しないでください -->
+                            <li class="p-modal-dashboard__status__item">
+                            </li>
+                            <!-- /レイアウト用・消去しないでください -->
+                            <li class="p-modal-dashboard__status__item">
+                                <p class="p-modal-dashboard__status__label">基本給（大学院卒）</p>
+                                <label class="p-modal-dashboard__status__selectbox">
+                                    <select>
+                                        <option>月給22万円～</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li class="p-modal-dashboard__status__item">
+                                <p class="p-modal-dashboard__status__label">基本給（大学卒）</p>
+                                <label class="p-modal-dashboard__status__selectbox">
+                                    <select>
+                                        <option>月給20万円～</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li class="p-modal-dashboard__status__item">
+                                <p class="p-modal-dashboard__status__label">基本給（短大卒）</p>
+                                <label class="p-modal-dashboard__status__selectbox">
+                                    <select>
+                                        <option>月給22万円～</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                            <li class="p-modal-dashboard__status__item">
+                                <p class="p-modal-dashboard__status__label">基本給（専門卒）</p>
+                                <label class="p-modal-dashboard__status__selectbox">
+                                    <select>
+                                        <option>月給22万円～</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                        </ul>                  
+                    </div>
+                    <!-- 福利厚生 -->
+                    <div class="p-modal-dashboard__categorys">
+                        <p class="p-modal-dashboard__category">健康保険あり</p>
+                        <p class="p-modal-dashboard__category white">厚生年金あり</p>
+                        <p class="p-modal-dashboard__category white">雇用保険あり</p>
+                        <p class="p-modal-dashboard__category white">労災保険あり</p>
+                        <p class="p-modal-dashboard__category">退職金制度あり</p>
+                        <p class="p-modal-dashboard__category white">財形貯蓄制度あり</p>
+                        <p class="p-modal-dashboard__category white">育児・介護休業制度あり</p>
+                        <p class="p-modal-dashboard__category white">慶弔見舞金制度あり</p>
+                        <p class="p-modal-dashboard__category">社員旅行あり</p>
+                    </div>             
+                    <!-- 受動喫煙防止 -->
+                    <div class="p-modal-dashboard__status">
+                        <ul class="p-modal-dashboard__status__list">
+                            <li class="p-modal-dashboard__status__item">
+                                <p class="p-modal-dashboard__status__label">受動喫煙防止</p>
+                                <label class="p-modal-dashboard__status__selectbox">
+                                    <select>
+                                        <option>屋内喫煙</option>
+                                        <option>選択リスト１</option>
+                                        <option>選択リスト２</option>
+                                    </select>
+                                </label>
+                            </li>
+                        </ul>                  
+                    </div>
+
+                    
+                    <!-- ボタン -->
+                        <div class="p-modal__buttons">
+                            <div class="p-modal__button p-modal__button--blue">
                                 <a href="#">上記の条件で検索</a>
                             </div>
-                            <div class="p-modal-dashboard__button p-modal-dashboard__button--gray">
+                            <div class="p-modal__button p-modal__button--gray" data-closeButton>
                                 <a href="#">X　　閉じる</a>
                             </div>
                         </div>
+                        <!-- ボタン -->
                 </div>
                 <!-- inner -->
             </div>
