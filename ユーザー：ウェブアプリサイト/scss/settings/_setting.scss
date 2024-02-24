@@ -164,6 +164,9 @@
             cursor: pointer;
         }
     }
+    &__list:first-child{
+        margin-top: 0;
+    }
     &__list.--top{
         align-items: flex-start;
     }
@@ -266,7 +269,7 @@
             white-space: nowrap;
         }
         &__lists{
-            width: 75%;
+            width: calc(75% + 30px);
         }
         &__list {
             display: flex;
@@ -419,7 +422,7 @@
                 letter-spacing: 0.05em;
                 line-height: 30px;
                 text-align: left;
-                color: #ccc;
+                color: #111;
             }
             textarea{
                 height: 200px;
@@ -551,7 +554,7 @@
             border-radius: 3px;
             background-color: #fff;
             color: #333333;
-            font-size: 1em;
+            font-size: 16px;
             cursor: pointer;
         }
         &__button {
@@ -656,7 +659,7 @@
             }
         }
         &__list:not(:last-child){
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
     }
     &__button.c-button{
@@ -710,7 +713,7 @@
             display: block;
             align-items: flex-start;
             justify-content: left;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             &__name {
                 width: 100%;
                 margin-bottom: 10px;
@@ -724,6 +727,7 @@
             &__list{
                 input{
                     width: 100%;
+                    margin-left: 0;
                 }
             }
             &__selectbox {
@@ -883,7 +887,7 @@
             &__name {
                 margin-right: 0px;
                 width: fit-content;
-                font-size: 20px;
+                font-size: 16px;
                 margin-bottom: 20px;
             }
             &__list{
@@ -893,12 +897,7 @@
                 margin-bottom: 12px;
             }
             &__type {
-                font-weight: bold;
-                font-size: 16px;
-                letter-spacing: 0.05em;
-                text-align: left;
-                color: #111;
-                margin-bottom: 11px;
+                font-size: 14px;
             }
             &__select {
                 max-width: 500px;
@@ -908,6 +907,7 @@
                 input{
                     border: 1px solid #a5bacc;
                     margin-right: 10px;
+                    
                 }
                 label{
                     font-weight: bold;
@@ -924,66 +924,33 @@
                 position: relative;
                 max-width: 500px;
                 min-width: 0;
+                font-size: 14px;
                 width: 100% !important;
             }
         }
         
         
-        // ボタン
-        &__button{
-            display: flex;
-            &__list{
-                display: flex;
-                align-items: center;
-                justify-content: left;
-                .percent{
-                    margin-left: 20px;
-                }
-            }
-            &__list:not(:last-child){
-                margin-bottom: 20px;
-            }
         }
-        &__button.c-button{
-            width: 260px;
-            white-space: nowrap;
-            margin: 0 20px 0 0;
-        }
-        &__button.c-button.--short{
-            width: 210px;
-            white-space: nowrap;
-            margin: 0 20px 0 0;
-        }
-        
-        }
-
         // ボタン
         &__button{
             display: flex;
             &__list{
                 display: block;
+                align-items: center;
+                justify-content: center;
                 .percent{
                     margin-left: 20px;
                 }
                 .l-container__side__input{
-                    justify-content: center;
+                    justify-content: left;
+                    padding: 0 0 0 10px;
                 }
             }
             &__list:not(:last-child){
                 margin-bottom: 20px;
             }
         }
-        &__button.c-button{
-            width: 260px;
-            white-space: nowrap;
-            margin: 0 auto 0;
-        }
-        &__button.c-button.--short{
-            width: 210px;
-            white-space: nowrap;
-            margin: 0 auto 0;
-        }
-        
+    
     }
 }
 
@@ -993,7 +960,7 @@
         // 語学・資格情報
         &__language {
             max-width: 500px;
-            margin: 0 auto;
+            margin: 0 auto 20px;
             &__list {
                 display: block;
             }
@@ -1005,19 +972,203 @@
             &__item:not(:last-child) {
                 margin-right: 0px;
             }
+            &__title{
+                font-size: 20px;
+            }
             &__inner{
                 margin-bottom: 10px;
+                padding: 20px;
+            }
+            &__name,&__type{
+                font-size: 16px;
             }
             &__selectbox {
                 max-width: 500px;
                 select{
                 width: 100% !important;
+                font-size: 14px;
             }
         }
         &__language:not(:last-child) {
             margin-bottom: 23px;
         }
+        &__button{
+            font-size: 14px;
+            height: 36px;
+            line-height: 36px;
+        }
         
     }
+
+    // 設定リスト
+    &__list {
+        margin-top: 20px;
+        &__name {
+            font-size: 16px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__column{
+            label{
+                font-size: 14px;
+            }
+            input{
+                font-size: 14px;
+                padding: 10px;
+                width: calc(100% - 20px);
+            }
+        }
+        &__column.--2col {
+            width: calc(50% - 10px);
+            margin-right: 10px;
+            label{
+                font-size: 14px;
+            }
+            input{
+                font-size: 14px;
+                padding: 10px;
+                width: calc(100% - 20px);
+            }
+        }
+        &__column.--radio{
+            label{
+                font-size: 14px;
+            }
+        }
+        &__selectbox select {
+            padding: 10px;
+            font-size: 14px;
+        }
+    }   
+    
+    // 希望条件
+    &__hope {
+        &__name {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        &__list {
+            input{
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+        }
+        &__number {
+            font-size: 14px;
+
+        }
+        &__input{
+            input{
+                font-size: 14px;
+                padding: 10px 15px;
+                width: calc(100% - 32px) !important;
+            }
+        }
+        &__selectbox select {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+    }
+    
+    
+    // 職歴
+    &__job {
+        margin-bottom: 30px;
+        
+        &__history {
+            font-size: 20px;
+            margin-bottom: 20px;           
+        }
+        &__item:not(:last-child){
+            margin-bottom: 20px;
+        }
+        &__inner{
+            margin-bottom: 10px;
+        }
+        &__name {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        &__content {
+            input,textarea{
+                padding: 10px 15px;
+                width: calc(100% - 32px) !important;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            textarea{
+                height: 200px;
+            }
+        }
+        &__selectbox {
+            display: flex;
+            align-items: center;
+            max-width: 320px;
+            width: 100% !important;
+            position: relative;
+        }
+        &__selectbox::after {
+            position: absolute;
+            right: 15px;
+            top: 35%;
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+            border-bottom: solid 3px #0489C6;
+            border-right: solid 3px #0489C6;
+            content: '';
+            pointer-events: none;
+        }
+        &__selectbox select {
+            font-size: 14px;
+            width: 100% !important;
+            padding: 10px 15px;
+        }
+        &__button {
+            max-width: 95px;
+            height: 35px;
+            font-size: 14px;
+            line-height: 35px;
+        }
+
+    }
+    
+        // ボタン
+        &__button{
+            display: flex;
+            &__list{
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                .percent{
+                    margin-left: 20px;
+                }
+                .l-container__side__input{
+                    justify-content: left;
+                    padding: 0 0 0 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .p-setting {
+        // ボタン
+        &__button{
+            &__list{
+                display: block;
+                .percent{
+                    margin-left: 20px;
+                }
+                .l-container__side__input{
+                    justify-content: left;
+                    padding: 0 0 0 10px;
+                }
+            }
+        }
     }
 }

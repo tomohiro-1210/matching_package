@@ -103,12 +103,15 @@
             width: 100%;
             padding: 30px 0 0px;
         }
+        &__content:first-child{
+            padding-top: 0;
+        }
     }
 
     .p-social {
     border-radius: 0px 0px 10px 10px;
     background-color: #fff;
-    padding: 30px 0 30px;
+    padding: 20px 0;
     margin-bottom: 50px;
     &__text {
         margin: 0px auto 30px;

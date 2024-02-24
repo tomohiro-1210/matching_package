@@ -15,8 +15,8 @@
         margin-bottom: 20px;
     }
     &__dot {
-        width: 10px;
-        height: 10px;
+        width: 10px !important;
+        height: 10px !important;
         background-color: #DE2D28;
         border-radius: 5px;
         margin-right: 20px;
@@ -54,48 +54,20 @@
         margin-bottom: 30px;
         &__lists {
             background-color: #fff;
-            padding: 30px;
-    
+            padding: 20px;
         }
         &__list {
-            display: flex;
-            align-items: center;
-            justify-content: left;
+            position: relative;
         }
         &__list:not(:last-child) {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         &__dot {
-            width: 10px;
-            height: 10px;
-            background-color: #DE2D28;
-            border-radius: 5px;
-            margin-right: 20px;
-        }
-        &__dot.read{
-            background-color: #fff;
-        }
-        &__date {
-            font-family: "Noto Sans JP";
-            font-weight: bold;
-            font-size: 14px;
-            letter-spacing: 0.05em;
-            text-align: left;
-            color: #abc8e2;
-            margin-right: 20px;
-        }
-        &__title {
-            font-family: "Noto Sans JP";
-            font-weight: bold;
-            text-decoration: underline;
-            font-size: 16px;
-            letter-spacing: 0.05em;
-            text-align: left;
-            color: #0058a3;
-            text-decoration-color: #0058a3;        
-        }
-        &__title.read{
-            font-weight: normal;
+            position: absolute;
+            left: 0px;
+            top: 20%;
+            transform: translateY(-50%);
+            margin-right: 0px;
         }
     }
 }
@@ -228,6 +200,9 @@
     align-items: center; /* 垂直中心 */
     justify-content: center; /* 水平中心 */
     margin-bottom: 30px;
+    span{
+        color: #333;
+    }
 }
 .c-secTitle--left:after {
     border-top: 1px solid;
@@ -436,7 +411,7 @@
         .c-button{
             width: 220px;
             height: 41px;
-            margin:0 auto 0px;
+            margin:30px auto 0px;
         }
     }
 }
@@ -605,7 +580,7 @@
         width: fit-content;
         margin-left: 30px;
         display: inline-block;
-        padding: 3px 10px;
+        padding: 1px 10px;
         font-family: "Noto Sans JP";
         font-weight: bold;
         font-size: 14px;
@@ -766,8 +741,18 @@
             width: 16px;
             height: 16px;
         }
+        p{
+            width: calc(100% - 26px);
+            font-size: 14px;
+        }
         a{
             font-size: 14px;
+        }
+        .c-form__reason{
+            font-size: 16px;
+            &--label{
+                margin-left: 10px;
+            }
         }
     }
     .c-form__check.--privacy {

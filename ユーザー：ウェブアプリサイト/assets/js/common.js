@@ -12,6 +12,10 @@ $(".l-header__humburgur").click(function () {
     $(".l-header__triangle").toggleClass('hide');
     $(".p-menu").toggleClass('hide');
 });
+// サイドバー基本情報出現
+$('[data-toggle]').click(function () {
+    $(this).next().slideToggle(400);
+});
 
 // 検索モーダル出現
 $('[data-dashboard]').click(function () {

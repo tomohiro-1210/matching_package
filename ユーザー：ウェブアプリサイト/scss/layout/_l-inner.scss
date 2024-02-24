@@ -116,7 +116,15 @@
                 width: 20px;
                 height: 20px;
             }
-
+        }
+        &__toggle{
+            display: none;
+            border-bottom: solid 1px #4893C6;
+            a{
+                padding: 10px 10px;
+                border-bottom: none;
+                font-weight: normal;
+            }
         }
         &__input{
             font-weight: normal;
@@ -172,16 +180,13 @@
             transition: all 0.3s;
             justify-content: center;
             white-space: nowrap;
-            border: solid 1px #4893C6;
-            color: #4893C6;
+            background-color: #F8F8F8;
+            border: solid 1px #F8F8F8;
+            color: #CCCCCC;
         }
         &__button.l-container__side__button--blue:hover {
             background-color: #fff;
             color: #4893C6;
-        }
-        &__button.l-container__side__button--white:hover {
-            color: #fff;
-            background-color: #4893c6;
         }
     }
     // オファー関連
@@ -199,8 +204,8 @@
         }
         
         &__img {
-            width: 50px;
-            height: 49px;
+            width: 40px;
+            height: 40px;
             position: relative;
             z-index: 10;
             margin-right: 7px;
@@ -245,7 +250,7 @@
             line-height: 30px;
             border-radius: 15px;
             background-color: #EAF2F4;
-            margin: 41px auto 0;
+            margin: 0px auto 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -286,7 +291,7 @@
             }
         }
         &__side {
-            max-width: 500px;
+            max-width: 100%;
             width: 100%;
             margin: 50px auto;
             &__search {
@@ -301,6 +306,12 @@
             }
             &__content{
                 padding: 0 10px;
+            }
+            &__input{
+                justify-content: left;
+                .percent{
+                    margin-left: 10px;
+                }
             }
         }
         

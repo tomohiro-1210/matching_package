@@ -1,0 +1,968 @@
+.p-dashboard{
+    // 検索フォーム
+    &__window{
+        padding: 20px 30px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        background-color: #F1F1F1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__button {
+            background-color: #4893C6;
+            width: 290px;
+            height: 60px;
+            margin-right: 30px;
+            border-radius: 30px;
+            transition: all 0.3s;
+            box-shadow:1px 2px 8px  rgba($color: #000000, $alpha: 0.2);
+            p{
+                line-height: 60px;
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                text-align: center;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        &__button:hover{
+            background-color: #fff;
+            p{
+                color: #4893C6;
+            }
+        }
+        &__form {
+            max-width: 600px;
+            width: calc(100% - 320px);
+            margin: 0 auto;
+            background-color: #F1F1F1;
+            // 検索窓
+            .search-form-1 {
+                overflow: hidden;
+                border: 1px solid #2589d0;
+                border-radius: 3px;
+                max-width: 850px;
+                width: 100%;
+                margin: 0 auto;
+                background-color: #fff;
+                label{
+                    display: flex;
+                    justify-content: left;
+                    align-items: flex-start;
+                    margin: 10px 15px;
+                }
+            }
+    
+            .search-form-1 input {
+                max-width: 100%;
+                width: 600px;
+                height: 40px;
+                border: none;
+                box-sizing: border-box;
+                font-size: 16px;
+                border-bottom: solid 1px #104069;
+                outline: none;
+            }
+    
+            .search-form-1 button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border: none;
+                cursor: pointer;
+                background-color: #fff;
+                border-bottom: solid 1px #104069;
+            }
+    
+            .search-form-1 button::before{
+                width: 16px;
+                height: 16px;
+                background-image: url("../img/common/dashboard-search2.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                content: '';
+            }
+        }
+    }
+
+    // オファーが来ています！
+    &__offer {
+        padding: 30px;
+        margin-bottom: 20px;
+        background-color: #EAF2F4;
+        border: solid 2px #4893C6;
+        border-radius: 10px;
+        &__top {
+            margin-bottom: 30px;
+        }
+        &__top--title {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #4893c6;
+        }
+        &__top--text {
+            display: inline-block;
+            font-family: "Noto Sans JP";
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #333;
+            margin-left: 2%;
+        }
+        &__lists {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        &__list {
+            width: 100px;
+            margin-right: 30px;
+        }
+        &__img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            img{
+                border-radius: 10px;
+            }
+        }
+        &__check {
+            font-family: "Noto Sans JP";
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+        &__check.red{
+            color: #de2d28;
+        }
+        &__check.blue{
+            color: #0058A3;
+        }
+        &__check.green{
+            color: #0AB479;
+        }
+        &__check--dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 12px;
+            margin-right: 10px;
+            
+        }
+        &__check--dot.red {
+            background-color: #de2d28;
+        }
+        &__check--dot.blue {
+            background-color: #0058A3;
+        }
+        &__check--dot.green {
+            background-color: #0AB479;
+        }
+    }
+    
+    // 入力達成率
+    &__input {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        margin-bottom: 37px;
+        &__left {
+            width: 200px;
+            margin-right: 42px;
+        }
+        &__graph {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 10px;
+        }
+        &__grapth--text {
+            font-family: "Lato" sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: #111;
+            span{
+                display: inline-block;
+                color: #0AB479;
+            }
+        }
+        &__right {
+            width: calc(100% - 200px);
+        }
+        &__step {
+            font-weight: normal;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #111;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            span{
+                display: inline-block;
+                color: #0489C6;
+            }
+        }
+        &__step::before{
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-right: solid 3px #0489C6;
+            border-bottom: solid 3px #0489C6;
+            position: relative;
+            top: 50%;
+            transform: translateY(-30%) rotate(45deg);
+        }
+        &__button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 440px;
+            padding: 9px 30px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 1px 8px 0px rgba($color: #000000, $alpha: 0.2);
+            border: solid 1px #0489C6;
+        }
+        &__button--name {
+            font-family: "Noto Sans JP";
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #4893C6;
+            white-space: nowrap;
+            margin-right: 50px;
+        }
+        .l-container__side__input {
+            padding: 0;
+            margin-right: 50px;
+            .percent {
+                margin-left: 10px;
+            }
+        }
+    }
+    
+
+    // カテゴリー
+    &__categorys {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    &__category {
+        padding: 3px 20px;
+        background-color: #EAF2F4;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        color: #4893c6;   
+        margin: 0 20px 20px 0;     
+    }
+    // 企業検索結果
+    &__lists {
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: left;        
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    &__list {
+        width: calc(28% - 40px / 3);
+        margin-right: 20px;
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 10px;
+        transition: all 0.3s;
+        box-shadow: 0px 1px 8px 0 rgba($color: #000000, $alpha: 0.2);
+        position: relative;
+        &__content{
+            margin-bottom: 25px;
+        }
+        // 企業データー
+        &__status {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            position: relative;
+            .question-mark{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        &__dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: #DE2D28;
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            transform: translate(-50%, -50%);
+        }
+        &__img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+            img{
+                border-radius: 50px;
+            }
+        }
+        &__company {
+            &__date {
+                font-weight: normal;
+                font-size: 12px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                color: #abc8e2;
+                margin-bottom: 5px;
+            }
+            &__name {
+                font-weight: bold;
+                font-size: 18px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                color: #0489C6;
+                margin-bottom: 5px;
+            }
+            &__label {
+                span{
+                    font-weight: bold;
+                    font-size: 12px;
+                    letter-spacing: 0.05em;
+                    text-align: left;
+                    padding: 2px 10px;
+                    border-radius: 10px;
+                    width: fit-content;
+                }
+                .--maker{
+                    color: #4893c6;
+                    background-color: #EAF2F4;
+                }
+                .--kouri{
+                    color: #0AB479;
+                    background-color: #D9EBE5;
+                }
+                .--service{
+                    color: #4A00D6;
+                    background-color: #E6DFF7;
+                }
+                .--shosha{
+                    color: #D89312;
+                    background-color: #FFEAC4;
+                }
+                .--kinyu{
+                    color: #608900;
+                    background-color: #E0E6D2;
+                }
+                .--mass{
+                    color: #B51111;
+                    background-color: #EDDEDE;
+                }
+                .--software{
+                    color: #0A6CB4;
+                    background-color: #D4EAFA;
+                }
+                .--goverment{
+                    color: #111;
+                    background-color: #e5e5e5;
+                }
+            }
+        }
+        // 矢印
+        &__arrow{
+            width: 20px;
+            height: 20px;
+            z-index: 100;
+        }
+        &__arrow{
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            transform: translate(50%, 50%);
+        }
+        // 業種など
+        &__industry {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        &__industry:not(:last-child){
+            margin-bottom: 10px;
+        }
+        &__industry--left {
+            width: 60px;
+            height: 20px;
+            line-height: 20px;
+            font-weight: normal;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: #104069;
+            background-color: #EAF2F4;
+        }
+        &__industry--right {
+            width: calc(100% - 60px);
+            font-weight: normal;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #333;
+            margin-left: 10px;
+            .label {
+                white-space: nowrap;
+                font-weight: bold;
+                font-size: 12px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                padding: 2px 10px;
+                border-radius: 10px;
+            }
+            .--maker{
+                color: #4893c6;
+                background-color: #EAF2F4;
+            }
+            .--kouri{
+                color: #0AB479;
+                background-color: #D9EBE5;
+            }
+            .--service{
+                color: #4A00D6;
+                background-color: #E6DFF7;
+            }
+            .--shosha{
+                color: #D89312;
+                background-color: #FFEAC4;
+            }
+            .--kinyu{
+                color: #608900;
+                background-color: #E0E6D2;
+            }
+            .--mass{
+                color: #B51111;
+                background-color: #EDDEDE;
+            }
+            .--software{
+                color: #0A6CB4;
+                background-color: #D4EAFA;
+            }
+            .--goverment{
+                color: #111;
+                background-color: #e5e5e5;
+            }
+        }
+        // 業務内容
+        &__job-detail{
+            padding: 10px;
+            background-color: #F8F8F8;
+            border-radius: 5px;
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            line-height: 22px;
+            text-align: left;
+            color: #333;
+            border-radius: 5px;
+        }
+        
+    }
+    &__list:nth-child(3n){
+        margin-right: 00px;
+    }
+    &__list:nth-child(n + 4){
+        margin-top: 20px;
+    }
+    &__list:hover{
+        background-color: #EAF2F4;
+    } 
+
+
+}
+
+
+@media screen and (max-width:1024px) {
+    .p-dashboard{
+    // オファーが来ています！
+    &__offer {
+        padding: 20px;
+        &__top {
+            margin-bottom: 20px;
+        }
+        &__top--title {
+            // display: block;
+            margin-bottom: 5px;
+        }
+        &__top--text {
+            // display: block;
+            margin-left: 0px;
+        }
+        &__list {
+            width: 100px;
+            margin-right: 20px;
+        }
+    }
+    
+    // 入力達成率
+    &__input {
+        display: block;
+        padding: 20px;
+        margin-bottom: 30px;
+        &__left {
+            width: 200px;
+            margin:0 auto 20px;
+        }
+        &__graph {
+            width: 160px;
+            height: 160px;
+            margin-bottom: 10px;
+        }
+        &__grapth--text {
+            font-family: "Lato" sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: #111;
+            span{
+                display: inline-block;
+                color: #0AB479;
+            }
+        }
+        &__right {
+            width: 100%;
+        }
+        &__step {
+            font-weight: normal;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #111;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            span{
+                display: inline-block;
+                color: #0489C6;
+            }
+        }
+        &__step::before{
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-right: solid 3px #0489C6;
+            border-bottom: solid 3px #0489C6;
+            position: relative;
+            top: 50%;
+            transform: translateY(-30%) rotate(45deg);
+        }
+        &__button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100%;
+            padding: 9px 20px;
+        }
+        &__button--name {
+            font-size: 14px;
+            margin-right: 15px;
+        }
+        .l-container__side__input {
+            margin-right: 15px;
+            .percent {
+                margin-left: 5px;
+            }
+        }
+        .arrow-blue{
+            width: 16px;
+            height: 16px;
+        }
+    }
+        // 検索フォーム
+        &__window{
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            background-color: #F1F1F1;
+            display: block;
+            &__button {
+                max-width: 100%;
+                width: 100%;
+                height: 50px;
+                margin: 0 auto 10px;
+                p{
+                    line-height: 50px;
+                    font-size: 14px;
+                    img{
+                        width: 14px;
+                        height: 14px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            &__form {
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+                background-color: #F1F1F1;
+            }
+        }
+        &__words{
+            padding: 0 20px;
+        }
+        &__text:not(:last-child){
+            padding-right: 20px;
+        }
+        &__slice{
+            padding: 0 10px;
+        }
+
+        // カテゴリー
+        &__categorys {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            margin-bottom: 10px;
+        }
+        &__category {
+            padding: 2px 15px;
+            background-color: #EAF2F4;
+            font-weight: bold;
+            font-size: 12px;
+            text-align: center;
+            color: #4893c6;   
+            margin: 0 10px 10px 0;     
+        }
+
+        
+    // 企業検索結果
+    &__lists {
+        margin-bottom: 50px;
+    }
+    &__list {
+        width: calc((50% - 20px) - 20px / 2);
+        margin-right: 20px;
+        padding: 10px;
+        &__content{
+            margin-bottom: 20px;
+        }
+        // 企業データー
+        &__status {
+            margin-bottom: 10px;
+        }
+        // 業種など
+        &__industry:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+    &__list:nth-child(3n){
+        margin-right: 20px;
+    }
+    &__list:nth-child(2n){
+        margin-right: 00px;
+    }
+    &__list:nth-child(n + 4){
+        margin-top: 00px;
+    }
+    &__list:nth-child(n + 3){
+        margin-top: 20px;
+    }
+    
+    }
+}
+@media screen and (max-width:768px) {
+    .p-dashboard{
+        .l-container__side__title{
+            padding: 0 20px;
+        }
+        // 企業検索結果
+        &__lists {
+            margin: 0 auto 50px;
+            padding: 0 20px;
+        }
+        // 入力達成率
+        &__input{
+            &__step {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (max-width:540px) {
+    .p-dashboard{
+    // 企業検索結果
+        &__lists {
+            margin:0 auto 50px;
+        }
+        &__list {
+            max-width: 400px;
+            width: 100%;
+            margin:0 auto 00px;
+            padding: 10px;
+        }
+        &__list:nth-child(3n){
+            margin-right: auto;
+        }
+        &__list:nth-child(2n){
+            margin-right: auto;
+        }
+        &__list:nth-child(n + 3){
+            margin-top: 00px;
+        }
+        &__list:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+}
+@media screen and (max-width:420px) {
+    .p-dashboard{
+    
+        // 入力達成率
+        &__input {
+            display: block;
+            padding: 20px;
+            margin-bottom: 30px;
+            &__left {
+                width: 200px;
+                margin:0 auto 20px;
+            }
+            &__graph {
+                width: 160px;
+                height: 160px;
+                margin: 0 auto 10px;
+            }
+            &__grapth--text {
+                font-family: "Lato" sans-serif;
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: 0.05em;
+                text-align: center;
+                color: #111;
+                span{
+                    display: inline-block;
+                    color: #0AB479;
+                }
+            }
+            &__right {
+                width: 100%;
+            }
+            &__button {
+                display: block;
+                position: relative;
+                padding: 9px 20px;
+            }
+            &__button--name {
+                font-size: 14px;
+                margin-right: 15px;
+            }
+            .l-container__side__input {
+                margin-right: 15px;
+                .percent {
+                    margin-left: 5px;
+                }
+            }
+            .arrow-blue{
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+// 就活お役立ちコラム
+.hunting-column {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin:0 auto 50px;
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list {
+        width: calc(33% - 60px / 3);
+        height: fit-content;
+        margin-right: 30px;
+    }
+    &__list:last-child{
+        margin-right: 0;
+    }
+    &__img {
+        border-radius: 10px;
+    }
+    &__content {
+        padding: 20px;
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        border-radius: 10px;
+        background-color: #fff;
+        position: relative;
+        top: -5px;
+        z-index: 10;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        line-height: 24px;
+        text-align: left;
+        color: #0358a3;        
+        margin-bottom: 15px;
+    }
+    &__text {
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        line-height: 24px;
+        text-align: left;
+        color: #111;   
+        margin-bottom: 35px;     
+    }
+    &__categorys {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .arrow-blue {
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translateY(-50%);
+        }
+    }
+    &__category {
+        padding: 5px 20px;
+        margin-right: 10px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        line-height: 16px;
+        text-align: left;
+        color: #0058a3;
+        display: inline-block;
+        background-color: #D9EBE5;
+    }
+    &__button{
+        width: fit-content;
+        margin: 30px auto 0;
+        padding: 10px 30px;
+        background-color: #0489C6;
+        border: solid 1px #0489C6;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        .text{
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.05em;
+            text-align: left;
+            color: #fff;
+            margin-right: 30px;
+        }
+        &__block{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 10px;
+            span{
+                display: block;
+                width: 4px;
+                height: 4px;
+                background-color: #fff;
+                margin-right: 2px;
+            }
+            span:nth-child(2n){
+                margin-right: 0;
+            }
+            span:nth-child(n + 3){
+                margin-top: 2px;
+            }
+        }
+    }
+    &__button:hover{
+        background-color: #fff;
+        .text{
+            color: #4893c6;
+        }
+        &__block:hover{
+            width: 10px;
+            span:hover{
+                background-color: #4893C6;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    // 就活お役立ちコラム
+    .hunting-column {
+        max-width: 1200px;
+        padding: 0 20px;
+        margin-bottom: 50px;
+        &__lists {
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__list {
+            width: 100%;
+            height: fit-content;
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+        &__list:last-child{
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+        &__content {
+            padding: 15px;
+            width: calc(100% - 50px);
+        }
+        &__title {
+            font-size: 16px;      
+            margin-bottom: 10px;
+        }
+        &__text {
+            font-size: 14px;
+            margin-bottom: 20px;     
+        }
+        &__category {
+            padding: 3px 10px;
+            margin-right: 10px;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            line-height: 16px;
+        }
+    }}
